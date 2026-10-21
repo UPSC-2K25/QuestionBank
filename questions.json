@@ -128,5 +128,135 @@
     ],
     "answer": "C",
     "explanation": "Statement 1 is correct: Section 135 and the Companies (CSR Policy) Rules clarify that programs or activities that benefit only the employees of the company and their families are excluded from qualifying CSR. Statement 2 is correct: Covered companies are legally required to spend at least 2% of the average net profits realized over the three immediately preceding financial years."
+  },
+  {
+    "year": 2024,
+    "topic": "Indian Geography / Infrastructure",
+    "question": "Regarding airport infrastructure developments in India, consider the following facilities: 1. Donyi Polo Airport 2. Kushinagar International Airport 3. Vijayawada International Airport. Which among these were developed as Greenfield projects in the recent past?",
+    "options": {
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    },
+    "answer": "A",
+    "explanation": "Greenfield projects refer to completely new infrastructure facilities built from scratch on previously undeveloped land. Donyi Polo Airport (located at Hollongi near Itanagar, Arunachal Pradesh) and Kushinagar International Airport (Uttar Pradesh) were developed as greenfield facilities. Vijayawada Airport (Gannavaram) is a pre-existing airport that underwent modern terminal expansion and runway upgrades, classifying it as a brownfield redevelopment."
+  },
+  {
+    "year": 2024,
+    "topic": "Physical Geography / Climatology",
+    "question": "Regarding atmospheric water vapour, evaluate the following statements: 1. It is an atmospheric gas whose concentration decreases with increasing altitude. 2. Its proportional volume in the air reaches its maximum at polar latitudes.",
+    "options": {
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    },
+    "answer": "A",
+    "explanation": "Statement 1 is valid: water vapour is a variable atmospheric constituent whose volume rapidly diminishes upward; roughly 90% is concentrated within the lower troposphere. Statement 2 is incorrect: warmer air holds substantially more moisture, making water vapour content highest in warm, humid equatorial and tropical belts (up to 4% by volume) and lowest in cold, dry polar regions (under 1%)."
+  },
+  {
+    "year": 2024,
+    "topic": "Physical Geography / World Climatic Zones",
+    "question": "Identify the climatic type defined by these features: (1) Modest diurnal and seasonal temperature variations; (2) Year-round precipitation; (3) Annual precipitation totals generally ranging between 50 cm and 250 cm.",
+    "options": {
+      "Equatorial climate",
+      "China type climate",
+      "Humid subtropical climate",
+      "Marine West coast climate"
+    },
+    "answer": "D",
+    "explanation": "The Marine West Coast climate (also referred to as the British type / Köppen Cfb) occurs on mid-latitude western continental margins. Maritime influences moderate both summer heat and winter cold, maintaining small annual temperature ranges. Driven by prevailing westerlies and frontal cyclones, precipitation is distributed across all seasons, typically between 50 cm and 250 cm."
+  },
+  {
+    "year": 2024,
+    "topic": "Physical Geography / Atmospheric Dynamics",
+    "question": "Concerning the Coriolis effect on atmospheric motion, consider the following statements: 1. Its magnitude intensifies with higher wind velocities. 2. It attains its maximum intensity at the poles and becomes zero along the equator.",
+    "options": {
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    },
+    "answer": "C",
+    "explanation": "The Coriolis force is proportional to the sine of latitude and the speed of the moving object (F = 2vω sin φ). Statement 1 is correct because higher wind velocity (v) directly increases the deflecting force. Statement 2 is correct because sin(0°) = 0 at the equator (rendering the force absent), while sin(90°) = 1 makes it maximal at the poles."
+  },
+  {
+    "year": 2024,
+    "topic": "Physical Geography / Earth Sun Relationships",
+    "question": "On the Summer Solstice (June 21), which of the following latitudinal locations receive more than 12 hours of continuous daylight? 1. Equator 2. Tropic of Cancer 3. Tropic of Capricorn 4. Arctic Circle",
+    "options": {
+      "1 only",
+      "2 only",
+      "3 and 4",
+      "2 and 4"
+    },
+    "answer": "D",
+    "explanation": "During the June solstice, the Northern Hemisphere is tilted towards the Sun. The Equator experiences an almost constant 12-hour day throughout the year. Every parallel north of the equator experiences daylight exceeding 12 hours (including the Tropic of Cancer), with locations within the Arctic Circle experiencing continuous 24-hour daylight. The Tropic of Capricorn in the Southern Hemisphere has its shortest daylight period."
+  },
+  {
+    "year": 2024,
+    "topic": "Environment & Ecology / Carbon Sinks",
+    "question": "Which geographical area contains the planet's most expansive tropical peatland complex, storing an amount of carbon roughly equal to three years of global fossil fuel emissions, whose degradation would severely disrupt global climate stability?",
+    "options": {
+      "Amazon Basin",
+      "Congo Basin",
+      "Sundaland",
+      "Okavango Delta"
+    },
+    "answer": "B",
+    "explanation": "The Cuvette Centrale peatlands situated in the central Congo Basin form the largest continuous tropical peatland complex in the world. It holds approximately 30 billion metric tons of sequestered carbon—equivalent to three years of global fossil fuel combustion—making its conservation vital for atmospheric carbon balance."
+  },
+  {
+    "year": 2024,
+    "topic": "Science & Technology / Environmental Chemistry",
+    "question": "Consider the following statements regarding Per- and polyfluoroalkyl substances (PFAS): 1. They are extensively detected in potable water, food supplies, and packaging materials. 2. They resist chemical breakdown and degrade very slowly in natural ecosystems. 3. Continuous exposure can cause them to bioaccumulate inside animal tissue.",
+    "options": {
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    },
+    "answer": "D",
+    "explanation": "PFAS are synthetic organofluorine chemical compounds termed 'forever chemicals' due to exceptionally strong carbon-fluorine chemical bonds that resist biological and environmental breakdown. They leach into municipal drinking water and consumer packaging, resisting natural degradation and bioaccumulating in organisms across trophic levels."
+  },
+  {
+    "year": 2024,
+    "topic": "Environment & Ecology / Entomology",
+    "question": "Among the following taxonomic groups of organisms, how many contain species that exhibit a parasitoid life cycle? 1. Carabid beetles 2. Centipedes 3. Flies 4. Termites 5. Wasps",
+    "options": {
+      "Only two",
+      "Only three",
+      "Only four",
+      "All five"
+    },
+    "answer": "B",
+    "explanation": "Parasitoids are organisms whose immature stages feed on or inside a single host organism, ultimately killing it. Wasps (notably parasitoid Hymenoptera such as Ichneumonoidea) and flies (order Diptera, especially Tachinidae) contain vast numbers of parasitoid species. Specialized carabid beetles (such as the genus Lebia targeting leaf beetle pupae) also act as parasitoids. Centipedes are predators and termites are detritivores, neither containing parasitoid species."
+  },
+  {
+    "year": 2024,
+    "topic": "Agriculture / Botany",
+    "question": "Consider the following cultivated economic crops: 1. Groundnut 2. Horse-gram 3. Soybean. How many of these belong to the legume/pea family (Fabaceae)?",
+    "options": {
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    },
+    "answer": "C",
+    "explanation": "Groundnut (Arachis hypogaea), Horse-gram (Macrotyloma uniflorum), and Soybean (Glycine max) all belong taxonomically to the Fabaceae (Leguminosae) family, characterized by root nodule nitrogen fixation and leguminous pod structures."
+  },
+  {
+    "year": 2024,
+    "topic": "Environment & Ecology / Wildlife Legislation",
+    "question": "Consider the following statements regarding the Indian Flying Fox: Statement-I: It is listed under the 'vermin' category in the Wild Life (Protection) Act, 1972. Statement-II: It sustains itself by consuming the blood of other animals.",
+    "options": {
+      "Both Statement-I and Statement-II are correct, and Statement-II explains Statement-I",
+      "Both Statement-I and Statement-II are correct, but Statement-II does not explain Statement-I",
+      "Statement-I is correct, but Statement-II is incorrect",
+      "Statement-I is incorrect, but Statement-II is correct"
+    },
+    "answer": "C",
+    "explanation": "Statement-I is correct: The Indian Flying Fox (Pteropus giganteus/medius) was historically placed in Schedule V ('vermin') of the Wildlife (Protection) Act, 1972 due to orchard crop foraging. Statement-II is incorrect: Indian flying foxes are predominantly frugivorous (feeding on fruits, nectar, and pollen), not hematophagous (blood-feeding bats are native to Central and South America)."
   }
 ]
