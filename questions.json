@@ -258,5 +258,135 @@
     ],
     "answer": "C",
     "explanation": "Statement-I is correct: The Indian Flying Fox (Pteropus giganteus/medius) was historically placed in Schedule V ('vermin') of the Wildlife (Protection) Act, 1972 due to orchard crop foraging. Statement-II is incorrect: Indian flying foxes are predominantly frugivorous (feeding on fruits, nectar, and pollen), not hematophagous (blood-feeding bats are native to Central and South America)."
+  },
+  {
+    "year": "2027",
+    "topic": "International Relations & Economy: Currency Swap Arrangements",
+    "question": "With reference to Bilateral Currency Swap Arrangements and the SAARC Currency Swap Framework, consider the following statements:\n1. A currency swap arrangement involves exchanging a predetermined amount of domestic currency for foreign currency at a specified exchange rate with an agreement to reverse the transaction at a later date.\n2. Under the SAARC Currency Swap Framework operated by the Reserve Bank of India, drawdown facilities are offered exclusively in Indian Rupees (INR).\n3. Currency swap agreements can serve as a temporary liquidity bridge to mitigate short-term balance-of-payments (BoP) strains without impacting foreign exchange reserves permanently.\nWhich of the statements given above are correct?",
+    "options": [
+      "A. 1 and 2 only",
+      "B. 2 and 3 only",
+      "C. 1 and 3 only",
+      "D. 1, 2 and 3"
+    ],
+    "answer": "C",
+    "explanation": "Statements 1 and 3 are correct. A currency swap is an agreement between two central banks to exchange currencies with predetermined terms for repayment, helping recipient nations address short-term balance of payment crises and liquidity shortfalls. Statement 2 is incorrect because the SAARC Currency Swap facility offers drawdowns in US Dollars, Euros, and Indian Rupees (INR), not exclusively in INR."
+  },
+  {
+    "year": "2027",
+    "topic": "Regional Groupings: Mekong-Ganga Cooperation (MGC)",
+    "question": "Which of the following countries are members of the Mekong-Ganga Cooperation (MGC) initiative?\n1. India\n2. Myanmar\n3. Thailand\n4. Bangladesh\n5. Cambodia\n6. Vietnam\nSelect the correct answer using the code given below:",
+    "options": [
+      "A. 1, 2, 3 and 5 only",
+      "B. 1, 2, 3, 5 and 6 only",
+      "C. 1, 3, 4, 5 and 6 only",
+      "D. 1, 2, 3, 4, 5 and 6"
+    ],
+    "answer": "B",
+    "explanation": "The Mekong-Ganga Cooperation (MGC) was established in 2000 at Vientiane, Laos. It comprises six member countries: India and five ASEAN riparian states of the Mekong basin (Cambodia, Laos, Myanmar, Thailand, and Vietnam). Bangladesh is not a member of the MGC."
+  },
+  {
+    "year": "2027",
+    "topic": "Social Development & Reports: Global Hunger Index (GHI)",
+    "question": "The Global Hunger Index (GHI) score is computed based on which of the following four component indicators?\n1. Undernourishment\n2. Child Stunting\n3. Child Wasting\n4. Child Mortality\n5. Maternal Anaemia\nSelect the correct answer using the code given below:",
+    "options": [
+      "A. 1, 2, 3 and 4 only",
+      "B. 1, 2, 4 and 5 only",
+      "C. 2, 3, 4 and 5 only",
+      "D. 1, 3, 4 and 5 only"
+    ],
+    "answer": "A",
+    "explanation": "The Global Hunger Index (GHI), jointly published by Welthungerhilfe (WHH) and partner organizations, evaluates hunger using four indicators: Undernourishment (share of population with insufficient caloric intake), Child Stunting (low height-for-age under age five), Child Wasting (low weight-for-height under age five), and Child Mortality (mortality rate of children under age five). Maternal Anaemia is not one of the four core indicators."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian Economy: Labour Force Survey Concepts",
+    "question": "In the context of the Periodic Labour Force Survey (PLFS) conducted by the National Statistics Office (NSO), consider the following statements:\n1. The Labour Force Participation Rate (LFPR) is defined as the percentage of persons in the labour force (working or seeking/available for work) in the population.\n2. The Worker Population Ratio (WPR) measures the percentage of employed persons relative to the total population.\n3. The Usual Principal Activity Status approach classifies a person's activity based on the major time spent during the 365 days preceding the date of survey.\nWhich of the statements given above are correct?",
+    "options": [
+      "A. 1 and 2 only",
+      "B. 2 and 3 only",
+      "C. 1 and 3 only",
+      "D. 1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are correct per NSO definitions. LFPR measures the proportion of a country's population that is actively engaged in or seeking economic work. WPR reflects the proportion of employed persons in the population. The Usual Activity Status identifies employment based on the reference period of the preceding 365 days, separating principal status (majority time) and subsidiary status."
+  },
+  {
+    "year": "2027",
+    "topic": "Environment & Pollution Governance: Graded Response Action Plan (GRAP)",
+    "question": "With reference to the Graded Response Action Plan (GRAP) for the National Capital Region (NCR), consider the following statements:\n1. GRAP was originally formulated pursuant to the directions of the Supreme Court of India in the M.C. Mehta case.\n2. The implementation and enforcement of GRAP is currently overseen by the Central Pollution Control Board (CPCB) independently of any statutory commission.\n3. Stage-I of GRAP is automatically invoked when the Air Quality Index (AQI) enters the 'Severe' category.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "A. 1 only",
+      "B. 1 and 2 only",
+      "C. 2 and 3 only",
+      "D. 1 and 3 only"
+    ],
+    "answer": "A",
+    "explanation": "Statement 1 is correct: GRAP was notified in 2017 following Supreme Court orders in the M.C. Mehta v. Union of India case. Statement 2 is incorrect because GRAP implementation is mandated and overseen by the statutory Commission for Air Quality Management in NCR and Adjoining Areas (CAQM). Statement 3 is incorrect because Stage-I is triggered when AQI reaches the 'Poor' category (201-300); Stage-IV corresponds to 'Severe+' (AQI > 450)."
+  },
+  {
+    "year": "2027",
+    "topic": "Governance & Banking Reforms: Financial Services Institutions Bureau (FSIB)",
+    "question": "Consider the following statements regarding the Financial Services Institutions Bureau (FSIB):\n1. It was established as an autonomous body to replace the Banks Board Bureau (BBB).\n2. Its mandate includes recommending whole-time directors and non-executive chairpersons for Public Sector Banks (PSBs), Public Sector Insurance Companies, and Financial Institutions.\n3. The Appointments Committee of the Cabinet (ACC) approves appointments based on FSIB recommendations.\nWhich of the statements given above are correct?",
+    "options": [
+      "A. 1 and 2 only",
+      "B. 2 and 3 only",
+      "C. 1 and 3 only",
+      "D. 1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All statements are correct. In 2022, the Central Government approved the creation of FSIB in place of the Banks Board Bureau following a Delhi High Court ruling concerning BBB's jurisdiction. FSIB recommends senior personnel for PSBs, public sector insurance companies, and development financial institutions, with final appointments cleared by the Appointments Committee of the Cabinet (ACC)."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian Polity: Constitutional Provisions for Languages",
+    "question": "Regarding the Eighth Schedule and linguistic provisions of the Constitution of India, consider the following statements:\n1. The Eighth Schedule originally contained 14 languages at the commencement of the Constitution.\n2. English is one of the 22 languages specified in the Eighth Schedule.\n3. Article 351 of the Constitution directs the Union to promote the spread and development of the Hindi language as a medium of expression for all elements of the composite culture of India.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "A. 1 and 2 only",
+      "B. 1 and 3 only",
+      "C. 3 only",
+      "D. 1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 3 are correct. The Eighth Schedule initially contained 14 languages, expanded over time via constitutional amendments to 22. Article 351 lays down a special directive for the development of the Hindi language. Statement 2 is incorrect because English is not listed among the 22 languages in the Eighth Schedule."
+  },
+  {
+    "year": "2027",
+    "topic": "Science & Technology: Quantum Key Distribution (QKD)",
+    "question": "In the context of modern cybersecurity and communications, why is Quantum Key Distribution (QKD) considered 'unconditionally secure'?\n1. It utilizes mathematical complexity based on prime factorization that classical computers cannot solve.\n2. Any unauthorized interception or measurement alters the quantum states of the photons, instantly revealing the eavesdropping.\n3. It uses entangled or single photons where cloning an unknown arbitrary quantum state is fundamentally prohibited by physics.\nSelect the correct answer using the code given below:",
+    "options": [
+      "A. 1 and 2 only",
+      "B. 2 and 3 only",
+      "C. 1 and 3 only",
+      "D. 1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 2 and 3 are correct. QKD derives its security from the fundamental principles of quantum mechanics—the Heisenberg Uncertainty Principle and the No-Cloning Theorem—meaning any attempt to intercept or observe the key alters the states and flags the intruder. Statement 1 is incorrect because prime factorization forms the basis of classical public-key cryptography (e.g., RSA), not QKD."
+  },
+  {
+    "year": "2027",
+    "topic": "Modern Indian History: Aligarh Movement",
+    "question": "Consider the following statements regarding Sir Syed Ahmad Khan and the Aligarh Movement:\n1. He advocated for modern scientific and Western education for Muslims while maintaining Islamic religious values.\n2. He founded the Scientific Society to translate Western scholarly and technical works into Urdu.\n3. He actively participated in and presided over early annual sessions of the Indian National Congress.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "A. 1 only",
+      "B. 1 and 2 only",
+      "C. 2 and 3 only",
+      "D. 1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 2 are correct. Sir Syed Ahmad Khan championed modern education, establishing the Scientific Society in 1864 and later the Muhammadan Anglo-Oriental College (1875) at Aligarh. Statement 3 is incorrect because Sir Syed opposed Muslim participation in the Indian National Congress, urging them to focus on modern education and administrative careers instead of oppositional politics."
+  },
+  {
+    "year": "2027",
+    "topic": "International Trade: Free Trade Agreements (FTAs) & Rules of Origin",
+    "question": "In international trade agreements, what is the primary purpose of incorporating 'Rules of Origin' (ROO)?",
+    "options": [
+      "A. To enforce intellectual property compliance according to the TRIPS agreement",
+      "B. To ensure that preferential tariff benefits are granted only to goods originating in signatory partner countries, preventing trade deflection",
+      "C. To determine the maritime exclusive economic zone jurisdiction for international shipping lanes",
+      "D. To set mandatory minimum environmental standards for export commodities"
+    ],
+    "answer": "B",
+    "explanation": "Rules of Origin (ROO) are the criteria needed to determine the national source of a product. In Free Trade Agreements, ROOs prevent third-party non-member countries from routing goods through a member nation with lower external duties (trade deflection) to illegitimately access preferential or zero-duty tariffs."
   }
-]
+  ]
