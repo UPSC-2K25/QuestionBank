@@ -388,5 +388,135 @@
     ],
     "answer": "B",
     "explanation": "Rules of Origin (ROO) are the criteria needed to determine the national source of a product. In Free Trade Agreements, ROOs prevent third-party non-member countries from routing goods through a member nation with lower external duties (trade deflection) to illegitimately access preferential or zero-duty tariffs."
+  },
+  {
+    "year": "2027",
+    "topic": "Environment & Biodiversity: Biosphere Reserves & MAB Programme",
+    "question": "With reference to the World Network of Biosphere Reserves (WNBR) under UNESCO's Man and the Biosphere (MAB) Programme, consider the following statements:\n1. Nilgiri was the first biosphere reserve from India to be included in the World Network of Biosphere Reserves.\n2. In a Biosphere Reserve, limited human activity like research and traditional gathering is permissible in the Core Zone with prior permission.\n3. The Transition Area is an area of cooperation where management agencies, scientists, and local communities work together for sustainable resource management.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "C",
+    "explanation": "Statements 1 and 3 are correct. Nilgiri Biosphere Reserve was designated as India's first biosphere reserve under UNESCO's MAB network in 2000. The Transition Area forms the outermost zone where sustainable economic and human activities are promoted in harmony with local populations. Statement 2 is incorrect because the Core Zone is strictly protected and devoted entirely to non-destructive conservation; human entry and resource extraction are strictly prohibited except for non-destructive, monitored research."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian Polity & Governance: Right to Information (RTI) Act, 2005",
+    "question": "Regarding the institutional framework under the Right to Information (RTI) Act, 2005, consider the following statements:\n1. The Chief Information Commissioner (CIC) and Information Commissioners (ICs) are appointed by the President on the recommendation of a committee headed by the Prime Minister.\n2. Following statutory amendments, the salaries and allowances of the CIC and ICs are prescribed by the Central Government rather than being equated with the Election Commission.\n3. Public authorities are mandated under Section 4(1)(b) of the Act to suo motu disclose key institutional information, budgets, and operational norms to the public.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are correct. The selection committee for the CIC consists of the Prime Minister (Chairperson), the Leader of Opposition in Lok Sabha, and a Union Cabinet Minister nominated by the PM. The Right to Information (Amendment) Act, 2019 empowered the Central Government to determine the tenure, salaries, and terms of service of Information Commissioners. Section 4(1)(b) establishes the statutory mandate for proactive/suo motu public disclosures."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian Economy & Fiscal Policy: Direct Tax Vivad se Vishwas Scheme",
+    "question": "With reference to tax administration and dispute resolution mechanisms in India, consider the following statements regarding the 'Direct Tax Vivad se Vishwas' initiative:\n1. It provides a statutory mechanism for the settlement of pending direct tax disputes by waiving interest and penalty upon payment of the disputed tax amount.\n2. Once an order of settlement is issued under the scheme, the matters determined cannot be reopened in any proceeding under the Income-tax Act, 1961.\n3. The scheme covers disputes involving prosecution initiated under the Prevention of Money Laundering Act (PMLA) or the Benami Transactions Act.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. The Vivad se Vishwas scheme resolves litigated direct tax disputes by enabling taxpayers to pay disputed tax in exchange for full waivers of associated interest, penalties, and prosecution immunity, providing conclusive settlement. Statement 3 is incorrect because disputes relating to undisclosed foreign income/assets, offences under the IPC, or proceedings under the PMLA and Benami Transactions (Prohibition) Act are expressly excluded from the settlement window."
+  },
+  {
+    "year": "2027",
+    "topic": "Science & Technology: Space Exploration & Near-Earth Asteroids",
+    "question": "Consider the following pairs of international space missions and their primary targets:\n1. OSIRIS-REx : Asteroid Bennu\n2. DART : Asteroid Dimorphos\n3. Hera : Asteroid Ryugu\n4. Lucy : Trojan Asteroids of Jupiter\nWhich of the pairs given above are correctly matched?",
+    "options": [
+      "1, 2 and 4 only",
+      "1, 3 and 4 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": "A",
+    "explanation": "Pairs 1, 2, and 4 are correctly matched. NASA's OSIRIS-REx sampled asteroid Bennu; NASA's DART successfully demonstrated kinetic impact planetary defense at asteroid Dimorphos; and NASA's Lucy is exploring the Trojan asteroids orbiting ahead of and behind Jupiter. Pair 3 is incorrectly matched because ESA's Hera mission was launched to investigate the Didymos binary asteroid system post-DART impact, whereas Asteroid Ryugu was explored by JAXA's Hayabusa2."
+  },
+  {
+    "year": "2027",
+    "topic": "International Relations: United Nations Peacekeeping Operations",
+    "question": "With reference to United Nations (UN) Peacekeeping operations, consider the following statements:\n1. Peacekeeping operations are formally authorized by the UN Security Council under Chapters VI, VII, or VIII of the UN Charter.\n2. Military personnel deployed as UN Peacekeepers ('Blue Helmets') remain members of their respective national armed forces and are not under permanent UN employment.\n3. UN Peacekeeping operations can only be deployed in regions where formal peace treaties have already been concluded between sovereign states.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. Peacekeeping missions require UN Security Council authorization and rely on voluntary troop contributions from member states; troops wear the UN blue beret/helmet while remaining commissioned in their national armies. Statement 3 is incorrect because peacekeeping missions are frequently deployed in intra-state conflicts, fragile truce environments, or civil wars where formal treaties do not yet exist (e.g., MONUSCO in DR Congo, UNIFIL in Lebanon)."
+  },
+  {
+    "year": "2027",
+    "topic": "Physical Geography: Western Disturbances and Monsoon Transition",
+    "question": "During the post-monsoon and transition months across northwest India, weather changes are frequently influenced by Western Disturbances. In this context, consider the following statements:\n1. Western Disturbances are extratropical cyclones that originate over the Mediterranean Sea and Caspian Sea region.\n2. They are steered into the Indian subcontinent by the subtropical westerly jet stream.\n3. An active Western Disturbance in October can interact with retreating monsoon easterly winds, producing unseasonal localized intense precipitation.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are correct. Western Disturbances are low-pressure systems originating in the Mediterranean/Caspian region. Embedded in the subtropical westerly jet stream, they travel eastward toward northern South Asia. When early-season Western Disturbances coincide with lingering or retreating monsoon easterlies during October, moisture convergence frequently induces intense, widespread unseasonal rain."
+  },
+  {
+    "year": "2027",
+    "topic": "Agriculture & Environment: Stubble Burning & Bio-Decomposers",
+    "question": "In the context of agricultural crop residue management, consider the following statements regarding the 'Pusa Bio-Decomposer':\n1. It consists of a consortium of beneficial fungi that accelerates the enzymatic degradation of cellulose, hemicellulose, and lignin in crop straw.\n2. Its application requires paddy straw to be collected, compacted, and sealed inside anaerobic underground silos.\n3. Using bio-decomposers enhances soil health by recycling organic carbon and reducing nitrogen loss caused by open-field burning.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 3 are correct. Developed by ICAR-IARI, the Pusa Bio-Decomposer utilizes fungal strains capable of rapid enzymatic breakdown of recalcitrant plant matter, replenishing soil organic carbon and micro-nutrients. Statement 2 is incorrect because it is designed for in-situ field application (sprayed directly onto chopped stubble and rotavated/mixed with soil under aerobic moist conditions), requiring no anaerobic silos."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian History & Culture: Bhakti-Sufi Traditions & Sant Namdev",
+    "question": "Consider the following statements regarding the Bhakti tradition in Western India:\n1. Sant Namdev belonged to the Varkari sect centered on the worship of Lord Vitthala at Pandharpur.\n2. Hymns composed by Sant Namdev are incorporated into the Guru Granth Sahib of Sikhism.\n3. The Varkari tradition strongly adhered to Vedic sacrificial rites and orthodox ritual purity.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. Sant Namdev (13th-14th century) was a prominent saint of the Varkari Sampradaya of Maharashtra. Over 60 of his padavali/hymns were collected in the Adi Granth (Guru Granth Sahib). Statement 3 is incorrect because the Varkari movement was egalitarian and devotional, explicitly rejecting external ritualism, caste-based hierarchy, and sacrificial Vedic orthodoxy in favor of congregational kirtan and inward bhakti."
+  },
+  {
+    "year": "2027",
+    "topic": "Governance & Digital Economy: Central Bank Digital Currency (CBDC)",
+    "question": "With reference to the Digital Rupee (e₹) launched by the Reserve Bank of India, consider the following statements:\n1. It appears as a liability on the balance sheet of the commercial bank maintaining the digital wallet.\n2. It holds the same legal tender status as sovereign physical banknotes and coins.\n3. It earns interest automatically based on the prevailing RBI Policy Repo Rate to curb inflationary liquidity.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statement 2 is correct: CBDC is a sovereign currency and legal tender under the RBI Act, 1934. Statement 1 is incorrect because CBDC is a direct liability of the central bank (RBI), not the commercial intermediary banks. Statement 3 is incorrect because retail CBDC (e₹-R) is non-interest bearing by design, matching the functional properties of physical currency notes to prevent sudden disintermediation of commercial bank deposits."
+  },
+  {
+    "year": "2027",
+    "topic": "Security & Defense: Shanghai Cooperation Organisation (SCO)",
+    "question": "With reference to the Shanghai Cooperation Organisation (SCO), consider the following statements:\n1. The Regional Anti-Terrorist Structure (RATS) of the SCO is a permanent executive organ headquartered in Tashkent, Uzbekistan.\n2. Decisions within the Council of Heads of State and the Council of Heads of Government are taken on the basis of consensus.\n3. Belarus was formally admitted as a full member state of the SCO at the Astana Summit in 2024.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are correct. SCO-RATS is the permanent body coordinating anti-terrorism, anti-separatism, and anti-extremism efforts, based in Tashkent. Decisions in key SCO bodies are made by consensus without voting. At the 2024 SCO summit in Astana, Kazakhstan, Belarus was inducted as the 10th full member state (following Iran's entry in 2023)."
   }
   ]
