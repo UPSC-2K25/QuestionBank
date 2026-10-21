@@ -1,8 +1,8 @@
 [
   {
     "year": "2024",
-    "topic": "Economy / Demography",
-    "question": "The total fertility rate in an economy is defined as:",
+    "subject": "Human Geography",
+	"question": "The total fertility rate in an economy is defined as:",
     "options": [
       "the number of children born per 1000 people in the population in a year",
       "the number of children born to a couple in their lifetime in a given population",
@@ -14,8 +14,8 @@
   },
   {
     "year": "2024",
-    "topic": "Economy / Financial Markets",
-    "question": "Consider the following statements: 1. In India, Non-Banking Financial Companies can access the Liquidity Adjustment Facility window of the Reserve Bank of India. 2. In India, Foreign Institutional Investors can hold the Government Securities (G-Secs). 3. In India, Stock Exchanges can offer separate trading platforms for debts. Which of the statements given above is/are correct?",
+    "subject": "Indian Economy",
+	"question": "Consider the following statements: 1. In India, Non-Banking Financial Companies can access the Liquidity Adjustment Facility window of the Reserve Bank of India. 2. In India, Foreign Institutional Investors can hold the Government Securities (G-Secs). 3. In India, Stock Exchanges can offer separate trading platforms for debts. Which of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
       "3 only",
@@ -27,8 +27,8 @@
   },
   {
     "year": "2024",
-    "topic": "Economy / Debt Market",
-    "question": "In India, which of the following can trade in Corporate Bonds and Government Securities? 1. Insurance Companies 2. Pension Funds 3. Retail Investors. Select the correct answer using the code given below:",
+    "subject": "Indian Economy",
+	"question": "In India, which of the following can trade in Corporate Bonds and Government Securities? 1. Insurance Companies 2. Pension Funds 3. Retail Investors. Select the correct answer using the code given below:",
     "options": [
       "1 and 2 only",
       "2 and 3 only",
@@ -40,8 +40,8 @@
   },
   {
     "year": "2024",
-    "topic": "Economy / Financial Concepts",
-    "question": "Consider the following: 1. Exchange-Traded Funds (ETF) 2. Motor vehicles 3. Currency swap. Which of the above is/are considered financial instruments?",
+    "subject": "Indian Economy",
+	"question": "Consider the following: 1. Exchange-Traded Funds (ETF) 2. Motor vehicles 3. Currency swap. Which of the above is/are considered financial instruments?",
     "options": [
       "1 only",
       "2 and 3 only",
@@ -53,8 +53,8 @@
   },
   {
     "year": "2024",
-    "topic": "Economy / Sectors of Economy",
-    "question": "With reference to the sectors of the Indian economy, consider the following pairs: 1. Storage of agricultural produce - Secondary 2. Dairy farm - Primary 3. Mineral exploration - Tertiary 4. Weaving cloth - Secondary. How many of the pairs given above are correctly matched?",
+    "subject": "Indian Economy",
+	"question": "With reference to the sectors of the Indian economy, consider the following pairs: 1. Storage of agricultural produce - Secondary 2. Dairy farm - Primary 3. Mineral exploration - Tertiary 4. Weaving cloth - Secondary. How many of the pairs given above are correctly matched?",
     "options": [
       "Only one",
       "Only two",
@@ -66,8 +66,8 @@
   },
   {
     "year": "2024",
-    "topic": "Environment & Energy",
-    "question": "Consider the following materials: 1. Agricultural residues 2. Corn grain 3. Wastewater treatment sludge 4. Wood mill waste. Which of the above can be used as feedstock for producing Sustainable Aviation Fuel?",
+    "subject": "Environment and Ecology",
+	"question": "Consider the following materials: 1. Agricultural residues 2. Corn grain 3. Wastewater treatment sludge 4. Wood mill waste. Which of the above can be used as feedstock for producing Sustainable Aviation Fuel?",
     "options": [
       "1 and 2 only",
       "3 and 4 only",
@@ -79,8 +79,8 @@
   },
   {
     "year": "2024",
-    "topic": "Economy / Capital & Production",
-    "question": "With reference to physical capital in Indian economy, consider the following pairs: 1. Farmer's plough - Working capital 2. Computer - Fixed capital 3. Yarn used by the weaver - Fixed capital 4. Petrol - Working capital. How many of the above pairs are correctly matched?",
+    "subject": "Indian Economy",
+	"question": "With reference to physical capital in Indian economy, consider the following pairs: 1. Farmer's plough - Working capital 2. Computer - Fixed capital 3. Yarn used by the weaver - Fixed capital 4. Petrol - Working capital. How many of the above pairs are correctly matched?",
     "options": [
       "Only one",
       "Only two",
@@ -92,7 +92,7 @@
   },
   {
     "year": "2024",
-    "topic": "Science & Technology / IT",
+    "subject": "Science & Technology",
     "question": "Which one of the following words/phrases is most appropriately used to denote \"an interoperable network of 3D virtual worlds that can be accessed simultaneously by millions of users, who can exert property rights over virtual items\"?",
     "options": [
       "Big data analytics",
@@ -105,7 +105,7 @@
   },
   {
     "year": "2024",
-    "topic": "Economy / Banking Regulation",
+    "subject": "Indian Economy",
     "question": "With reference to the rule/rules imposed by the Reserve Bank of India while treating foreign banks, consider the following statements: 1. There is no minimum capital requirement for wholly owned banking subsidiaries in India. 2. For wholly owned banking subsidiaries in India, at least 50% of the board members should be Indian nationals. Which of the statements given above is/are correct?",
     "options": [
       "1 only",
@@ -118,7 +118,7 @@
   },
   {
     "year": "2024",
-    "topic": "Polity & Governance / Corporate Law",
+    "subject": "Governance",
     "question": "With reference to Corporate Social Responsibility (CSR) rules in India, consider the following statements: 1. CSR rules specify that expenditures that benefit the company directly or its employees will not be considered as CSR activities. 2. CSR rules specify that companies have to spend 2% of the average net-profits of the company made during the three immediately preceding financial years in every financial year. Which of the statements given above is/are correct?",
     "options": [
       "1 only",
@@ -131,7 +131,7 @@
   },
   {
     "year": 2024,
-    "topic": "Indian Geography / Infrastructure",
+    "subject": "Human Geography",
     "question": "Regarding airport infrastructure developments in India, consider the following facilities: 1. Donyi Polo Airport 2. Kushinagar International Airport 3. Vijayawada International Airport. Which among these were developed as Greenfield projects in the recent past?",
     "options": [
       "1 and 2 only",
@@ -144,7 +144,7 @@
   },
   {
     "year": 2024,
-    "topic": "Physical Geography / Climatology",
+    "subject": "Climatology",
     "question": "Regarding atmospheric water vapour, evaluate the following statements: 1. It is an atmospheric gas whose concentration decreases with increasing altitude. 2. Its proportional volume in the air reaches its maximum at polar latitudes.",
     "options": [
       "1 only",
@@ -157,7 +157,7 @@
   },
   {
     "year": 2024,
-    "topic": "Physical Geography / World Climatic Zones",
+    "subject": "Climatology",
     "question": "Identify the climatic type defined by these features: (1) Modest diurnal and seasonal temperature variations; (2) Year-round precipitation; (3) Annual precipitation totals generally ranging between 50 cm and 250 cm.",
     "options": [
       "Equatorial climate",
@@ -170,7 +170,7 @@
   },
   {
     "year": 2024,
-    "topic": "Physical Geography / Atmospheric Dynamics",
+    "subject": "Climatology",
     "question": "Concerning the Coriolis effect on atmospheric motion, consider the following statements: 1. Its magnitude intensifies with higher wind velocities. 2. It attains its maximum intensity at the poles and becomes zero along the equator.",
     "options": [
       "1 only",
@@ -183,7 +183,7 @@
   },
   {
     "year": 2024,
-    "topic": "Physical Geography / Earth Sun Relationships",
+    "subject": "Climatology",
     "question": "On the Summer Solstice (June 21), which of the following latitudinal locations receive more than 12 hours of continuous daylight? 1. Equator 2. Tropic of Cancer 3. Tropic of Capricorn 4. Arctic Circle",
     "options": [
       "1 only",
@@ -196,7 +196,7 @@
   },
   {
     "year": 2024,
-    "topic": "Environment & Ecology / Carbon Sinks",
+    "subject": "Environment & Ecology",
     "question": "Which geographical area contains the planet's most expansive tropical peatland complex, storing an amount of carbon roughly equal to three years of global fossil fuel emissions, whose degradation would severely disrupt global climate stability?",
     "options": [
       "Amazon Basin",
@@ -209,7 +209,7 @@
   },
   {
     "year": 2024,
-    "topic": "Science & Technology / Environmental Chemistry",
+    "subject": "Science & Technology",
     "question": "Consider the following statements regarding Per- and polyfluoroalkyl substances (PFAS): 1. They are extensively detected in potable water, food supplies, and packaging materials. 2. They resist chemical breakdown and degrade very slowly in natural ecosystems. 3. Continuous exposure can cause them to bioaccumulate inside animal tissue.",
     "options": [
       "1 and 2 only",
@@ -222,7 +222,7 @@
   },
   {
     "year": 2024,
-    "topic": "Environment & Ecology / Entomology",
+    "subject": "Biogeography",
     "question": "Among the following taxonomic groups of organisms, how many contain species that exhibit a parasitoid life cycle? 1. Carabid beetles 2. Centipedes 3. Flies 4. Termites 5. Wasps",
     "options": [
       "Only two",
@@ -235,7 +235,7 @@
   },
   {
     "year": 2024,
-    "topic": "Agriculture / Botany",
+    "subject": "Biogeography",
     "question": "Consider the following cultivated economic crops: 1. Groundnut 2. Horse-gram 3. Soybean. How many of these belong to the legume/pea family (Fabaceae)?",
     "options": [
       "Only one",
@@ -248,7 +248,7 @@
   },
   {
     "year": 2024,
-    "topic": "Environment & Ecology / Wildlife Legislation",
+    "subject": "Environment & Ecology",
     "question": "Consider the following statements regarding the Indian Flying Fox: Statement-I: It is listed under the 'vermin' category in the Wild Life (Protection) Act, 1972. Statement-II: It sustains itself by consuming the blood of other animals.",
     "options": [
       "Both Statement-I and Statement-II are correct, and Statement-II explains Statement-I",
@@ -261,7 +261,7 @@
   },
   {
     "year": "2027",
-    "topic": "International Relations & Economy: Currency Swap Arrangements",
+    "subject": "World Economy",
     "question": "With reference to Bilateral Currency Swap Arrangements and the SAARC Currency Swap Framework, consider the following statements:\n1. A currency swap arrangement involves exchanging a predetermined amount of domestic currency for foreign currency at a specified exchange rate with an agreement to reverse the transaction at a later date.\n2. Under the SAARC Currency Swap Framework operated by the Reserve Bank of India, drawdown facilities are offered exclusively in Indian Rupees (INR).\n3. Currency swap agreements can serve as a temporary liquidity bridge to mitigate short-term balance-of-payments (BoP) strains without impacting foreign exchange reserves permanently.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -274,7 +274,7 @@
   },
   {
     "year": "2027",
-    "topic": "Regional Groupings: Mekong-Ganga Cooperation (MGC)",
+    "subject": "Political Science & International Relations",
     "question": "Which of the following countries are members of the Mekong-Ganga Cooperation (MGC) initiative?\n1. India\n2. Myanmar\n3. Thailand\n4. Bangladesh\n5. Cambodia\n6. Vietnam\nSelect the correct answer using the code given below:",
     "options": [
       "1, 2, 3 and 5 only",
@@ -287,7 +287,7 @@
   },
   {
     "year": "2027",
-    "topic": "Social Development & Reports: Global Hunger Index (GHI)",
+    "subject": "Indian Society",
     "question": "The Global Hunger Index (GHI) score is computed based on which of the following four component indicators?\n1. Undernourishment\n2. Child Stunting\n3. Child Wasting\n4. Child Mortality\n5. Maternal Anaemia\nSelect the correct answer using the code given below:",
     "options": [
       "1, 2, 3 and 4 only",
@@ -300,7 +300,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian Economy: Labour Force Survey Concepts",
+    "subject": "Indian Economy",
     "question": "In the context of the Periodic Labour Force Survey (PLFS) conducted by the National Statistics Office (NSO), consider the following statements:\n1. The Labour Force Participation Rate (LFPR) is defined as the percentage of persons in the labour force (working or seeking/available for work) in the population.\n2. The Worker Population Ratio (WPR) measures the percentage of employed persons relative to the total population.\n3. The Usual Principal Activity Status approach classifies a person's activity based on the major time spent during the 365 days preceding the date of survey.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -313,7 +313,7 @@
   },
   {
     "year": "2027",
-    "topic": "Environment & Pollution Governance: Graded Response Action Plan (GRAP)",
+    "subject": "Environment and Ecology",
     "question": "With reference to the Graded Response Action Plan (GRAP) for the National Capital Region (NCR), consider the following statements:\n1. GRAP was originally formulated pursuant to the directions of the Supreme Court of India in the M.C. Mehta case.\n2. The implementation and enforcement of GRAP is currently overseen by the Central Pollution Control Board (CPCB) independently of any statutory commission.\n3. Stage-I of GRAP is automatically invoked when the Air Quality Index (AQI) enters the 'Severe' category.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 only",
@@ -326,7 +326,7 @@
   },
   {
     "year": "2027",
-    "topic": "Governance & Banking Reforms: Financial Services Institutions Bureau (FSIB)",
+    "subject": "Governance",
     "question": "Consider the following statements regarding the Financial Services Institutions Bureau (FSIB):\n1. It was established as an autonomous body to replace the Banks Board Bureau (BBB).\n2. Its mandate includes recommending whole-time directors and non-executive chairpersons for Public Sector Banks (PSBs), Public Sector Insurance Companies, and Financial Institutions.\n3. The Appointments Committee of the Cabinet (ACC) approves appointments based on FSIB recommendations.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -339,7 +339,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian Polity: Constitutional Provisions for Languages",
+    "subject": "Constitution",
     "question": "Regarding the Eighth Schedule and linguistic provisions of the Constitution of India, consider the following statements:\n1. The Eighth Schedule originally contained 14 languages at the commencement of the Constitution.\n2. English is one of the 22 languages specified in the Eighth Schedule.\n3. Article 351 of the Constitution directs the Union to promote the spread and development of the Hindi language as a medium of expression for all elements of the composite culture of India.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -352,7 +352,7 @@
   },
   {
     "year": "2027",
-    "topic": "Science & Technology: Quantum Key Distribution (QKD)",
+    "subject": "Science & Technology",
     "question": "In the context of modern cybersecurity and communications, why is Quantum Key Distribution (QKD) considered 'unconditionally secure'?\n1. It utilizes mathematical complexity based on prime factorization that classical computers cannot solve.\n2. Any unauthorized interception or measurement alters the quantum states of the photons, instantly revealing the eavesdropping.\n3. It uses entangled or single photons where cloning an unknown arbitrary quantum state is fundamentally prohibited by physics.\nSelect the correct answer using the code given below:",
     "options": [
       "1 and 2 only",
@@ -365,7 +365,7 @@
   },
   {
     "year": "2027",
-    "topic": "Modern Indian History: Aligarh Movement",
+    "subject": "Modern Indian History",
     "question": "Consider the following statements regarding Sir Syed Ahmad Khan and the Aligarh Movement:\n1. He advocated for modern scientific and Western education for Muslims while maintaining Islamic religious values.\n2. He founded the Scientific Society to translate Western scholarly and technical works into Urdu.\n3. He actively participated in and presided over early annual sessions of the Indian National Congress.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 only",
@@ -378,7 +378,7 @@
   },
   {
     "year": "2027",
-    "topic": "International Trade: Free Trade Agreements (FTAs) & Rules of Origin",
+    "subject": "World Economy",
     "question": "In international trade agreements, what is the primary purpose of incorporating 'Rules of Origin' (ROO)?",
     "options": [
       "To enforce intellectual property compliance according to the TRIPS agreement",
@@ -391,7 +391,7 @@
   },
   {
     "year": "2027",
-    "topic": "Environment & Biodiversity: Biosphere Reserves & MAB Programme",
+    "subject": "Environment and Ecology",
     "question": "With reference to the World Network of Biosphere Reserves (WNBR) under UNESCO's Man and the Biosphere (MAB) Programme, consider the following statements:\n1. Nilgiri was the first biosphere reserve from India to be included in the World Network of Biosphere Reserves.\n2. In a Biosphere Reserve, limited human activity like research and traditional gathering is permissible in the Core Zone with prior permission.\n3. The Transition Area is an area of cooperation where management agencies, scientists, and local communities work together for sustainable resource management.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -404,7 +404,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian Polity & Governance: Right to Information (RTI) Act, 2005",
+    "subject": "Governance",
     "question": "Regarding the institutional framework under the Right to Information (RTI) Act, 2005, consider the following statements:\n1. The Chief Information Commissioner (CIC) and Information Commissioners (ICs) are appointed by the President on the recommendation of a committee headed by the Prime Minister.\n2. Following statutory amendments, the salaries and allowances of the CIC and ICs are prescribed by the Central Government rather than being equated with the Election Commission.\n3. Public authorities are mandated under Section 4(1)(b) of the Act to suo motu disclose key institutional information, budgets, and operational norms to the public.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -417,7 +417,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian Economy & Fiscal Policy: Direct Tax Vivad se Vishwas Scheme",
+    "subject": "Indian Economy",
     "question": "With reference to tax administration and dispute resolution mechanisms in India, consider the following statements regarding the 'Direct Tax Vivad se Vishwas' initiative:\n1. It provides a statutory mechanism for the settlement of pending direct tax disputes by waiving interest and penalty upon payment of the disputed tax amount.\n2. Once an order of settlement is issued under the scheme, the matters determined cannot be reopened in any proceeding under the Income-tax Act, 1961.\n3. The scheme covers disputes involving prosecution initiated under the Prevention of Money Laundering Act (PMLA) or the Benami Transactions Act.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -430,7 +430,7 @@
   },
   {
     "year": "2027",
-    "topic": "Science & Technology: Space Exploration & Near-Earth Asteroids",
+    "subject": "Science & Technology",
     "question": "Consider the following pairs of international space missions and their primary targets:\n1. OSIRIS-REx : Asteroid Bennu\n2. DART : Asteroid Dimorphos\n3. Hera : Asteroid Ryugu\n4. Lucy : Trojan Asteroids of Jupiter\nWhich of the pairs given above are correctly matched?",
     "options": [
       "1, 2 and 4 only",
@@ -443,7 +443,7 @@
   },
   {
     "year": "2027",
-    "topic": "International Relations: United Nations Peacekeeping Operations",
+    "subject": "Political Science and International Relations",
     "question": "With reference to United Nations (UN) Peacekeeping operations, consider the following statements:\n1. Peacekeeping operations are formally authorized by the UN Security Council under Chapters VI, VII, or VIII of the UN Charter.\n2. Military personnel deployed as UN Peacekeepers ('Blue Helmets') remain members of their respective national armed forces and are not under permanent UN employment.\n3. UN Peacekeeping operations can only be deployed in regions where formal peace treaties have already been concluded between sovereign states.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -456,7 +456,7 @@
   },
   {
     "year": "2027",
-    "topic": "Physical Geography: Western Disturbances and Monsoon Transition",
+    "subject": "Climatology",
     "question": "During the post-monsoon and transition months across northwest India, weather changes are frequently influenced by Western Disturbances. In this context, consider the following statements:\n1. Western Disturbances are extratropical cyclones that originate over the Mediterranean Sea and Caspian Sea region.\n2. They are steered into the Indian subcontinent by the subtropical westerly jet stream.\n3. An active Western Disturbance in October can interact with retreating monsoon easterly winds, producing unseasonal localized intense precipitation.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -469,7 +469,7 @@
   },
   {
     "year": "2027",
-    "topic": "Agriculture & Environment: Stubble Burning & Bio-Decomposers",
+    "subject": "Environment and Ecology",
     "question": "In the context of agricultural crop residue management, consider the following statements regarding the 'Pusa Bio-Decomposer':\n1. It consists of a consortium of beneficial fungi that accelerates the enzymatic degradation of cellulose, hemicellulose, and lignin in crop straw.\n2. Its application requires paddy straw to be collected, compacted, and sealed inside anaerobic underground silos.\n3. Using bio-decomposers enhances soil health by recycling organic carbon and reducing nitrogen loss caused by open-field burning.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -482,7 +482,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian History & Culture: Bhakti-Sufi Traditions & Sant Namdev",
+    "subject": "Medieval Indian History",
     "question": "Consider the following statements regarding the Bhakti tradition in Western India:\n1. Sant Namdev belonged to the Varkari sect centered on the worship of Lord Vitthala at Pandharpur.\n2. Hymns composed by Sant Namdev are incorporated into the Guru Granth Sahib of Sikhism.\n3. The Varkari tradition strongly adhered to Vedic sacrificial rites and orthodox ritual purity.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -495,7 +495,7 @@
   },
   {
     "year": "2027",
-    "topic": "Governance & Digital Economy: Central Bank Digital Currency (CBDC)",
+    "subject": "Indian Economy",
     "question": "With reference to the Digital Rupee (e₹) launched by the Reserve Bank of India, consider the following statements:\n1. It appears as a liability on the balance sheet of the commercial bank maintaining the digital wallet.\n2. It holds the same legal tender status as sovereign physical banknotes and coins.\n3. It earns interest automatically based on the prevailing RBI Policy Repo Rate to curb inflationary liquidity.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -508,7 +508,7 @@
   },
   {
     "year": "2027",
-    "topic": "Security & Defense: Shanghai Cooperation Organisation (SCO)",
+    "subject": "Political Science and International Relations",
     "question": "With reference to the Shanghai Cooperation Organisation (SCO), consider the following statements:\n1. The Regional Anti-Terrorist Structure (RATS) of the SCO is a permanent executive organ headquartered in Tashkent, Uzbekistan.\n2. Decisions within the Council of Heads of State and the Council of Heads of Government are taken on the basis of consensus.\n3. Belarus was formally admitted as a full member state of the SCO at the Astana Summit in 2024.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -521,7 +521,7 @@
   },
   {
     "year": "2027",
-    "topic": "Science & Technology: Space Science & Solar Physics",
+    "subject": "Science & Technology",
     "question": "With reference to the Aditya-L1 mission and solar atmospheric phenomena, consider the following statements:\n1. Aditya-L1 is placed in a halo orbit around the Sun-Earth Lagrangian Point 1 (L1), allowing continuous observation of the Sun without occultation or eclipses.\n2. Coronal Mass Ejections (CMEs) are major expulsions of plasma and magnetic field from the solar corona that can trigger severe geomagnetic storms on Earth.\n3. The Visible Emission Line Coronagraph (VELC) on board Aditya-L1 is designed to image the solar chromosphere exclusively in radio frequencies.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -534,7 +534,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian Polity & Constitutional Law: Caste Identity and Religious Conversion",
+    "subject": "Constitution",
     "question": "Regarding the constitutional and statutory provisions governing affirmative action and religious conversion in India, consider the following statements:\n1. The Constitution (Scheduled Castes) Order, 1950, as amended, specifies that no person professing a religion different from Hinduism, Sikhism, or Buddhism can be deemed a member of a Scheduled Caste.\n2. The criteria for identifying Backward Classes (OBCs) are strictly determined by religious identity rather than social and educational backwardness.\n3. The Supreme Court has held that fundamental rights under Articles 15(4) and 16(4) confer an enforceable fundamental right to claim reservation in public employment and promotions.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 only",
@@ -547,7 +547,7 @@
   },
   {
     "year": "2027",
-    "topic": "International Relations & Energy Security: Strategic Chokepoints",
+    "subject": "Political Science and International Relations",
     "question": "Consider the following statements regarding the Strait of Hormuz:\n1. It connects the Persian Gulf with the Gulf of Oman and the Arabian Sea.\n2. It is bounded by Iran to the north and Oman and the United Arab Emirates to the south.\n3. Ships transiting the Strait of Hormuz exercise the right of innocent passage or transit passage through recognized territorial waters of the littoral states.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -560,7 +560,7 @@
   },
   {
     "year": "2027",
-    "topic": "Environment & Sustainable Energy: Rooftop Solar and PM Surya Ghar Muft Bijli Yojana",
+    "subject": "Governance",
     "question": "With reference to the PM Surya Ghar: Muft Bijli Yojana, consider the following statements:\n1. It provides financial subsidies directly to residential households to install grid-connected rooftop solar systems.\n2. Beneficiaries must feed 100% of the generated solar power into the national grid and cannot consume electricity generated on-site.\n3. Distributed rooftop solar helps reduce transmission and distribution (T&D) losses by producing power close to the consumption point.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -573,7 +573,7 @@
   },
   {
     "year": "2027",
-    "topic": "Science & Emerging Technology: Artificial Intelligence Architectures",
+    "subject": "Artificial Intelligence",
     "question": "In the context of contemporary developments in Artificial Intelligence (AI), what is meant by an 'open-weight' AI model?",
     "options": [
       "A proprietary model that operates entirely offline without an internet connection",
@@ -586,7 +586,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian Polity & Constitutional Framework: High Courts and Union Territories",
+    "subject": "Constitution",
     "question": "With reference to the Indian Judiciary and Union Territories, consider the following statements:\n1. Article 241 of the Constitution empowers Parliament by law to establish a High Court for a Union Territory or declare any court in any such territory to be a High Court.\n2. The High Court of Jammu & Kashmir and Ladakh serves as the common High Court for both the Union Territory of Jammu & Kashmir and the Union Territory of Ladakh.\n3. A permanent bench of a High Court can only be established through a Constitutional Amendment under Article 368.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -599,7 +599,7 @@
   },
   {
     "year": "2027",
-    "topic": "Indian Economy & Capital Markets: Stock Exchange Microstructure",
+    "subject": "Indian Economy",
     "question": "In capital market trading, what is the primary objective of a 'Closing Auction Session' (CAS) in equity cash markets?",
     "options": [
       "To provide retail investors with guaranteed credit to purchase unsettled derivatives contracts",
@@ -612,7 +612,7 @@
   },
   {
     "year": "2027",
-    "topic": "Environment & Aquatic Ecology: Water Quality Parameters",
+    "subject": "Environment and Ecology",
     "question": "Regarding the monitoring of estuarine and coastal water quality, consider the following statements:\n1. The presence of Fecal Coliform bacteria in water bodies serves as an indicator of human or animal waste contamination and potential enteric pathogens.\n2. Most Probable Number (MPN) is a direct, exact census count of viable bacterial cells viewed under an optical microscope.\n3. In estuarine environments, tidal cycles can significantly alter bacterial concentrations and dissolved oxygen levels due to cyclical seawater dilution.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -625,7 +625,7 @@
   },
   {
     "year": "2027",
-    "topic": "International Security & Regional Groupings: SCO Council of Heads of Government",
+    "subject": "Political Science and International Relations",
     "question": "With reference to the institutional structure of the Shanghai Cooperation Organisation (SCO), consider the following statements:\n1. The Council of Heads of State (CHS) is the supreme decision-making body of the SCO.\n2. The Council of Heads of Government (CHG) focuses primarily on economic, trade, and multilateral budgetary cooperation.\n3. The official working languages of the SCO are English and Russian.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -638,7 +638,7 @@
   },
   {
     "year": "2027",
-    "topic": "Science & Medicine: Transmissible Cancers in Animals",
+    "subject": "Science & Technology",
     "question": "Consider the following statements regarding 'clonally transmissible cancers' in the animal kingdom:\n1. They are infectious diseases where living cancer cells themselves act as the infectious pathogen transmitted directly between individuals.\n2. Canine Transmissible Venereal Tumor (CTVT) and Devil Facial Tumor Disease (DFTD) are documented natural examples of transmissible cancers.\n3. Unlike conventional viral-induced tumors, the genome of the transmitted cancer cells does not match the host organism's DNA.\nWhich of the statements given above are correct?",
     "options": [
       "1 and 2 only",
@@ -651,7 +651,7 @@
   },
   {
     "year": "2026",
-    "topic": "Physical Geography & Geomorphology: Pleistocene Drainage Systems",
+    "subject": "Geomorphology",
     "question": "Consider the following assertion:\n\"In the Pleistocene period either the Yamuna once flowed into the Indus, or the Sutlej flowed into the Yamuna and one major tributary of either had shifted from the Ganga to the Indus or vice versa.\"\nWhich of the following is/are the basis of the above assertion?\n1. The Nadi-Sukta of the Rigveda.\n2. The explorations of the Sutlej and the Yamuna by Robert Bruce Foote.\n3. The presence of the same species of dolphins in both the Indus and the Ganga river systems.\nSelect the correct answer using the code given below:",
     "options": [
       "1 and 2 only",
@@ -664,7 +664,7 @@
   },
   {
     "year": "2026",
-    "topic": "Art & Culture: Early Buddhist Iconography & Aniconism",
+    "subject": "Art & Culture",
     "question": "What does an empty seat represent in early Buddhist iconography?",
     "options": [
       "The meditation of the Buddha",
@@ -677,7 +677,7 @@
   },
   {
     "year": "2026",
-    "topic": "Ancient Indian History: Rigvedic Geography & River Nomenclature",
+    "subject": "Ancient Indian History",
     "question": "Which of the following pairs of ancient and modern names of rivers is/are correctly matched?\n1. Vitasta : Chenab\n2. Asikni : Jhelum\n3. Parushni : Ravi\n4. Yavyavati : Beas\nSelect the answer using the code given below:",
     "options": [
       "1 and 2 only",
@@ -690,7 +690,7 @@
   },
   {
     "year": "2026",
-    "topic": "Ancient Architecture & Art: Amaravati Stupa",
+    "subject": "Art & Culture",
     "question": "Which of the following statements on the Amaravati Stupa and its relief sculpture is/are correct?\n1. It was located in the lower Krishna valley.\n2. In India, it was next only to the Sanchi Stupa in size.\n3. The Amaravati school of sculpture made a lasting impact on the later South Indian sculpture, and its products were carried to Sri Lanka and South-east Asia.\nSelect the answer using the code given below:",
     "options": [
       "1 only",
@@ -703,7 +703,7 @@
   },
   {
     "year": "2026",
-    "topic": "Ancient South Indian History: Sangam Rulers & Dynasties",
+    "subject": "Ancient Indian History",
     "question": "Which of the following pairs of the king and his dynasty in early historical Tamilakam is/are not correctly matched?\n1. Senguttuvan : Chera\n2. Udiyanjeral : Chola\n3. Nedunjeliyan : Pandya\nSelect the answer using the code given below:",
     "options": [
       "1 and 2",
@@ -716,7 +716,7 @@
   },
   {
     "year": "2026",
-    "topic": "Modern Indian History: Freedom Struggle & Tripuri Crisis (1939)",
+    "subject": "Modern Indian History",
     "question": "Which of the following factors contributed to the formation of the Forward Bloc by Subhas Chandra Bose in 1939?\n1. Bose failed to win the confidence of Mahatma Gandhi.\n2. The Congress Left was disunited and failed to support Bose.\n3. The Communists did not support Bose in his endeavours.\n4. The supporters of M.N. Roy and socialist leaders like Jayaprakash Narayan preferred Congress unity to supporting Bose.\nSelect the answer using the code given below:",
     "options": [
       "1, 2 and 3",
@@ -729,7 +729,7 @@
   },
   {
     "year": "2026",
-    "topic": "Modern Indian History: Annexation of Awadh & Land Revenue Policy",
+    "subject": "Modern Indian History",
     "question": "Consider the following statements regarding the British policy in Awadh immediately after its annexation in 1856:\n1. The taluqdars were dispossessed of their estates but allowed to retain their arms and forts.\n2. A Summary Revenue Settlement was made in 1856 assuming that the taluqdars were outsiders.\n3. The British believed in taking revenue directly from the peasants by removing the taluqdars.\nWhich of the statements given above is/are correct?",
     "options": [
       "2 and 3 only",
@@ -742,7 +742,7 @@
   },
   {
     "year": "2026",
-    "topic": "Polity & Modern History: Montagu-Chelmsford Reforms (1919)",
+    "subject": "Modern Indian History",
     "question": "Consider the following assertion:\n\"The genesis of political alliances based on community lay in the very nature of the Montague-Chelmsford Reforms, 1919.\"\nWhich of the following statements support/supports the above assertion?\n1. Reforms retained and extended the principle of separate electorates.\n2. Separate electorates were supposed to counter Indian nationalism, which was growing stronger.\n3. Deprived classes rallied around the favours inherent in separate electorates.\nSelect the answer using the code given below:",
     "options": [
       "1 only",
@@ -755,7 +755,7 @@
   },
   {
     "year": "2026",
-    "topic": "Art & Culture: Hindustani Classical Music Gharanas",
+    "subject": "Art & Culture",
     "question": "Pandit Mallikarjun Mansur, the famous classical singer from Karnataka, represented the:",
     "options": [
       "Agra Gharana",
@@ -768,7 +768,7 @@
   },
   {
     "year": "2026",
-    "topic": "Ancient Indian History: Later Vedic Literature & Agrarian Society",
+    "subject": "Ancient Indian History",
     "question": "In which one among the following texts does the term kshetra-patni ('mistress of the field') originate?",
     "options": [
       "Rigveda",
@@ -781,7 +781,7 @@
   },
   {
     "year": "2026",
-    "topic": "Art & Culture: Carnatic vs Hindustani Music Scales",
+    "subject": "Art & Culture",
     "question": "Which one of the following Carnatic music ragas is similar to Raga Bilawal in Hindustani music?",
     "options": [
       "Nat Bhairavi",
@@ -794,7 +794,7 @@
   },
   {
     "year": "2026",
-    "topic": "Modern Indian History: Colonial Economic Policy & Currency",
+    "subject": "Modern Indian History",
     "question": "The artificially fixed rupee-sterling exchange rate prescribed by the Hilton-Young Commission (1926) was adopted by the British Government for which one of the following reasons?",
     "options": [
       "Aiding the flow of remittances from India and maintaining India's creditworthiness",
@@ -807,7 +807,7 @@
   },
   {
     "year": "2026",
-    "topic": "Ancient Indian History: Second Urbanization & Monetary Economy",
+    "subject": "Ancient Indian History",
     "question": "Consider the following statements:\nI. Pali texts contain the first definite references to coins, e.g., kahapana, nikkha, kamsa, and kakanika.\nII. The literary evidence from Pali texts is corroborated by archaeological evidence of punch-marked coins from many sites, most of them made of silver.\nThe above statements have been associated with which of the following?\n1. Emergence of urban life\n2. Transition to money economy\nSelect the answer using the code given below:",
     "options": [
       "1 only",
@@ -820,7 +820,7 @@
   },
   {
     "year": "2026",
-    "topic": "Art & Architecture: Early Chalukyan & Gupta Temple Shikharas",
+    "subject": "Art & Culture",
     "question": "Which of the following temples has/have a Nagara-style shikhara?\n1. Malegitti Shivalaya, Badami\n2. Huchimalligudi Temple, Aihole\n3. Dashavatara Temple, Deogarh\n4. Virupaksha Temple, Pattadakal\nSelect the answer using the code given below:",
     "options": [
       "1 and 2",
@@ -833,7 +833,7 @@
   },
   {
     "year": "2026",
-    "topic": "Ancient Philosophy & Religion: Jaina Cosmology & Forms of Life",
+    "subject": "Ancient Indian History",
     "question": "Among the four main forms of existence of life (gatis) recognized in Jainism, which one of the following is not included?",
     "options": [
       "Deva (celestial beings/gods)",
@@ -846,7 +846,7 @@
   },
   {
     "year": "2026",
-    "topic": "Art & Culture: Cave Murals & Secular Themes",
+    "subject": "Art & Culture",
     "question": "The Hallisalasya painting in the Bagh Caves represents:",
     "options": [
       "A joyous folk dance",
@@ -859,7 +859,7 @@
   },
   {
     "year": "2026",
-    "topic": "Environment & Wildlife Conservation: Hoolock Gibbons",
+    "subject": "Biogeography",
     "question": "With respect to the Western Hoolock Gibbons, which of the following statements is/are correct?\n1. A Sanctuary in North-east India is home to this ape species listed as Endangered in the International Union for Conservation of Nature (IUCN) Red List.\n2. They have specialized brachiation and can easily swing between trees.\n3. They possess a strong and heavy build like gorillas, yet are remarkably agile tree climbers.\nSelect the answer using the code given below:",
     "options": [
       "1 only",
@@ -872,7 +872,7 @@
   },
   {
     "year": "2026",
-    "topic": "Environment & Governance: Research Institutions & Portals",
+    "subject": "Governance",
     "question": "Which of the following statements in relation to NIRANTAR (National Institute for Research and Application of Natural Resources to Transform, Adapt and Build Resilience) is/are correct?\n1. Ecosystem Survey and Analysis is a vertical under this platform, the lead institute of which is Botanical Survey of India, Kolkata.\n2. Research and Management of Ecosystem Service is a vertical under this platform, the lead institute of which is Central Zoo Authority, New Delhi.\n3. Capacity Development Support is a vertical under this platform, the lead institute of which is Indian Institute of Forest Management, Bhopal.\nSelect the answer using the code given below:",
     "options": [
       "1 and 2 only",
@@ -885,7 +885,7 @@
   },
   {
     "year": "2026",
-    "topic": "International Conventions & Treaties: Indian Ratification Status",
+    "subject": "Political Science and International Relations",
     "question": "Which of the following international conventions have not been ratified by India?\n1. Employment Policy Convention\n2. Abolition of Forced Labour Convention\n3. International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families\n4. Geneva Convention Relative to the Protection of Civilian Persons in Time of War\n5. Convention on Reduction of Statelessness\nSelect the answer using the code given below:",
     "options": [
       "2 and 4",
@@ -898,7 +898,7 @@
   },
   {
     "year": "2026",
-    "topic": "Economic Geography & Energy: Coal Reserves & Mining Basins",
+    "subject": "Economic Geography",
     "question": "With reference to the distribution of Gondwana and Tertiary coalfields in India, consider the following statements:\n1. Over 98% of India's total geological coal reserves belong to the Gondwana formation.\n2. Gondwana coals are primarily bituminous or sub-bituminous and have a relatively low moisture content.\n3. Tertiary coal deposits in northeastern India are characterized by low sulphur content and negligible ash.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -911,7 +911,7 @@
   },
   {
     "year": "2026",
-    "topic": "Environment & Ecology: Invasive Alien Species",
+    "subject": "Biogeography",
     "question": "Which of the following plants are considered invasive alien species in India?\n1. Prosopis juliflora\n2. Lantana camara\n3. Parthenium hysterophorus\n4. Senna spectabilis\nSelect the correct answer using the code given below:",
     "options": [
       "1 and 2 only",
@@ -924,7 +924,7 @@
   },
   {
     "year": "2026",
-    "topic": "Indian Polity: Constitutional Provisions & Writ Jurisdiction",
+    "subject": "Constitution",
     "question": "With reference to the writ jurisdiction under the Constitution of India, consider the following statements:\n1. The writ of Mandamus cannot be issued against a private individual or body who does not perform a public duty.\n2. The writ of Quo-Warranto can be sought by any interested person, even if the person's own fundamental rights are not violated.\n3. The High Court's jurisdiction to issue writs under Article 226 is narrower than that of the Supreme Court under Article 32.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 and 2 only",
@@ -937,7 +937,7 @@
   },
   {
     "year": "2026",
-    "topic": "Physical Geography: Ocean Currents & Upwelling",
+    "subject": "Oceanography",
     "question": "Consider the following statements regarding oceanic upwelling and ocean currents:\n1. Coastal upwelling occurs when wind-driven surface waters move offshore due to the Coriolis effect, allowing cold, nutrient-rich water to rise to the surface.\n2. The Benguela Current along the western coast of Southern Africa supports one of the most productive marine ecosystems in the world due to intense upwelling.\n3. Upwelling zones are generally associated with humid tropical rainforest climates on the adjacent coastal landmass.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 only",
@@ -950,7 +950,7 @@
   },
   {
     "year": "2026",
-    "topic": "Science & Technology: Biotechnology & RNA Interference (RNAi)",
+    "subject": "Science & Technology",
     "question": "RNA interference (RNAi) technology is increasingly being used in agriculture and medicine. Which of the following statements correctly explains its mechanism?",
     "options": [
       "It repairs double-stranded breaks in chromosomal DNA using homologous recombination.",
@@ -963,7 +963,7 @@
   },
   {
     "year": "2026",
-    "topic": "Ancient & Early Medieval History: Revenue Terms & Land Grants",
+    "subject": "Ancient Indian History",
     "question": "In early medieval and ancient Indian land grant inscriptions, what did the term 'Udranga' primarily denote?",
     "options": [
       "A toll tax levied on river crossings and ferries",
@@ -976,7 +976,7 @@
   },
   {
     "year": "2026",
-    "topic": "Indian Polity: National Emergency & Fundamental Rights",
+    "subject": "Constitution",
     "question": "In the event of a proclamation of National Emergency under Article 352 of the Constitution of India, which of the following statements is/are correct?\n1. Article 19 is automatically suspended only when the emergency is declared on the grounds of war or external aggression, and not armed rebellion.\n2. The right to move the court for the enforcement of the Fundamental Rights guaranteed by Articles 20 and 21 cannot be suspended under any circumstance.\n3. The legislative power of Parliament automatically supersedes State legislative competence, leading to the dissolution of State Legislative Assemblies.\nSelect the correct answer using the code given below:",
     "options": [
       "1 and 2 only",
@@ -989,7 +989,7 @@
   },
   {
     "year": "2026",
-    "topic": "Modern Indian History: Tribal & Peasant Uprisings",
+    "subject": "Modern Indian History",
     "question": "Consider the following historical uprisings in colonial India:\n1. Santhal Hool\n2. Kol Mutiny\n3. Rampa Rebellion led by Alluri Sitarama Raju\n4. Munda Ulgulan led by Birsa Munda\nWhat is the correct chronological sequence of the above events starting from the earliest?",
     "options": [
       "2 - 1 - 4 - 3",
@@ -1002,7 +1002,7 @@
   },
   {
     "year": "2026",
-    "topic": "Indian Economy & Public Finance: FRBM Act & Deficit Indicators",
+    "subject": "Indian Economy",
     "question": "In the context of fiscal management in India, what does the 'Primary Deficit' measure?",
     "options": [
       "The difference between total expenditure and total receipts excluding borrowings",
@@ -1015,7 +1015,7 @@
   },
   {
     "year": "2026",
-    "topic": "Physical Geography & Climatology: Polar Vortex & Jet Streams",
+    "subject": "Climatology",
     "question": "With reference to the 'Polar Vortex', consider the following statements:\n1. It is a large area of low pressure and cold air surrounding the Earth's poles that strengthens in winter and weakens in summer.\n2. Sudden Stratospheric Warming (SSW) can disrupt the polar vortex, causing it to split and push Arctic air southward into mid-latitudes.\n3. It is confined entirely to the troposphere and has no interaction with stratospheric circulation.\nWhich of the statements given above is/are correct?",
     "options": [
       "1 only",
@@ -1028,7 +1028,7 @@
   },
   {
     "year": "2026",
-    "topic": "Environment: Wetlands & Ramsar Convention Criteria",
+    "subject": "Environment and Ecology",
     "question": "Under the Ramsar Convention on Wetlands, which of the following can qualify for designation as a 'Wetland of International Importance'?\n1. Peatlands and bogs\n2. Coral reefs and marine areas with low-tide depth not exceeding six meters\n3. Human-made reservoirs and paddy fields\nSelect the correct answer using the code given below:",
     "options": [
       "1 and 2 only",
