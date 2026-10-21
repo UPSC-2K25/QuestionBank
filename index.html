@@ -15,7 +15,7 @@
     .card { background: var(--card); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 16px; }
     h2 { font-size: 20px; margin-top: 0; }
     label { font-size: 13px; font-weight: 600; color: var(--text-sub); display: block; margin-top: 14px; }
-    select, button { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border); font-size: 16px; margin-top: 6px; background: #fff; }
+    select, input[type="number"], button { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border); font-size: 16px; margin-top: 6px; background: #fff; }
     button.btn-primary { background: var(--primary); color: #fff; border: none; font-weight: 600; cursor: pointer; margin-top: 22px; }
     .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 14px; font-weight: 600; color: var(--text-sub); }
     .q-text { font-size: 16px; line-height: 1.5; font-weight: 600; margin-bottom: 20px; }
@@ -29,6 +29,9 @@
     .badge-year { background: #fef7e0; color: #b06000; font-weight: 600; }
     .exp-box { margin-top: 10px; padding: 12px; background: #f1f3f4; border-radius: 6px; font-size: 13px; line-height: 1.5; }
     .hidden { display: none; }
+    .stat-box { padding: 10px; border-radius: 8px; text-align: center; }
+    .stat-label { font-size: 12px; color: var(--text-sub); font-weight: 600; margin-bottom: 4px; }
+    .stat-val { font-size: 20px; font-weight: 700; }
   </style>
 </head>
 <body>
@@ -40,20 +43,20 @@
     <div id="loading-msg">Loading quiz questions...</div>
     <div id="setup-form" class="hidden">
       <label>Filter by Subject / Topic:</label>
-      <select id="topic-select"><option value="ALL">All Topics</option></select>
+      <select id="topic-select" onchange="onFilterChange()"><option value="ALL">All Topics</option></select>
 
       <label>Filter by PYQ Year:</label>
-      <select id="year-select"><option value="ALL">All Years</option></select>
+      <select id="year-select" onchange="onFilterChange()"><option value="ALL">All Years</option></select>
 
-      <label>Number of Questions:</label>
-      <select id="count-select">
-        <option value="5">5 Questions</option>
-        <option value="10">10 Questions</option>
-        <option value="20">20 Questions</option>
-        <option value="50">50 Questions</option>
-      </select>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px;">
+        <label style="margin: 0;">Number of Questions:</label>
+        <span id="available-counter" style="font-size: 12px; font-weight: 600; color: var(--primary);">Available: 0 / 0</span>
+      </div>
+      
+      <!-- Number Input with dynamic min/max -->
+      <input type="number" id="count-input" min="1" max="1" placeholder="Enter count">
 
-      <button class="btn-primary" onclick="startTest()">Start Mock Test</button>
+      <button class="btn-primary" id="start-btn" onclick="startTest()">Start Mock Test</button>
     </div>
   </div>
 
@@ -76,35 +79,38 @@
   </div>
 
   <!-- RESULTS SCREEN -->
-	<div id="result-screen" class="card hidden">
-	  <h2>Test Completed! 🎉</h2>
-	  <div id="score-text" style="color: var(--primary); font-size: 26px; font-weight: 700; margin-bottom: 12px;"></div>
-	  
-	  <!-- Scorecard Breakdown -->
-	  <div id="score-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; text-align: center;">
-		<div style="background: #e6f4ea; padding: 10px; border-radius: 8px;">
-		  <div style="font-size: 12px; color: var(--text-sub); font-weight: 600;">CORRECT</div>
-		  <div id="stat-correct" style="font-size: 20px; font-weight: 700; color: var(--success);">0</div>
-		</div>
-		<div style="background: #fce8e6; padding: 10px; border-radius: 8px;">
-		  <div style="font-size: 12px; color: var(--text-sub); font-weight: 600;">WRONG</div>
-		  <div id="stat-wrong" style="font-size: 20px; font-weight: 700; color: var(--danger);">0</div>
-		</div>
-		<div style="background: #f1f3f4; padding: 10px; border-radius: 8px;">
-		  <div style="font-size: 12px; color: var(--text-sub); font-weight: 600;">SKIPPED</div>
-		  <div id="stat-unattempted" style="font-size: 20px; font-weight: 700; color: var(--text-sub);">0</div>
-		</div>
-	  </div>
+  <div id="result-screen" class="card hidden">
+    <h2>Test Completed! 🎉</h2>
+    <div id="score-text" style="color: var(--primary); font-size: 24px; font-weight: 700; margin-bottom: 14px;"></div>
+    
+    <!-- Breakdown Grid -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px;">
+      <div class="stat-box" style="background: #e6f4ea;">
+        <div class="stat-label">CORRECT</div>
+        <div id="stat-correct" class="stat-val" style="color: var(--success);">0</div>
+      </div>
+      <div class="stat-box" style="background: #fce8e6;">
+        <div class="stat-label">WRONG</div>
+        <div id="stat-wrong" class="stat-val" style="color: var(--danger);">0</div>
+      </div>
+      <div class="stat-box" style="background: #f1f3f4;">
+        <div class="stat-label">SKIPPED</div>
+        <div id="stat-unattempted" class="stat-val" style="color: var(--text-sub);">0</div>
+      </div>
+    </div>
 
-	  <button class="btn-secondary" onclick="toggleReview()">Review Explanations</button>
-	  <button class="btn-primary" onclick="location.reload()">Take Another Test</button>
-	  <div id="review-list" class="hidden" style="margin-top: 20px;"></div>
-	</div>
+    <button class="btn-secondary" onclick="toggleReview()">Review Explanations</button>
+    <button class="btn-primary" onclick="location.reload()">Take Another Test</button>
+    <div id="review-list" class="hidden" style="margin-top: 20px;"></div>
+  </div>
 </div>
 
 <script>
-  // >>> Paste your GitHub raw URL here in Step 4 <<<
   const DATA_URL = "https://raw.githubusercontent.com/UPSC-2K25/QuestionBank/refs/heads/main/questions.json";
+
+  // Scoring configuration
+  const MARKS_PER_CORRECT = 2.0;
+  const NEGATIVE_MARK = 0.66;
 
   let allQuestions = [];
   let currentTest = [];
@@ -112,7 +118,6 @@
   let currentIndex = 0;
 
   async function loadData() {
-    // Cache buster guarantees immediate updates upon editing your JSON file
     const targetUrl = DATA_URL + "?_=" + new Date().getTime();
     try {
       let res = await fetch(targetUrl);
@@ -142,23 +147,76 @@
       yearSelect.appendChild(opt);
     });
 
+    onFilterChange();
+
     document.getElementById('loading-msg').classList.add('hidden');
     document.getElementById('setup-form').classList.remove('hidden');
   }
 
-  function startTest() {
+  function getFilteredQuestions() {
     const selectedTopic = document.getElementById('topic-select').value;
     const selectedYear = document.getElementById('year-select').value;
-    const count = parseInt(document.getElementById('count-select').value);
 
-    let filtered = allQuestions.filter(q => {
-      return (selectedTopic === "ALL" || q.topic === selectedTopic) && (selectedYear === "ALL" || q.year === selectedYear);
+    return allQuestions.filter(q => {
+      return (selectedTopic === "ALL" || q.topic === selectedTopic) &&
+             (selectedYear === "ALL" || String(q.year) === selectedYear);
     });
+  }
 
-    if (filtered.length === 0) { alert("No matching questions found!"); return; }
+  function onFilterChange() {
+    const filtered = getFilteredQuestions();
+    const countInput = document.getElementById('count-input');
+    const counterBadge = document.getElementById('available-counter');
+    const startBtn = document.getElementById('start-btn');
 
+    const totalAvailable = filtered.length;
+    counterBadge.textContent = `Available: ${totalAvailable} / ${allQuestions.length}`;
+
+    if (totalAvailable === 0) {
+      countInput.value = 0;
+      countInput.min = 0;
+      countInput.max = 0;
+      countInput.disabled = true;
+      startBtn.disabled = true;
+      startBtn.style.opacity = "0.5";
+    } else {
+      countInput.disabled = false;
+      countInput.min = 1;
+      countInput.max = totalAvailable;
+      
+      // Default the input to totalAvailable if empty or if previous value exceeds the new maximum
+      if (!countInput.value || parseInt(countInput.value) > totalAvailable || parseInt(countInput.value) < 1) {
+        countInput.value = totalAvailable;
+      }
+      startBtn.disabled = false;
+      startBtn.style.opacity = "1";
+    }
+  }
+
+  function startTest() {
+    const filtered = getFilteredQuestions();
+    const countInput = document.getElementById('count-input');
+    const count = parseInt(countInput.value, 10);
+    const maxAllowed = filtered.length;
+
+    if (isNaN(count) || count < 1) {
+      alert("Please enter a valid number of questions (minimum 1).");
+      countInput.focus();
+      return;
+    }
+
+    if (count > maxAllowed) {
+      alert(`Entered count (${count}) exceeds maximum available questions (${maxAllowed}) for this filter.`);
+      countInput.value = maxAllowed;
+      countInput.focus();
+      return;
+    }
+
+    // Shuffle and pick requested number
     currentTest = filtered.sort(() => Math.random() - 0.5).slice(0, count);
-    userAnswers = {}; currentIndex = 0;
+    userAnswers = {};
+    currentIndex = 0;
+
     document.getElementById('setup-screen').classList.add('hidden');
     document.getElementById('quiz-screen').classList.remove('hidden');
     renderQuestion();
@@ -170,8 +228,12 @@
     document.getElementById('topic-badge').textContent = q.topic;
     
     const yearBadge = document.getElementById('year-badge');
-    if (q.year) { yearBadge.textContent = q.year; yearBadge.style.display = "inline-block"; } 
-    else { yearBadge.style.display = "none"; }
+    if (q.year) { 
+      yearBadge.textContent = q.year; 
+      yearBadge.style.display = "inline-block"; 
+    } else { 
+      yearBadge.style.display = "none"; 
+    }
 
     document.getElementById('q-text').textContent = q.question;
     const optContainer = document.getElementById('options-box');
@@ -189,78 +251,84 @@
     document.getElementById('next-btn').textContent = (currentIndex === currentTest.length - 1) ? "Submit Test" : "Next";
   }
 
-  function nextQuestion() { if (currentIndex === currentTest.length - 1) { finishTest(); } else { currentIndex++; renderQuestion(); } }
-  function prevQuestion() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
+  function nextQuestion() { 
+    if (currentIndex === currentTest.length - 1) { 
+      finishTest(); 
+    } else { 
+      currentIndex++; 
+      renderQuestion(); 
+    } 
+  }
 
-  // Marking scheme constants (adjust values as needed)
-	const MARKS_PER_CORRECT = 2.0;
-	const NEGATIVE_MARK = 0.66; // Subtracted per wrong answer
+  function prevQuestion() { 
+    if (currentIndex > 0) { 
+      currentIndex--; 
+      renderQuestion(); 
+    } 
+  }
 
-	function finishTest() {
-	  let correctCount = 0;
-	  let wrongCount = 0;
-	  let unattemptedCount = 0;
+  function finishTest() {
+    let correctCount = 0;
+    let wrongCount = 0;
+    let unattemptedCount = 0;
 
-	  currentTest.forEach((q, idx) => {
-		const userChoice = userAnswers[idx];
-		if (!userChoice) {
-		  unattemptedCount++;
-		} else if (userChoice === q.answer) {
-		  correctCount++;
-		} else {
-		  wrongCount++;
-		}
-	  });
+    currentTest.forEach((q, idx) => {
+      const choice = userAnswers[idx];
+      if (!choice) {
+        unattemptedCount++;
+      } else if (choice === q.answer) {
+        correctCount++;
+      } else {
+        wrongCount++;
+      }
+    });
 
-	  // Calculate final score
-	  const totalScore = (correctCount * MARKS_PER_CORRECT) - (wrongCount * NEGATIVE_MARK);
-	  const maxPossibleMarks = currentTest.length * MARKS_PER_CORRECT;
+    const netMarks = (correctCount * MARKS_PER_CORRECT) - (wrongCount * NEGATIVE_MARK);
+    const maxMarks = currentTest.length * MARKS_PER_CORRECT;
 
-	  document.getElementById('quiz-screen').classList.add('hidden');
-	  document.getElementById('result-screen').classList.remove('hidden');
+    document.getElementById('quiz-screen').classList.add('hidden');
+    document.getElementById('result-screen').classList.remove('hidden');
 
-	  // Display Net Score
-	  document.getElementById('score-text').innerHTML = `
-		Marks: ${totalScore.toFixed(2)} <span style="font-size: 16px; color: var(--text-sub); font-weight: normal;">/ ${maxPossibleMarks.toFixed(2)}</span>
-	  `;
+    document.getElementById('score-text').innerHTML = `
+      Marks: ${netMarks.toFixed(2)} <span style="font-size: 15px; color: var(--text-sub); font-weight: normal;">/ ${maxMarks.toFixed(2)}</span>
+    `;
 
-	  // Display Breakdown Stats
-	  document.getElementById('stat-correct').textContent = correctCount;
-	  document.getElementById('stat-wrong').textContent = wrongCount;
-	  document.getElementById('stat-unattempted').textContent = unattemptedCount;
+    document.getElementById('stat-correct').textContent = correctCount;
+    document.getElementById('stat-wrong').textContent = wrongCount;
+    document.getElementById('stat-unattempted').textContent = unattemptedCount;
 
-	  // Render Explanations
-	  const reviewBox = document.getElementById('review-list');
-	  reviewBox.innerHTML = "";
-	  currentTest.forEach((q, idx) => {
-		const userChoice = userAnswers[idx];
-		const isAttempted = !!userChoice;
-		const isCorrect = userChoice === q.answer;
+    const reviewBox = document.getElementById('review-list');
+    reviewBox.innerHTML = "";
+    currentTest.forEach((q, idx) => {
+      const choice = userAnswers[idx];
+      const isAttempted = !!choice;
+      const isCorrect = choice === q.answer;
 
-		let statusBadge = "";
-		if (!isAttempted) {
-		  statusBadge = '<span style="color: var(--text-sub); font-weight: bold;">Unattempted (0.00)</span>';
-		} else if (isCorrect) {
-		  statusBadge = `<span style="color: var(--success); font-weight: bold;">${userChoice} (+${MARKS_PER_CORRECT.toFixed(2)})</span>`;
-		} else {
-		  statusBadge = `<span style="color: var(--danger); font-weight: bold;">${userChoice} (-${NEGATIVE_MARK.toFixed(2)})</span>`;
-		}
+      let statusBadge = "";
+      if (!isAttempted) {
+        statusBadge = '<span style="color: var(--text-sub); font-weight: bold;">Unattempted (0.00)</span>';
+      } else if (isCorrect) {
+        statusBadge = `<span style="color: var(--success); font-weight: bold;">${choice} (+${MARKS_PER_CORRECT.toFixed(2)})</span>`;
+      } else {
+        statusBadge = `<span style="color: var(--danger); font-weight: bold;">${choice} (-${NEGATIVE_MARK.toFixed(2)})</span>`;
+      }
 
-		const item = document.createElement('div');
-		item.style.marginBottom = "18px";
-		item.innerHTML = `
-		  <div style="font-weight:600; font-size:14px;">${idx + 1}. [${q.year ? q.year + ' - ' : ''}${q.topic}] ${q.question}</div>
-		  <div style="font-size:13px; margin-top:5px;">
-			Your answer: ${statusBadge} | 
-			Correct: <strong style="color:var(--success);">${q.answer}</strong>
-		  </div>
-		  <div class="exp-box"><strong>Explanation:</strong> ${q.explanation}</div>
-		`;
-		reviewBox.appendChild(item);
-	  });
-	}
+      const item = document.createElement('div');
+      item.style.marginBottom = "18px";
+      item.innerHTML = `
+        <div style="font-weight:600; font-size:14px;">${idx + 1}. [${q.year ? q.year + ' - ' : ''}${q.topic}] ${q.question}</div>
+        <div style="font-size:13px; margin-top:5px;">
+          Your answer: ${statusBadge} | Correct: <strong style="color:var(--success);">${q.answer}</strong>
+        </div>
+        <div class="exp-box"><strong>Explanation:</strong> ${q.explanation}</div>
+      `;
+      reviewBox.appendChild(item);
+    });
+  }
 
-  function toggleReview() { document.getElementById('review-list').classList.toggle('hidden'); }
+  function toggleReview() { 
+    document.getElementById('review-list').classList.toggle('hidden'); 
+  }
 
   loadData();
 </script>
