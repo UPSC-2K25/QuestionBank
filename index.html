@@ -170,4 +170,276 @@
       const opt = document.createElement('option');
       opt.value = y;
       opt.textContent = y;
-      yearSelect.appendChild(
+      yearSelect.appendChild(opt);
+    });
+
+    if (availableYears.map(String).includes(String(currentVal))) {
+      yearSelect.value = currentVal;
+    } else {
+      yearSelect.value = "ALL";
+    }
+  }
+
+  // Populate Subject Dropdown based on all questions or filtered by selected year
+  function populateSubjectDropdown() {
+    const subjectSelect = document.getElementById('subject-select');
+    const selectedYear = document.getElementById('year-select').value;
+    const currentVal = subjectSelect.value || "ALL";
+
+    let pool = allQuestions;
+    if (selectedYear !== "ALL") {
+      pool = pool.filter(q => String(q.year) === selectedYear);
+    }
+
+    // Handles fallback gracefully if any legacy records still carry q.topic
+    const availableSubjects = [...new Set(pool.map(q => q.subject || q.topic).filter(Boolean))].sort();
+
+    subjectSelect.innerHTML = '<option value="ALL">All Subjects</option>';
+    availableSubjects.forEach(s => {
+      const opt = document.createElement('option');
+      opt.value = s;
+      opt.textContent = s;
+      subjectSelect.appendChild(opt);
+    });
+
+    if (availableSubjects.includes(currentVal)) {
+      subjectSelect.value = currentVal;
+    } else {
+      subjectSelect.value = "ALL";
+    }
+  }
+
+  function onYearChange() {
+    populateSubjectDropdown();
+    syncCountInput();
+  }
+
+  function onSubjectChange() {
+    syncCountInput();
+  }
+
+  function getFilteredQuestions() {
+    const selectedYear = document.getElementById('year-select').value;
+    const selectedSubject = document.getElementById('subject-select').value;
+
+    return allQuestions.filter(q => {
+      const itemSubject = q.subject || q.topic;
+      return (selectedYear === "ALL" || String(q.year) === selectedYear) &&
+             (selectedSubject === "ALL" || itemSubject === selectedSubject);
+    });
+  }
+
+  function syncCountInput() {
+    const filtered = getFilteredQuestions();
+    const countInput = document.getElementById('count-input');
+    const counterBadge = document.getElementById('available-counter');
+    const startBtn = document.getElementById('start-btn');
+    const totalAvailable = filtered.length;
+
+    counterBadge.textContent = `Available: ${totalAvailable} / ${allQuestions.length}`;
+
+    if (totalAvailable === 0) {
+      countInput.value = 0;
+      countInput.min = 0;
+      countInput.max = 0;
+      countInput.disabled = true;
+      startBtn.disabled = true;
+      startBtn.style.opacity = "0.5";
+    } else {
+      countInput.disabled = false;
+      countInput.min = 1;
+      countInput.max = totalAvailable;
+
+      if (!countInput.value || parseInt(countInput.value) > totalAvailable || parseInt(countInput.value) < 1) {
+        countInput.value = totalAvailable;
+      }
+      startBtn.disabled = false;
+      startBtn.style.opacity = "1";
+    }
+  }
+
+  function startTest() {
+    const filtered = getFilteredQuestions();
+    const countInput = document.getElementById('count-input');
+    const count = parseInt(countInput.value, 10);
+    const maxAllowed = filtered.length;
+
+    if (isNaN(count) || count < 1) {
+      alert("Please enter a valid count (minimum 1).");
+      countInput.focus();
+      return;
+    }
+
+    if (count > maxAllowed) {
+      alert(`Entered count (${count}) exceeds available questions (${maxAllowed}) for this selection.`);
+      countInput.value = maxAllowed;
+      countInput.focus();
+      return;
+    }
+
+    // Shuffle and pick subset
+    currentTest = filtered.sort(() => Math.random() - 0.5).slice(0, count);
+    userAnswers = {};
+    currentIndex = 0;
+    reviewRenderIndex = 0;
+    isReviewInitialized = false;
+
+    document.getElementById('setup-screen').classList.add('hidden');
+    document.getElementById('quiz-screen').classList.remove('hidden');
+    renderQuestion();
+  }
+
+  function renderQuestion() {
+    const q = currentTest[currentIndex];
+    document.getElementById('q-counter').textContent = `Q ${currentIndex + 1} / ${currentTest.length}`;
+    document.getElementById('subject-badge').textContent = q.subject || q.topic || 'General';
+    
+    const yearBadge = document.getElementById('year-badge');
+    if (q.year) { 
+      yearBadge.textContent = q.year; 
+      yearBadge.style.display = "inline-block"; 
+    } else { 
+      yearBadge.style.display = "none"; 
+    }
+
+    document.getElementById('q-text').textContent = q.question;
+    const optContainer = document.getElementById('options-box');
+    optContainer.innerHTML = "";
+
+    ["A", "B", "C", "D"].forEach((letter, i) => {
+      const btn = document.createElement('button');
+      btn.className = "opt-btn" + (userAnswers[currentIndex] === letter ? " selected" : "");
+      btn.innerHTML = `<strong>${letter}.</strong> ${q.options[i] || 'N/A'}`;
+      btn.onclick = () => { userAnswers[currentIndex] = letter; renderQuestion(); };
+      optContainer.appendChild(btn);
+    });
+
+    document.getElementById('prev-btn').style.visibility = currentIndex === 0 ? "hidden" : "visible";
+    document.getElementById('next-btn').textContent = (currentIndex === currentTest.length - 1) ? "Submit Test" : "Next";
+  }
+
+  function nextQuestion() { 
+    if (currentIndex === currentTest.length - 1) { 
+      finishTest(); 
+    } else { 
+      currentIndex++; 
+      renderQuestion(); 
+    } 
+  }
+
+  function prevQuestion() { 
+    if (currentIndex > 0) { 
+      currentIndex--; 
+      renderQuestion(); 
+    } 
+  }
+
+  function finishTest() {
+    let correctCount = 0;
+    let wrongCount = 0;
+    let unattemptedCount = 0;
+
+    currentTest.forEach((q, idx) => {
+      const choice = userAnswers[idx];
+      if (!choice) {
+        unattemptedCount++;
+      } else if (choice === q.answer) {
+        correctCount++;
+      } else {
+        wrongCount++;
+      }
+    });
+
+    const netMarks = (correctCount * MARKS_PER_CORRECT) - (wrongCount * NEGATIVE_MARK);
+    const maxMarks = currentTest.length * MARKS_PER_CORRECT;
+
+    document.getElementById('quiz-screen').classList.add('hidden');
+    document.getElementById('result-screen').classList.remove('hidden');
+
+    document.getElementById('score-text').innerHTML = `
+      Marks: ${netMarks.toFixed(2)} <span style="font-size: 15px; color: var(--text-sub); font-weight: normal;">/ ${maxMarks.toFixed(2)}</span>
+    `;
+
+    document.getElementById('stat-correct').textContent = correctCount;
+    document.getElementById('stat-wrong').textContent = wrongCount;
+    document.getElementById('stat-unattempted').textContent = unattemptedCount;
+
+    // Reset review container state
+    document.getElementById('review-section').classList.add('hidden');
+    document.getElementById('review-list').innerHTML = "";
+    document.getElementById('review-toggle-btn').textContent = "Review Explanations";
+    reviewRenderIndex = 0;
+    isReviewInitialized = false;
+  }
+
+  function toggleReview() {
+    const reviewSec = document.getElementById('review-section');
+    const toggleBtn = document.getElementById('review-toggle-btn');
+
+    if (reviewSec.classList.contains('hidden')) {
+      reviewSec.classList.remove('hidden');
+      toggleBtn.textContent = "Hide Explanations";
+      if (!isReviewInitialized) {
+        renderNextReviewBatch();
+        isReviewInitialized = true;
+      }
+    } else {
+      reviewSec.classList.add('hidden');
+      toggleBtn.textContent = "Review Explanations";
+    }
+  }
+
+  // Paginates DOM creation in chunks of 20 to prevent lag and mobile crashes
+  function renderNextReviewBatch() {
+    const reviewBox = document.getElementById('review-list');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const nextLimit = Math.min(reviewRenderIndex + REVIEW_PAGE_SIZE, currentTest.length);
+
+    const fragment = document.createDocumentFragment();
+
+    for (let idx = reviewRenderIndex; idx < nextLimit; idx++) {
+      const q = currentTest[idx];
+      const choice = userAnswers[idx];
+      const isAttempted = !!choice;
+      const isCorrect = choice === q.answer;
+      const qSubject = q.subject || q.topic || 'General';
+
+      let statusBadge = "";
+      if (!isAttempted) {
+        statusBadge = '<span style="color: var(--text-sub); font-weight: bold;">Unattempted (0.00)</span>';
+      } else if (isCorrect) {
+        statusBadge = `<span style="color: var(--success); font-weight: bold;">${choice} (+${MARKS_PER_CORRECT.toFixed(2)})</span>`;
+      } else {
+        statusBadge = `<span style="color: var(--danger); font-weight: bold;">${choice} (-${NEGATIVE_MARK.toFixed(2)})</span>`;
+      }
+
+      const item = document.createElement('div');
+      item.style.marginBottom = "18px";
+      item.style.borderBottom = "1px solid var(--border)";
+      item.style.paddingBottom = "12px";
+      item.innerHTML = `
+        <div style="font-weight:600; font-size:14px;">${idx + 1}. [${q.year ? q.year + ' - ' : ''}${qSubject}] ${q.question}</div>
+        <div style="font-size:13px; margin-top:5px;">
+          Your answer: ${statusBadge} | Correct: <strong style="color:var(--success);">${q.answer}</strong>
+        </div>
+        <div class="exp-box"><strong>Explanation:</strong> ${q.explanation}</div>
+      `;
+      fragment.appendChild(item);
+    }
+
+    reviewBox.appendChild(fragment);
+    reviewRenderIndex = nextLimit;
+
+    // Show/hide Load More button depending on remaining questions
+    if (reviewRenderIndex < currentTest.length) {
+      loadMoreBtn.classList.remove('hidden');
+      loadMoreBtn.textContent = `Load More (${reviewRenderIndex} / ${currentTest.length} shown)`;
+    } else {
+      loadMoreBtn.classList.add('hidden');
+    }
+  }
+
+  loadData();
+</script>
+</body>
+</html>
