@@ -76,13 +76,30 @@
   </div>
 
   <!-- RESULTS SCREEN -->
-  <div id="result-screen" class="card hidden">
-    <h2>Test Completed! 🎉</h2>
-    <h3 id="score-text" style="color: var(--primary); font-size: 24px;"></h3>
-    <button class="btn-secondary" onclick="toggleReview()">Review Explanations</button>
-    <button class="btn-primary" onclick="location.reload()">Take Another Test</button>
-    <div id="review-list" class="hidden" style="margin-top: 20px;"></div>
-  </div>
+	<div id="result-screen" class="card hidden">
+	  <h2>Test Completed! 🎉</h2>
+	  <div id="score-text" style="color: var(--primary); font-size: 26px; font-weight: 700; margin-bottom: 12px;"></div>
+	  
+	  <!-- Scorecard Breakdown -->
+	  <div id="score-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; text-align: center;">
+		<div style="background: #e6f4ea; padding: 10px; border-radius: 8px;">
+		  <div style="font-size: 12px; color: var(--text-sub); font-weight: 600;">CORRECT</div>
+		  <div id="stat-correct" style="font-size: 20px; font-weight: 700; color: var(--success);">0</div>
+		</div>
+		<div style="background: #fce8e6; padding: 10px; border-radius: 8px;">
+		  <div style="font-size: 12px; color: var(--text-sub); font-weight: 600;">WRONG</div>
+		  <div id="stat-wrong" style="font-size: 20px; font-weight: 700; color: var(--danger);">0</div>
+		</div>
+		<div style="background: #f1f3f4; padding: 10px; border-radius: 8px;">
+		  <div style="font-size: 12px; color: var(--text-sub); font-weight: 600;">SKIPPED</div>
+		  <div id="stat-unattempted" style="font-size: 20px; font-weight: 700; color: var(--text-sub);">0</div>
+		</div>
+	  </div>
+
+	  <button class="btn-secondary" onclick="toggleReview()">Review Explanations</button>
+	  <button class="btn-primary" onclick="location.reload()">Take Another Test</button>
+	  <div id="review-list" class="hidden" style="margin-top: 20px;"></div>
+	</div>
 </div>
 
 <script>
@@ -175,31 +192,73 @@
   function nextQuestion() { if (currentIndex === currentTest.length - 1) { finishTest(); } else { currentIndex++; renderQuestion(); } }
   function prevQuestion() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
 
-  function finishTest() {
-    let score = 0;
-    currentTest.forEach((q, idx) => { if (userAnswers[idx] === q.answer) score++; });
+  // Marking scheme constants (adjust values as needed)
+	const MARKS_PER_CORRECT = 2.0;
+	const NEGATIVE_MARK = 0.66; // Subtracted per wrong answer
 
-    document.getElementById('quiz-screen').classList.add('hidden');
-    document.getElementById('result-screen').classList.remove('hidden');
-    document.getElementById('score-text').textContent = `Score: ${score} / ${currentTest.length} (${Math.round((score/currentTest.length)*100)}%)`;
+	function finishTest() {
+	  let correctCount = 0;
+	  let wrongCount = 0;
+	  let unattemptedCount = 0;
 
-    const reviewBox = document.getElementById('review-list');
-    reviewBox.innerHTML = "";
-    currentTest.forEach((q, idx) => {
-      const isCorrect = userAnswers[idx] === q.answer;
-      const item = document.createElement('div');
-      item.style.marginBottom = "18px";
-      item.innerHTML = `
-        <div style="font-weight:600; font-size:14px;">${idx + 1}. [${q.year ? q.year + ' - ' : ''}${q.topic}] ${q.question}</div>
-        <div style="font-size:13px; margin-top:5px;">
-          Your answer: <span style="color:${isCorrect ? 'var(--success)' : 'var(--danger)'}; font-weight:bold;">${userAnswers[idx] || "Unattempted"}</span> | 
-          Correct: <strong style="color:var(--success);">${q.answer}</strong>
-        </div>
-        <div class="exp-box"><strong>Explanation:</strong> ${q.explanation}</div>
-      `;
-      reviewBox.appendChild(item);
-    });
-  }
+	  currentTest.forEach((q, idx) => {
+		const userChoice = userAnswers[idx];
+		if (!userChoice) {
+		  unattemptedCount++;
+		} else if (userChoice === q.answer) {
+		  correctCount++;
+		} else {
+		  wrongCount++;
+		}
+	  });
+
+	  // Calculate final score
+	  const totalScore = (correctCount * MARKS_PER_CORRECT) - (wrongCount * NEGATIVE_MARK);
+	  const maxPossibleMarks = currentTest.length * MARKS_PER_CORRECT;
+
+	  document.getElementById('quiz-screen').classList.add('hidden');
+	  document.getElementById('result-screen').classList.remove('hidden');
+
+	  // Display Net Score
+	  document.getElementById('score-text').innerHTML = `
+		Marks: ${totalScore.toFixed(2)} <span style="font-size: 16px; color: var(--text-sub); font-weight: normal;">/ ${maxPossibleMarks.toFixed(2)}</span>
+	  `;
+
+	  // Display Breakdown Stats
+	  document.getElementById('stat-correct').textContent = correctCount;
+	  document.getElementById('stat-wrong').textContent = wrongCount;
+	  document.getElementById('stat-unattempted').textContent = unattemptedCount;
+
+	  // Render Explanations
+	  const reviewBox = document.getElementById('review-list');
+	  reviewBox.innerHTML = "";
+	  currentTest.forEach((q, idx) => {
+		const userChoice = userAnswers[idx];
+		const isAttempted = !!userChoice;
+		const isCorrect = userChoice === q.answer;
+
+		let statusBadge = "";
+		if (!isAttempted) {
+		  statusBadge = '<span style="color: var(--text-sub); font-weight: bold;">Unattempted (0.00)</span>';
+		} else if (isCorrect) {
+		  statusBadge = `<span style="color: var(--success); font-weight: bold;">${userChoice} (+${MARKS_PER_CORRECT.toFixed(2)})</span>`;
+		} else {
+		  statusBadge = `<span style="color: var(--danger); font-weight: bold;">${userChoice} (-${NEGATIVE_MARK.toFixed(2)})</span>`;
+		}
+
+		const item = document.createElement('div');
+		item.style.marginBottom = "18px";
+		item.innerHTML = `
+		  <div style="font-weight:600; font-size:14px;">${idx + 1}. [${q.year ? q.year + ' - ' : ''}${q.topic}] ${q.question}</div>
+		  <div style="font-size:13px; margin-top:5px;">
+			Your answer: ${statusBadge} | 
+			Correct: <strong style="color:var(--success);">${q.answer}</strong>
+		  </div>
+		  <div class="exp-box"><strong>Explanation:</strong> ${q.explanation}</div>
+		`;
+		reviewBox.appendChild(item);
+	  });
+	}
 
   function toggleReview() { document.getElementById('review-list').classList.toggle('hidden'); }
 
