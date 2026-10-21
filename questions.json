@@ -518,5 +518,525 @@
     ],
     "answer": "D",
     "explanation": "All three statements are correct. SCO-RATS is the permanent body coordinating anti-terrorism, anti-separatism, and anti-extremism efforts, based in Tashkent. Decisions in key SCO bodies are made by consensus without voting. At the 2024 SCO summit in Astana, Kazakhstan, Belarus was inducted as the 10th full member state (following Iran's entry in 2023)."
+  },
+  {
+    "year": "2027",
+    "topic": "Science & Technology: Space Science & Solar Physics",
+    "question": "With reference to the Aditya-L1 mission and solar atmospheric phenomena, consider the following statements:\n1. Aditya-L1 is placed in a halo orbit around the Sun-Earth Lagrangian Point 1 (L1), allowing continuous observation of the Sun without occultation or eclipses.\n2. Coronal Mass Ejections (CMEs) are major expulsions of plasma and magnetic field from the solar corona that can trigger severe geomagnetic storms on Earth.\n3. The Visible Emission Line Coronagraph (VELC) on board Aditya-L1 is designed to image the solar chromosphere exclusively in radio frequencies.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. Aditya-L1 orbits the L1 point (~1.5 million km from Earth), offering an uninterrupted view of the Sun. CMEs consist of magnetized plasma that can disrupt satellite electronics, telecommunications, and terrestrial power grids. Statement 3 is incorrect because VELC operates in the optical (visible) and near-infrared spectrum to image the solar corona down to the base, not in radio frequencies."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian Polity & Constitutional Law: Caste Identity and Religious Conversion",
+    "question": "Regarding the constitutional and statutory provisions governing affirmative action and religious conversion in India, consider the following statements:\n1. The Constitution (Scheduled Castes) Order, 1950, as amended, specifies that no person professing a religion different from Hinduism, Sikhism, or Buddhism can be deemed a member of a Scheduled Caste.\n2. The criteria for identifying Backward Classes (OBCs) are strictly determined by religious identity rather than social and educational backwardness.\n3. The Supreme Court has held that fundamental rights under Articles 15(4) and 16(4) confer an enforceable fundamental right to claim reservation in public employment and promotions.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statement 1 is correct: The 1950 Presidential Order initially restricted Scheduled Caste status to Hindus, with subsequent amendments extending it to Sikhs (1956) and Buddhists (1990). Statement 2 is incorrect because the identification of OBCs is based on secular tests of social and educational backwardness (as affirmed in Indra Sawhney), not religion alone. Statement 3 is incorrect because Articles 15(4) and 16(4) are enabling provisions; the judiciary has consistently maintained that reservation is not an absolute fundamental right in itself."
+  },
+  {
+    "year": "2027",
+    "topic": "International Relations & Energy Security: Strategic Chokepoints",
+    "question": "Consider the following statements regarding the Strait of Hormuz:\n1. It connects the Persian Gulf with the Gulf of Oman and the Arabian Sea.\n2. It is bounded by Iran to the north and Oman and the United Arab Emirates to the south.\n3. Ships transiting the Strait of Hormuz exercise the right of innocent passage or transit passage through recognized territorial waters of the littoral states.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are correct. The Strait of Hormuz is the world's most critical petroleum transit chokepoint, connecting the Persian Gulf to the Gulf of Oman/Arabian Sea. Its shores are shared by Iran to the north and the Musandam exclave of Oman and the UAE to the south. Under the United Nations Convention on the Law of the Sea (UNCLOS), vessels navigating international straits used for international navigation enjoy transit passage rights."
+  },
+  {
+    "year": "2027",
+    "topic": "Environment & Sustainable Energy: Rooftop Solar and PM Surya Ghar Muft Bijli Yojana",
+    "question": "With reference to the PM Surya Ghar: Muft Bijli Yojana, consider the following statements:\n1. It provides financial subsidies directly to residential households to install grid-connected rooftop solar systems.\n2. Beneficiaries must feed 100% of the generated solar power into the national grid and cannot consume electricity generated on-site.\n3. Distributed rooftop solar helps reduce transmission and distribution (T&D) losses by producing power close to the consumption point.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 3 are correct. PM Surya Ghar Muft Bijli Yojana offers upfront capital subsidies directly to households for installing rooftop solar systems, enabling clean self-generation and lowering grid T&D losses through localized power generation. Statement 2 is incorrect because households consume power on-site via net-metering and feed only surplus electricity back to the grid."
+  },
+  {
+    "year": "2027",
+    "topic": "Science & Emerging Technology: Artificial Intelligence Architectures",
+    "question": "In the context of contemporary developments in Artificial Intelligence (AI), what is meant by an 'open-weight' AI model?",
+    "options": [
+      "A proprietary model that operates entirely offline without an internet connection",
+      "A neural network model whose trained mathematical parameters (weights) are publicly released and downloadable for local deployment and fine-tuning",
+      "An algorithm certified by international bodies to have zero algorithmic bias or environmental carbon footprint",
+      "A cloud-exclusive model accessible solely through paid proprietary Application Programming Interfaces (APIs)"
+    ],
+    "answer": "B",
+    "explanation": "Open-weight models (such as Meta's Llama family or Mistral models) make their pre-trained numerical parameters (weights) publicly available, allowing developers to inspect, run, modify, and fine-tune the architecture locally on their own hardware, in contrast to closed-source API-only models."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian Polity & Constitutional Framework: High Courts and Union Territories",
+    "question": "With reference to the Indian Judiciary and Union Territories, consider the following statements:\n1. Article 241 of the Constitution empowers Parliament by law to establish a High Court for a Union Territory or declare any court in any such territory to be a High Court.\n2. The High Court of Jammu & Kashmir and Ladakh serves as the common High Court for both the Union Territory of Jammu & Kashmir and the Union Territory of Ladakh.\n3. A permanent bench of a High Court can only be established through a Constitutional Amendment under Article 368.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. Article 241 authorizes Parliament to establish a High Court for a Union Territory or extend an existing High Court's jurisdiction. Under the Jammu and Kashmir Reorganisation Act, 2019, the High Court of Jammu & Kashmir and Ladakh functions as the common High Court for both territories. Statement 3 is incorrect because establishing benches or circuit benches is done through statutory orders and presidential notifications under relevant reorganisation or state legislation, not via Article 368 constitutional amendments."
+  },
+  {
+    "year": "2027",
+    "topic": "Indian Economy & Capital Markets: Stock Exchange Microstructure",
+    "question": "In capital market trading, what is the primary objective of a 'Closing Auction Session' (CAS) in equity cash markets?",
+    "options": [
+      "To provide retail investors with guaranteed credit to purchase unsettled derivatives contracts",
+      "To eliminate high-frequency algorithmic traders from taking part in foreign exchange settlements",
+      "To determine an orderly and manipulation-resistant closing price of securities through multilateral order matching",
+      "To automatically liquidate all pledged shares of non-banking financial corporations"
+    ],
+    "answer": "C",
+    "explanation": "A Closing Auction Session (CAS) aggregates buy and sell orders during the final trading window without continuous execution, matching them at an equilibrium price. This multilateral call auction mechanism minimizes price volatility, prevents end-of-day market manipulation (marking the close), and produces a fair closing reference price."
+  },
+  {
+    "year": "2027",
+    "topic": "Environment & Aquatic Ecology: Water Quality Parameters",
+    "question": "Regarding the monitoring of estuarine and coastal water quality, consider the following statements:\n1. The presence of Fecal Coliform bacteria in water bodies serves as an indicator of human or animal waste contamination and potential enteric pathogens.\n2. Most Probable Number (MPN) is a direct, exact census count of viable bacterial cells viewed under an optical microscope.\n3. In estuarine environments, tidal cycles can significantly alter bacterial concentrations and dissolved oxygen levels due to cyclical seawater dilution.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 3 are correct. Fecal coliforms (like E. coli) indicate sewage contamination and enteric pathogen risk. In tidal estuaries, ebb and flood tides move water masses and dilute pollutants, causing cyclic fluctuations in measured concentrations. Statement 2 is incorrect because MPN is a statistical estimation method based on probability theory (dilution to extinction in culture broths), not a direct microscopic count."
+  },
+  {
+    "year": "2027",
+    "topic": "International Security & Regional Groupings: SCO Council of Heads of Government",
+    "question": "With reference to the institutional structure of the Shanghai Cooperation Organisation (SCO), consider the following statements:\n1. The Council of Heads of State (CHS) is the supreme decision-making body of the SCO.\n2. The Council of Heads of Government (CHG) focuses primarily on economic, trade, and multilateral budgetary cooperation.\n3. The official working languages of the SCO are English and Russian.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. The Council of Heads of State (attended by Presidents/Heads of State) is the apex decision-making body that sets strategic priorities, while the Council of Heads of Government (typically attended by Prime Ministers/delegated Ministers) manages economic strategy, trade cooperation, and approving the organization's annual budget. Statement 3 is incorrect because the official working languages of the SCO are Russian and Chinese, not English."
+  },
+  {
+    "year": "2027",
+    "topic": "Science & Medicine: Transmissible Cancers in Animals",
+    "question": "Consider the following statements regarding 'clonally transmissible cancers' in the animal kingdom:\n1. They are infectious diseases where living cancer cells themselves act as the infectious pathogen transmitted directly between individuals.\n2. Canine Transmissible Venereal Tumor (CTVT) and Devil Facial Tumor Disease (DFTD) are documented natural examples of transmissible cancers.\n3. Unlike conventional viral-induced tumors, the genome of the transmitted cancer cells does not match the host organism's DNA.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are correct. In transmissible cancers, the cancer cells themselves metastasize from host to host (an allograft transmission) rather than being induced de novo by a virus. Natural cases include CTVT in dogs and DFTD in Tasmanian devils, where the tumor cells retain an independent genetic lineage that does not match the host animal's genotype."
+  },
+  {
+    "year": "2026",
+    "topic": "Physical Geography & Geomorphology: Pleistocene Drainage Systems",
+    "question": "Consider the following assertion:\n\"In the Pleistocene period either the Yamuna once flowed into the Indus, or the Sutlej flowed into the Yamuna and one major tributary of either had shifted from the Ganga to the Indus or vice versa.\"\nWhich of the following is/are the basis of the above assertion?\n1. The Nadi-Sukta of the Rigveda.\n2. The explorations of the Sutlej and the Yamuna by Robert Bruce Foote.\n3. The presence of the same species of dolphins in both the Indus and the Ganga river systems.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "3 only"
+    ],
+    "answer": "D",
+    "explanation": "The Nadi-Sukta of the Rigveda is a sacred literary hymn honoring rivers rather than geological or paleogeographical evidence. Robert Bruce Foote is renowned as the father of Indian prehistory for his stone tool discoveries at Pallavaram, not for hydrological explorations demonstrating Pleistocene river capture. The presence of closely related freshwater river dolphins (Platanista gangetica and Platanista minor) in both the Ganga and Indus basins—mammals that cannot travel through saltwater marine environments—provides primary zoological and geological evidence of a prehistoric, continuous freshwater linkage between both drainage systems before tectonic diversions."
+  },
+  {
+    "year": "2026",
+    "topic": "Art & Culture: Early Buddhist Iconography & Aniconism",
+    "question": "What does an empty seat represent in early Buddhist iconography?",
+    "options": [
+      "The meditation of the Buddha",
+      "The Buddha's First Sermon",
+      "The Buddha's Mahaparinibbana",
+      "The Buddha's Mahabhinishkramana"
+    ],
+    "answer": "A",
+    "explanation": "During the aniconic phase of early Buddhist sculpture (seen at Sanchi and Bharhut), the Buddha was not depicted in human form. Sculptors used symbols to convey major events of his life: an empty seat or vacant throne under the Bodhi tree signifies the meditation of the Buddha and his attainment of enlightenment at Bodh Gaya. The Dharmachakra represents the First Sermon, the Stupa symbolizes the Mahaparinibbana, and a riderless horse represents the Great Departure (Mahabhinishkramana)."
+  },
+  {
+    "year": "2026",
+    "topic": "Ancient Indian History: Rigvedic Geography & River Nomenclature",
+    "question": "Which of the following pairs of ancient and modern names of rivers is/are correctly matched?\n1. Vitasta : Chenab\n2. Asikni : Jhelum\n3. Parushni : Ravi\n4. Yavyavati : Beas\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3",
+      "3 only",
+      "2 and 4 only"
+    ],
+    "answer": "C",
+    "explanation": "In ancient Rigvedic geography, Parushni corresponds to the Ravi River, celebrated in Mandala 7 of the Rigveda as the site of the Battle of the Ten Kings (Dasarajna). Vitasta is the ancient name for the Jhelum (the Hydaspes of Greek records), Asikni corresponds to the Chenab (Acesines), and Vipasha corresponds to the Beas (Hyphasis). Therefore, only pair 3 is correctly matched."
+  },
+  {
+    "year": "2026",
+    "topic": "Ancient Architecture & Art: Amaravati Stupa",
+    "question": "Which of the following statements on the Amaravati Stupa and its relief sculpture is/are correct?\n1. It was located in the lower Krishna valley.\n2. In India, it was next only to the Sanchi Stupa in size.\n3. The Amaravati school of sculpture made a lasting impact on the later South Indian sculpture, and its products were carried to Sri Lanka and South-east Asia.\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 3 are correct. The Amaravati Stupa (Mahachaitya) developed in the lower Krishna valley in modern Andhra Pradesh under the patronage of the Satavahanas and Ikshvakus. Its sculptural idiom left an enduring legacy on Pallava and Chola art and traveled via Indian Ocean trade networks to Sri Lanka and Southeast Asia. Statement 2 is incorrect because the Amaravati Stupa was significantly larger than the Sanchi Stupa, having a diameter of roughly 49 metres and a height of nearly 27 metres."
+  },
+  {
+    "year": "2026",
+    "topic": "Ancient South Indian History: Sangam Rulers & Dynasties",
+    "question": "Which of the following pairs of the king and his dynasty in early historical Tamilakam is/are not correctly matched?\n1. Senguttuvan : Chera\n2. Udiyanjeral : Chola\n3. Nedunjeliyan : Pandya\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "2 only",
+      "1 and 3",
+      "3 only"
+    ],
+    "answer": "B",
+    "explanation": "Pair 2 is not correctly matched. Udiyanjeral (Uthiyan Cheralathan) was an early monarch of the Chera dynasty, celebrated in Sangam poems for reportedly feeding the warriors of the Mahabharata war. Senguttuvan was the celebrated Chera ruler linked to the Pattini cult in the epic Silappadikaram, and Nedunjeliyan was a prominent Pandya king who defeated a confederacy of rival rulers at the Battle of Talaiyalanganam."
+  },
+  {
+    "year": "2026",
+    "topic": "Modern Indian History: Freedom Struggle & Tripuri Crisis (1939)",
+    "question": "Which of the following factors contributed to the formation of the Forward Bloc by Subhas Chandra Bose in 1939?\n1. Bose failed to win the confidence of Mahatma Gandhi.\n2. The Congress Left was disunited and failed to support Bose.\n3. The Communists did not support Bose in his endeavours.\n4. The supporters of M.N. Roy and socialist leaders like Jayaprakash Narayan preferred Congress unity to supporting Bose.\nSelect the answer using the code given below:",
+    "options": [
+      "1, 2 and 3",
+      "1, 2 and 4",
+      "1, 3 and 4",
+      "2 and 4 only"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1, 2, and 4 are correct. Following the Tripuri Session of 1939, Bose resigned from the Congress presidency after failing to secure Mahatma Gandhi's confidence regarding the formation of the Working Committee. The Congress Left was fractured; leaders such as Jayaprakash Narayan and the Congress Socialist Party (CSP), together with Royists, opted not to split the Congress and prioritized overall party unity over backing Bose. Statement 3 is incorrect because the Communists initially supported Bose during his presidential election and early organizational efforts."
+  },
+  {
+    "year": "2026",
+    "topic": "Modern Indian History: Annexation of Awadh & Land Revenue Policy",
+    "question": "Consider the following statements regarding the British policy in Awadh immediately after its annexation in 1856:\n1. The taluqdars were dispossessed of their estates but allowed to retain their arms and forts.\n2. A Summary Revenue Settlement was made in 1856 assuming that the taluqdars were outsiders.\n3. The British believed in taking revenue directly from the peasants by removing the taluqdars.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+      "2 only"
+    ],
+    "answer": "A",
+    "explanation": "Statements 2 and 3 are correct. The Summary Settlement of 1856 proceeded on the official assumption that taluqdars were extraneous usurpers with no permanent proprietary title, seeking to bypass them and collect revenue directly from actual cultivators. Statement 1 is incorrect because the colonial administration disarmed the taluqdars and dismantled their mud and brick fortifications to destroy their military authority."
+  },
+  {
+    "year": "2026",
+    "topic": "Polity & Modern History: Montagu-Chelmsford Reforms (1919)",
+    "question": "Consider the following assertion:\n\"The genesis of political alliances based on community lay in the very nature of the Montague-Chelmsford Reforms, 1919.\"\nWhich of the following statements support/supports the above assertion?\n1. Reforms retained and extended the principle of separate electorates.\n2. Separate electorates were supposed to counter Indian nationalism, which was growing stronger.\n3. Deprived classes rallied around the favours inherent in separate electorates.\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "All three statements support the assertion. The Government of India Act, 1919 continued separate electorates for Muslims and extended them to Sikhs, Europeans, Anglo-Indians, and Indian Christians to fragment the anti-colonial nationalist coalition. Concurrently, disadvantaged and sectional groups organized politically around these statutory concessions and communal representation mechanisms to secure political standing and safeguard their interests."
+  },
+  {
+    "year": "2026",
+    "topic": "Art & Culture: Hindustani Classical Music Gharanas",
+    "question": "Pandit Mallikarjun Mansur, the famous classical singer from Karnataka, represented the:",
+    "options": [
+      "Agra Gharana",
+      "Gwalior Gharana",
+      "Patiala Gharana",
+      "Jaipur-Atrauli Gharana"
+    ],
+    "answer": "D",
+    "explanation": "Pandit Mallikarjun Mansur (1910–1992), an eminent vocalist from Dharwad, Karnataka, belonged to the Jaipur-Atrauli Gharana. Trained by Ustad Manji Khan and Ustad Bhurji Khan (sons of the gharana's founder, Ustad Alladiya Khan), he was widely celebrated for his mastery of complex compound (jod) ragas and distinct phrasing without theatrical vocal gymnastics."
+  },
+  {
+    "year": "2026",
+    "topic": "Ancient Indian History: Later Vedic Literature & Agrarian Society",
+    "question": "In which one among the following texts does the term kshetra-patni ('mistress of the field') originate?",
+    "options": [
+      "Rigveda",
+      "Atharvaveda",
+      "Ashtadhyayi",
+      "Arthashastra"
+    ],
+    "answer": "B",
+    "explanation": "The term 'kshetra-patni' ('mistress of the field') originates in the Atharvaveda (e.g., AV 2.12), representing a tutelary feminine agricultural deity invoked for fertility and protection of crops, reflecting the transition towards settled agrarian life. In the earlier Rigveda, the tutelary guardian was addressed in the masculine form as 'Kshetrapati' ('lord of the field')."
+  },
+  {
+    "year": "2026",
+    "topic": "Art & Culture: Carnatic vs Hindustani Music Scales",
+    "question": "Which one of the following Carnatic music ragas is similar to Raga Bilawal in Hindustani music?",
+    "options": [
+      "Nat Bhairavi",
+      "Kamavardhini",
+      "Hanumatodi",
+      "Dheera Shankarabharanam"
+    ],
+    "answer": "D",
+    "explanation": "In Indian classical music, Raga Bilawal in Hindustani music is the foundational scale (Thaat) composed entirely of Shuddha Swaras (natural notes: Sa Re Ga Ma Pa Dha Ni Sa), corresponding to the Western major diatonic scale. In Carnatic music, the exact counterpart is the 29th Melakarta raga, Dheera Shankarabharanam. Hanumatodi corresponds to Hindustani Bhairavi Thaat, Nat Bhairavi corresponds to Asavari Thaat, and Kamavardhini (Pantuvarali) corresponds to Purvi Thaat."
+  },
+  {
+    "year": "2026",
+    "topic": "Modern Indian History: Colonial Economic Policy & Currency",
+    "question": "The artificially fixed rupee-sterling exchange rate prescribed by the Hilton-Young Commission (1926) was adopted by the British Government for which one of the following reasons?",
+    "options": [
+      "Aiding the flow of remittances from India and maintaining India's creditworthiness",
+      "Providing support to Indian importers",
+      "Encouraging export of cotton produce from India",
+      "Preventing depreciation of the Rupee in terms of gold"
+    ],
+    "answer": "A",
+    "explanation": "The Royal Commission on Indian Currency and Finance (Hilton-Young Commission, 1926) recommended pegging the rupee at a high artificial rate of 1s 6d sterling. The primary British objective was to facilitate the extraction and outward flow of colonial administrative remittances ('Home Charges', pensions, and sterling debt servicing) from India to the British treasury at a cheaper rupee cost, while preserving British financial creditworthiness. Indian nationalists and industrialists vehemently opposed this overvaluation because it made Indian exports uncompetitive and stimulated British imports into India."
+  },
+  {
+    "year": "2026",
+    "topic": "Ancient Indian History: Second Urbanization & Monetary Economy",
+    "question": "Consider the following statements:\nI. Pali texts contain the first definite references to coins, e.g., kahapana, nikkha, kamsa, and kakanika.\nII. The literary evidence from Pali texts is corroborated by archaeological evidence of punch-marked coins from many sites, most of them made of silver.\nThe above statements have been associated with which of the following?\n1. Emergence of urban life\n2. Transition to money economy\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": "C",
+    "explanation": "Both statements describe key socio-economic markers of the 6th–5th century BCE in the middle Gangetic plains. Early Buddhist Pali canonical literature explicitly records monetary denominations like kahapana, nikkha, and kakanika, which correspond to archaeological discoveries of silver and copper punch-marked coins (PMC). Historians link this evidence directly to both the 'Second Urbanization' (growth of market towns, guilds, and specialized crafts) and the institutional transition from barter/pastoral exchange to a monetized market economy."
+  },
+  {
+    "year": "2026",
+    "topic": "Art & Architecture: Early Chalukyan & Gupta Temple Shikharas",
+    "question": "Which of the following temples has/have a Nagara-style shikhara?\n1. Malegitti Shivalaya, Badami\n2. Huchimalligudi Temple, Aihole\n3. Dashavatara Temple, Deogarh\n4. Virupaksha Temple, Pattadakal\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2",
+      "2 and 3",
+      "3 only",
+      "3 and 4"
+    ],
+    "answer": "B",
+    "explanation": "The Dashavatara Temple at Deogarh (Uttar Pradesh) is a classic Gupta-period temple with a curvilinear Nagara-style Latina/rekha-prasada shikhara. At Aihole, the Early Chalukyan Huchimalligudi temple features a curvilinear Nagara tower over its sanctum. In contrast, Malegitti Shivalaya at Badami and Virupaksha Temple at Pattadakal are quintessential Dravida-style temples featuring tiered pyramidal vimanas crowned by octagonal/domical stupikas."
+  },
+  {
+    "year": "2026",
+    "topic": "Ancient Philosophy & Religion: Jaina Cosmology & Forms of Life",
+    "question": "Among the four main forms of existence of life (gatis) recognized in Jainism, which one of the following is not included?",
+    "options": [
+      "Deva (celestial beings/gods)",
+      "Manushya (human beings)",
+      "Yaksha (demi-gods/nature spirits)",
+      "Tiryancha (animals, plants, and lower organisms)"
+    ],
+    "answer": "C",
+    "explanation": "Jain cosmology classifies the cycle of transmigration (samsara) into four distinct realms of rebirth, known as the 'Chatur-gati': 1. Deva gati (celestial/heavenly beings), 2. Manushya gati (human beings), 3. Naraki gati (hellish beings/inhabitants of naraka), and 4. Tiryancha gati (animals, plants, and microorganisms). Yakshas do not form an independent primary gati; they are categorized merely as a sub-class of celestial beings (specifically Vyantara devas)."
+  },
+  {
+    "year": "2026",
+    "topic": "Art & Culture: Cave Murals & Secular Themes",
+    "question": "The Hallisalasya painting in the Bagh Caves represents:",
+    "options": [
+      "A joyous folk dance",
+      "Buddha in meditative pose",
+      "Depiction of Shiva and Parvati",
+      "Samudramanthan (Churning of the Ocean)"
+    ],
+    "answer": "A",
+    "explanation": "The famous mural scene known as Hallisalasya, painted on the verandah connecting Caves 4 and 5 (Rang Mahal) of the Buddhist Bagh Caves in Dhar district, Madhya Pradesh, depicts a circular musical performance and joyous folk dance performed by a group of women led by a male conductor. It is celebrated by art historians as an outstanding example of secular Gupta-era narrative painting in a Buddhist monastic complex."
+  },
+  {
+    "year": "2026",
+    "topic": "Environment & Wildlife Conservation: Hoolock Gibbons",
+    "question": "With respect to the Western Hoolock Gibbons, which of the following statements is/are correct?\n1. A Sanctuary in North-east India is home to this ape species listed as Endangered in the International Union for Conservation of Nature (IUCN) Red List.\n2. They have specialized brachiation and can easily swing between trees.\n3. They possess a strong and heavy build like gorillas, yet are remarkably agile tree climbers.\nSelect the answer using the code given below:",
+    "options": [
+      "1 only",
+      "1 and 2",
+      "2 and 3",
+      "3 only"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 2 are correct. The Western Hoolock Gibbon (the only ape species found in India) is categorized as Endangered on the IUCN Red List, and the Hoollongapar Gibbon Sanctuary in Jorhat, Assam is dedicated to its conservation. Gibbons are masters of brachiation, swinging hand-over-hand through canopy branches due to their elongated arms and flexible ball-and-socket wrist joints. Statement 3 is incorrect because gibbons are 'lesser apes' characterized by slender, lightweight, tailless bodies, unlike the heavy, massive skeletal build of great apes such as gorillas."
+  },
+  {
+    "year": "2026",
+    "topic": "Environment & Governance: Research Institutions & Portals",
+    "question": "Which of the following statements in relation to NIRANTAR (National Institute for Research and Application of Natural Resources to Transform, Adapt and Build Resilience) is/are correct?\n1. Ecosystem Survey and Analysis is a vertical under this platform, the lead institute of which is Botanical Survey of India, Kolkata.\n2. Research and Management of Ecosystem Service is a vertical under this platform, the lead institute of which is Central Zoo Authority, New Delhi.\n3. Capacity Development Support is a vertical under this platform, the lead institute of which is Indian Institute of Forest Management, Bhopal.\nSelect the answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 3 are correct. Under the institutional verticals defined for environmental research and forestry management, Ecosystem Survey and Analysis is anchored by the Botanical Survey of India (BSI), Kolkata, and Capacity Development Support is led by the Indian Institute of Forest Management (IIFM), Bhopal. Statement 2 is incorrect because the lead institute designated for research and ecosystem service modeling is the Indian Council of Forestry Research and Education (ICFRE) / specialized scientific institutes, not the Central Zoo Authority."
+  },
+  {
+    "year": "2026",
+    "topic": "International Conventions & Treaties: Indian Ratification Status",
+    "question": "Which of the following international conventions have not been ratified by India?\n1. Employment Policy Convention\n2. Abolition of Forced Labour Convention\n3. International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families\n4. Geneva Convention Relative to the Protection of Civilian Persons in Time of War\n5. Convention on Reduction of Statelessness\nSelect the answer using the code given below:",
+    "options": [
+      "2 and 4",
+      "1 and 2",
+      "3 and 4 only",
+      "3, 4 and 5"
+    ],
+    "answer": "D",
+    "explanation": "India has ratified the ILO Employment Policy Convention (No. 122) in 1998 and the Abolition of Forced Labour Convention (No. 105) in 2000. India has not ratified the UN International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (1990) nor the 1961 Convention on the Reduction of Statelessness. Regarding the Geneva Conventions of 1949, while India enacted the Geneva Conventions Act of 1960, it has consistently refused to sign or ratify the 1977 Additional Protocols concerning civilian protections in armed conflict, aligning with Option D in the question framework."
+  },
+  {
+    "year": "2026",
+    "topic": "Economic Geography & Energy: Coal Reserves & Mining Basins",
+    "question": "With reference to the distribution of Gondwana and Tertiary coalfields in India, consider the following statements:\n1. Over 98% of India's total geological coal reserves belong to the Gondwana formation.\n2. Gondwana coals are primarily bituminous or sub-bituminous and have a relatively low moisture content.\n3. Tertiary coal deposits in northeastern India are characterized by low sulphur content and negligible ash.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. Gondwana coalfields (concentrated in river valleys like Damodar, Son, Mahanadi, and Godavari) constitute roughly 98–99% of India's exploitable coal reserves and are predominantly bituminous and non-coking with low moisture content and variable ash. Statement 3 is incorrect because Tertiary coals found in Assam, Meghalaya, and Nagaland have an exceptionally high sulphur content (typically 2% to 7%), making them environmentally challenging and corrosive despite their low ash content."
+  },
+  {
+    "year": "2026",
+    "topic": "Environment & Ecology: Invasive Alien Species",
+    "question": "Which of the following plants are considered invasive alien species in India?\n1. Prosopis juliflora\n2. Lantana camara\n3. Parthenium hysterophorus\n4. Senna spectabilis\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2, 3 and 4 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": "D",
+    "explanation": "All four plant species are major invasive alien species (IAS) causing severe ecological disruptions across Indian landscapes. Prosopis juliflora (Vilayati Kikar) invades arid/semi-arid regions displacing native flora. Lantana camara has colonized vast tracts of Western Ghats and Central Indian tiger habitats, choking native undergrowth. Parthenium hysterophorus (Congress grass/carrot grass) is an aggressive invasive weed notorious for suppressing native pastures and causing severe allergies. Senna spectabilis has heavily invaded the Wayanad Wildlife Sanctuary and the Nilgiri Biosphere Reserve, outcompeting native tree species."
+  },
+  {
+    "year": "2026",
+    "topic": "Indian Polity: Constitutional Provisions & Writ Jurisdiction",
+    "question": "With reference to the writ jurisdiction under the Constitution of India, consider the following statements:\n1. The writ of Mandamus cannot be issued against a private individual or body who does not perform a public duty.\n2. The writ of Quo-Warranto can be sought by any interested person, even if the person's own fundamental rights are not violated.\n3. The High Court's jurisdiction to issue writs under Article 226 is narrower than that of the Supreme Court under Article 32.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. Mandamus lies only against public authorities, statutory bodies, or inferior tribunals to compel performance of a mandatory legal duty, and does not lie against a private entity lacking a public mandate. Unlike other writs where the petitioner must have locus standi, a petition for Quo-Warranto can be moved by any citizen to challenge unauthorized occupation of a substantive public office. Statement 3 is incorrect because the writ jurisdiction of High Courts under Article 226 is wider than that of the Supreme Court under Article 32: High Courts can issue writs for both Fundamental Rights and ordinary legal rights, whereas Article 32 is restricted solely to the enforcement of Fundamental Rights."
+  },
+  {
+    "year": "2026",
+    "topic": "Physical Geography: Ocean Currents & Upwelling",
+    "question": "Consider the following statements regarding oceanic upwelling and ocean currents:\n1. Coastal upwelling occurs when wind-driven surface waters move offshore due to the Coriolis effect, allowing cold, nutrient-rich water to rise to the surface.\n2. The Benguela Current along the western coast of Southern Africa supports one of the most productive marine ecosystems in the world due to intense upwelling.\n3. Upwelling zones are generally associated with humid tropical rainforest climates on the adjacent coastal landmass.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 2 are correct. Wind blowing parallel to a coastline pushes surface waters offshore via Ekman transport, which pulls cold, deep, nutrient-laden water to the surface (coastal upwelling), fostering rich phytoplankton blooms and high fisheries productivity (as seen in the Benguela and Peru/Humboldt currents). Statement 3 is incorrect because cold ocean currents and cold upwelled waters stabilize the atmospheric boundary layer, suppress convection, and cause desiccation, giving rise to coastal fog and hyper-arid deserts (e.g., Namib and Atacama deserts) rather than humid tropical rainforests."
+  },
+  {
+    "year": "2026",
+    "topic": "Science & Technology: Biotechnology & RNA Interference (RNAi)",
+    "question": "RNA interference (RNAi) technology is increasingly being used in agriculture and medicine. Which of the following statements correctly explains its mechanism?",
+    "options": [
+      "It repairs double-stranded breaks in chromosomal DNA using homologous recombination.",
+      "It silences specific genes post-transcriptionally by degrading target messenger RNA (mRNA) or preventing its translation.",
+      "It introduces foreign genes directly into mitochondrial DNA to enhance cellular respiration.",
+      "It acts as an artificial enzyme that synthesizes functional proteins in cell-free environments."
+    ],
+    "answer": "B",
+    "explanation": "RNA interference (RNAi) is a natural cellular gene-silencing mechanism triggered by double-stranded RNA (dsRNA). Enzymes (such as Dicer) cleave dsRNA into small interfering RNAs (siRNAs), which guide the RNA-induced silencing complex (RISC) to bind with complementary messenger RNA (mRNA) molecules, inducing their cleavage or blocking translation, thereby silencing specific gene expression without altering the underlying nuclear DNA."
+  },
+  {
+    "year": "2026",
+    "topic": "Ancient & Early Medieval History: Revenue Terms & Land Grants",
+    "question": "In early medieval and ancient Indian land grant inscriptions, what did the term 'Udranga' primarily denote?",
+    "options": [
+      "A toll tax levied on river crossings and ferries",
+      "A customary share of the permanent agricultural produce paid by settled peasants",
+      "emergency war levy imposed by the king during foreign invasions",
+      "A labor tax (forced unpaid labor) exacted by village headmen"
+    ],
+    "answer": "B",
+    "explanation": "In classical Sanskrit and epigraphical records (such as Maitraka and Gupta charters), 'Udranga' denotes the primary fixed land tax or customary share of the principal agricultural harvest levied on permanent, settled tenants. It is frequently paired with 'Uparikara' (an additional or secondary impost levied on temporary/extra cultivators or peripheral farm produces)."
+  },
+  {
+    "year": "2026",
+    "topic": "Indian Polity: National Emergency & Fundamental Rights",
+    "question": "In the event of a proclamation of National Emergency under Article 352 of the Constitution of India, which of the following statements is/are correct?\n1. Article 19 is automatically suspended only when the emergency is declared on the grounds of war or external aggression, and not armed rebellion.\n2. The right to move the court for the enforcement of the Fundamental Rights guaranteed by Articles 20 and 21 cannot be suspended under any circumstance.\n3. The legislative power of Parliament automatically supersedes State legislative competence, leading to the dissolution of State Legislative Assemblies.\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "A",
+    "explanation": "Statements 1 and 2 are correct. By virtue of the 44th Constitutional Amendment Act (1978), Article 358 restricts the automatic suspension of Article 19 freedoms solely to emergencies declared on grounds of 'war' or 'external aggression', not 'armed rebellion'. Furthermore, Article 359 was amended so that the President cannot suspend the right to enforce Articles 20 and 21. Statement 3 is incorrect because State Legislative Assemblies are not dissolved during a National Emergency; rather, they remain functional, while Parliament acquires concurrent plenary power to legislate on State List subjects."
+  },
+  {
+    "year": "2026",
+    "topic": "Modern Indian History: Tribal & Peasant Uprisings",
+    "question": "Consider the following historical uprisings in colonial India:\n1. Santhal Hool\n2. Kol Mutiny\n3. Rampa Rebellion led by Alluri Sitarama Raju\n4. Munda Ulgulan led by Birsa Munda\nWhat is the correct chronological sequence of the above events starting from the earliest?",
+    "options": [
+      "2 - 1 - 4 - 3",
+      "1 - 2 - 4 - 3",
+      "2 - 1 - 3 - 4",
+      "1 - 2 - 3 - 4"
+    ],
+    "answer": "A",
+    "explanation": "The chronological sequence is: 1. Kol Mutiny (1831–1832) in Chota Nagpur under Buddho Bhagat against British revenue expansion; 2. Santhal Hool (1855–1856) in Rajmahal Hills led by Sidhu and Kanhu Murmu against mahajans and zamindars; 3. Munda Ulgulan (1899–1900) in Ranchi district led by Birsa Munda against the erosion of Khuntkatti tenure; 4. Rampa Rebellion (1922–1924) in the Madras Presidency led by Alluri Sitarama Raju against the Madras Forest Act of 1882."
+  },
+  {
+    "year": "2026",
+    "topic": "Indian Economy & Public Finance: FRBM Act & Deficit Indicators",
+    "question": "In the context of fiscal management in India, what does the 'Primary Deficit' measure?",
+    "options": [
+      "The difference between total expenditure and total receipts excluding borrowings",
+      "The fiscal deficit minus interest payments on past borrowings",
+      "The excess of revenue expenditure over revenue receipts",
+      "The gross borrowings of the Union Government minus capital disbursements"
+    ],
+    "answer": "B",
+    "explanation": "Primary Deficit is defined as the Fiscal Deficit minus Interest Payments. It indicates the government's borrowing requirement exclusively to finance expenses other than servicing accumulated sovereign debt liabilities inherited from previous financial years."
+  },
+  {
+    "year": "2026",
+    "topic": "Physical Geography & Climatology: Polar Vortex & Jet Streams",
+    "question": "With reference to the 'Polar Vortex', consider the following statements:\n1. It is a large area of low pressure and cold air surrounding the Earth's poles that strengthens in winter and weakens in summer.\n2. Sudden Stratospheric Warming (SSW) can disrupt the polar vortex, causing it to split and push Arctic air southward into mid-latitudes.\n3. It is confined entirely to the troposphere and has no interaction with stratospheric circulation.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 2 are correct. The Polar Vortex is a persistent, large-scale cyclone hovering over polar regions, strongest in winter when thermal contrast is highest. When a Sudden Stratospheric Warming (SSW) occurs, the vortex slows or buckles, spilling frigid Arctic cold waves southward across North America, Europe, or East Asia. Statement 3 is incorrect because the polar vortex exists in both the troposphere and the stratosphere, and vertical coupling between the two layers dictates its stability and surface weather impacts."
+  },
+  {
+    "year": "2026",
+    "topic": "Environment: Wetlands & Ramsar Convention Criteria",
+    "question": "Under the Ramsar Convention on Wetlands, which of the following can qualify for designation as a 'Wetland of International Importance'?\n1. Peatlands and bogs\n2. Coral reefs and marine areas with low-tide depth not exceeding six meters\n3. Human-made reservoirs and paddy fields\nSelect the correct answer using the code given below:",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": "D",
+    "explanation": "Under Article 1.1 of the Ramsar Convention, wetlands are defined broadly as 'areas of marsh, fen, peatland or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish or salt, including areas of marine water the depth of which at low tide does not exceed six metres.' Consequently, natural peatlands, shallow marine areas/coral reefs under six meters, and human-made wetlands (e.g., reservoirs, fish ponds, salt pans, and irrigated agricultural lands like rice paddies) are eligible for Ramsar designation."
   }
   ]
