@@ -23,7 +23,7 @@
     .opt-btn.selected { border-color: var(--primary); background: #e8f0fe; color: var(--primary); font-weight: 600; }
     .nav-row { display: flex; gap: 10px; margin-top: 16px; }
     .nav-row button { margin: 0; }
-    .btn-secondary { background: #f1f3f4; border: 1px solid var(--border); color: var(--text); }
+    .btn-secondary { background: #f1f3f4; border: 1px solid var(--border); color: var(--text); cursor: pointer; font-weight: 600; }
     .badge-wrap { display: flex; gap: 6px; }
     .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; background: #e8f0fe; color: var(--primary); font-size: 12px; }
     .badge-year { background: #fef7e0; color: #b06000; font-weight: 600; }
@@ -42,18 +42,23 @@
     <h2>🎯 Mock Test Setup</h2>
     <div id="loading-msg">Loading quiz questions...</div>
     <div id="setup-form" class="hidden">
-      <label>Filter by Subject / Topic:</label>
-      <select id="topic-select" onchange="onFilterChange()"><option value="ALL">All Topics</option></select>
+      <!-- 1. Year Filter First -->
+      <label>1. Filter by PYQ Year:</label>
+      <select id="year-select" onchange="onYearChange()">
+        <option value="ALL">All Years</option>
+      </select>
 
-      <label>Filter by PYQ Year:</label>
-      <select id="year-select" onchange="onFilterChange()"><option value="ALL">All Years</option></select>
+      <!-- 2. Topic Filter Cascaded -->
+      <label>2. Filter by Subject / Specific Topic:</label>
+      <select id="topic-select" onchange="onTopicChange()">
+        <option value="ALL">All Topics</option>
+      </select>
 
+      <!-- 3. Question Count Input with live bounds -->
       <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px;">
-        <label style="margin: 0;">Number of Questions:</label>
+        <label style="margin: 0;">3. Number of Questions:</label>
         <span id="available-counter" style="font-size: 12px; font-weight: 600; color: var(--primary);">Available: 0 / 0</span>
       </div>
-      
-      <!-- Number Input with dynamic min/max -->
       <input type="number" id="count-input" min="1" max="1" placeholder="Enter count">
 
       <button class="btn-primary" id="start-btn" onclick="startTest()">Start Mock Test</button>
@@ -83,7 +88,6 @@
     <h2>Test Completed! 🎉</h2>
     <div id="score-text" style="color: var(--primary); font-size: 24px; font-weight: 700; margin-bottom: 14px;"></div>
     
-    <!-- Breakdown Grid -->
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px;">
       <div class="stat-box" style="background: #e6f4ea;">
         <div class="stat-label">CORRECT</div>
@@ -99,23 +103,31 @@
       </div>
     </div>
 
-    <button class="btn-secondary" onclick="toggleReview()">Review Explanations</button>
+    <button class="btn-secondary" id="review-toggle-btn" onclick="toggleReview()">Review Explanations</button>
     <button class="btn-primary" onclick="location.reload()">Take Another Test</button>
-    <div id="review-list" class="hidden" style="margin-top: 20px;"></div>
+    
+    <!-- Explanations Container with 20-at-a-time pagination -->
+    <div id="review-section" class="hidden" style="margin-top: 20px;">
+      <div id="review-list"></div>
+      <button id="load-more-btn" class="btn-secondary hidden" style="margin-top: 14px;" onclick="renderNextReviewBatch()">Load More (Next 20)</button>
+    </div>
   </div>
 </div>
 
 <script>
   const DATA_URL = "https://raw.githubusercontent.com/UPSC-2K25/QuestionBank/refs/heads/main/questions.json";
 
-  // Scoring configuration
   const MARKS_PER_CORRECT = 2.0;
   const NEGATIVE_MARK = 0.66;
+  const REVIEW_PAGE_SIZE = 20;
 
   let allQuestions = [];
   let currentTest = [];
   let userAnswers = {};
   let currentIndex = 0;
+  
+  let reviewRenderIndex = 0;
+  let isReviewInitialized = false;
 
   async function loadData() {
     const targetUrl = DATA_URL + "?_=" + new Date().getTime();
@@ -132,44 +144,97 @@
 
   function initQuizUI() {
     if (allQuestions.length === 0) return;
-
-    const topics = [...new Set(allQuestions.map(q => q.topic).filter(Boolean))].sort();
-    const topicSelect = document.getElementById('topic-select');
-    topics.forEach(t => {
-      const opt = document.createElement('option'); opt.value = t; opt.textContent = t;
-      topicSelect.appendChild(opt);
-    });
-
-    const years = [...new Set(allQuestions.map(q => q.year).filter(Boolean))].sort().reverse();
-    const yearSelect = document.getElementById('year-select');
-    years.forEach(y => {
-      const opt = document.createElement('option'); opt.value = y; opt.textContent = y;
-      yearSelect.appendChild(opt);
-    });
-
-    onFilterChange();
+    populateYearDropdown();
+    populateTopicDropdown();
+    syncCountInput();
 
     document.getElementById('loading-msg').classList.add('hidden');
     document.getElementById('setup-form').classList.remove('hidden');
   }
 
-  function getFilteredQuestions() {
-    const selectedTopic = document.getElementById('topic-select').value;
+  // Populate Year Dropdown based on all questions or filtered by current topic
+  function populateYearDropdown() {
+    const yearSelect = document.getElementById('year-select');
+    const selectedTopic = document.getElementById('topic-select')?.value || "ALL";
+    const currentVal = yearSelect.value || "ALL";
+
+    let pool = allQuestions;
+    if (selectedTopic !== "ALL") {
+      pool = pool.filter(q => q.topic === selectedTopic);
+    }
+
+    const availableYears = [...new Set(pool.map(q => q.year).filter(Boolean))].sort().reverse();
+
+    yearSelect.innerHTML = '<option value="ALL">All Years</option>';
+    availableYears.forEach(y => {
+      const opt = document.createElement('option');
+      opt.value = y;
+      opt.textContent = y;
+      yearSelect.appendChild(opt);
+    });
+
+    if (availableYears.map(String).includes(String(currentVal))) {
+      yearSelect.value = currentVal;
+    } else {
+      yearSelect.value = "ALL";
+    }
+  }
+
+  // Populate Topic Dropdown based on all questions or filtered by selected year
+  function populateTopicDropdown() {
+    const topicSelect = document.getElementById('topic-select');
     const selectedYear = document.getElementById('year-select').value;
+    const currentVal = topicSelect.value || "ALL";
+
+    let pool = allQuestions;
+    if (selectedYear !== "ALL") {
+      pool = pool.filter(q => String(q.year) === selectedYear);
+    }
+
+    const availableTopics = [...new Set(pool.map(q => q.topic).filter(Boolean))].sort();
+
+    topicSelect.innerHTML = '<option value="ALL">All Topics</option>';
+    availableTopics.forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t;
+      opt.textContent = t;
+      topicSelect.appendChild(opt);
+    });
+
+    if (availableTopics.includes(currentVal)) {
+      topicSelect.value = currentVal;
+    } else {
+      topicSelect.value = "ALL";
+    }
+  }
+
+  function onYearChange() {
+    // When Year changes, immediately filter the available topics to remove irrelevancies
+    populateTopicDropdown();
+    syncCountInput();
+  }
+
+  function onTopicChange() {
+    syncCountInput();
+  }
+
+  function getFilteredQuestions() {
+    const selectedYear = document.getElementById('year-select').value;
+    const selectedTopic = document.getElementById('topic-select').value;
 
     return allQuestions.filter(q => {
-      return (selectedTopic === "ALL" || q.topic === selectedTopic) &&
-             (selectedYear === "ALL" || String(q.year) === selectedYear);
+      return (selectedYear === "ALL" || String(q.year) === selectedYear) &&
+             (selectedTopic === "ALL" || q.topic === selectedTopic);
     });
   }
 
-  function onFilterChange() {
+  function syncCountInput() {
     const filtered = getFilteredQuestions();
     const countInput = document.getElementById('count-input');
     const counterBadge = document.getElementById('available-counter');
     const startBtn = document.getElementById('start-btn');
-
     const totalAvailable = filtered.length;
+
     counterBadge.textContent = `Available: ${totalAvailable} / ${allQuestions.length}`;
 
     if (totalAvailable === 0) {
@@ -183,8 +248,7 @@
       countInput.disabled = false;
       countInput.min = 1;
       countInput.max = totalAvailable;
-      
-      // Default the input to totalAvailable if empty or if previous value exceeds the new maximum
+
       if (!countInput.value || parseInt(countInput.value) > totalAvailable || parseInt(countInput.value) < 1) {
         countInput.value = totalAvailable;
       }
@@ -200,22 +264,24 @@
     const maxAllowed = filtered.length;
 
     if (isNaN(count) || count < 1) {
-      alert("Please enter a valid number of questions (minimum 1).");
+      alert("Please enter a valid count (minimum 1).");
       countInput.focus();
       return;
     }
 
     if (count > maxAllowed) {
-      alert(`Entered count (${count}) exceeds maximum available questions (${maxAllowed}) for this filter.`);
+      alert(`Entered count (${count}) exceeds available questions (${maxAllowed}) for this selection.`);
       countInput.value = maxAllowed;
       countInput.focus();
       return;
     }
 
-    // Shuffle and pick requested number
+    // Shuffle and pick subset
     currentTest = filtered.sort(() => Math.random() - 0.5).slice(0, count);
     userAnswers = {};
     currentIndex = 0;
+    reviewRenderIndex = 0;
+    isReviewInitialized = false;
 
     document.getElementById('setup-screen').classList.add('hidden');
     document.getElementById('quiz-screen').classList.remove('hidden');
@@ -297,9 +363,41 @@
     document.getElementById('stat-wrong').textContent = wrongCount;
     document.getElementById('stat-unattempted').textContent = unattemptedCount;
 
+    // Reset review container state
+    document.getElementById('review-section').classList.add('hidden');
+    document.getElementById('review-list').innerHTML = "";
+    document.getElementById('review-toggle-btn').textContent = "Review Explanations";
+    reviewRenderIndex = 0;
+    isReviewInitialized = false;
+  }
+
+  function toggleReview() {
+    const reviewSec = document.getElementById('review-section');
+    const toggleBtn = document.getElementById('review-toggle-btn');
+
+    if (reviewSec.classList.contains('hidden')) {
+      reviewSec.classList.remove('hidden');
+      toggleBtn.textContent = "Hide Explanations";
+      if (!isReviewInitialized) {
+        renderNextReviewBatch();
+        isReviewInitialized = true;
+      }
+    } else {
+      reviewSec.classList.add('hidden');
+      toggleBtn.textContent = "Review Explanations";
+    }
+  }
+
+  // Paginates DOM creation in chunks of 20 to prevent lag and mobile crashes
+  function renderNextReviewBatch() {
     const reviewBox = document.getElementById('review-list');
-    reviewBox.innerHTML = "";
-    currentTest.forEach((q, idx) => {
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const nextLimit = Math.min(reviewRenderIndex + REVIEW_PAGE_SIZE, currentTest.length);
+
+    const fragment = document.createDocumentFragment();
+
+    for (let idx = reviewRenderIndex; idx < nextLimit; idx++) {
+      const q = currentTest[idx];
       const choice = userAnswers[idx];
       const isAttempted = !!choice;
       const isCorrect = choice === q.answer;
@@ -315,6 +413,8 @@
 
       const item = document.createElement('div');
       item.style.marginBottom = "18px";
+      item.style.borderBottom = "1px solid var(--border)";
+      item.style.paddingBottom = "12px";
       item.innerHTML = `
         <div style="font-weight:600; font-size:14px;">${idx + 1}. [${q.year ? q.year + ' - ' : ''}${q.topic}] ${q.question}</div>
         <div style="font-size:13px; margin-top:5px;">
@@ -322,12 +422,19 @@
         </div>
         <div class="exp-box"><strong>Explanation:</strong> ${q.explanation}</div>
       `;
-      reviewBox.appendChild(item);
-    });
-  }
+      fragment.appendChild(item);
+    }
 
-  function toggleReview() { 
-    document.getElementById('review-list').classList.toggle('hidden'); 
+    reviewBox.appendChild(fragment);
+    reviewRenderIndex = nextLimit;
+
+    // Show/hide Load More button depending on remaining questions
+    if (reviewRenderIndex < currentTest.length) {
+      loadMoreBtn.classList.remove('hidden');
+      loadMoreBtn.textContent = `Load More (${reviewRenderIndex} / ${currentTest.length} shown)`;
+    } else {
+      loadMoreBtn.classList.add('hidden');
+    }
   }
 
   loadData();
