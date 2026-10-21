@@ -48,10 +48,10 @@
         <option value="ALL">All Years</option>
       </select>
 
-      <!-- 2. Topic Filter Cascaded -->
-      <label>2. Filter by Subject / Specific Topic:</label>
-      <select id="topic-select" onchange="onTopicChange()">
-        <option value="ALL">All Topics</option>
+      <!-- 2. Subject Filter Cascaded -->
+      <label>2. Filter by Subject:</label>
+      <select id="subject-select" onchange="onSubjectChange()">
+        <option value="ALL">All Subjects</option>
       </select>
 
       <!-- 3. Question Count Input with live bounds -->
@@ -71,7 +71,7 @@
       <span id="q-counter">Q 1/5</span>
       <div class="badge-wrap">
         <span id="year-badge" class="badge badge-year">Year</span>
-        <span id="topic-badge" class="badge">Topic</span>
+        <span id="subject-badge" class="badge">Subject</span>
       </div>
     </div>
     <div id="q-text" class="q-text"></div>
@@ -145,22 +145,22 @@
   function initQuizUI() {
     if (allQuestions.length === 0) return;
     populateYearDropdown();
-    populateTopicDropdown();
+    populateSubjectDropdown();
     syncCountInput();
 
     document.getElementById('loading-msg').classList.add('hidden');
     document.getElementById('setup-form').classList.remove('hidden');
   }
 
-  // Populate Year Dropdown based on all questions or filtered by current topic
+  // Populate Year Dropdown based on all questions or filtered by current subject
   function populateYearDropdown() {
     const yearSelect = document.getElementById('year-select');
-    const selectedTopic = document.getElementById('topic-select')?.value || "ALL";
+    const selectedSubject = document.getElementById('subject-select')?.value || "ALL";
     const currentVal = yearSelect.value || "ALL";
 
     let pool = allQuestions;
-    if (selectedTopic !== "ALL") {
-      pool = pool.filter(q => q.topic === selectedTopic);
+    if (selectedSubject !== "ALL") {
+      pool = pool.filter(q => (q.subject || q.topic) === selectedSubject);
     }
 
     const availableYears = [...new Set(pool.map(q => q.year).filter(Boolean))].sort().reverse();
@@ -170,274 +170,4 @@
       const opt = document.createElement('option');
       opt.value = y;
       opt.textContent = y;
-      yearSelect.appendChild(opt);
-    });
-
-    if (availableYears.map(String).includes(String(currentVal))) {
-      yearSelect.value = currentVal;
-    } else {
-      yearSelect.value = "ALL";
-    }
-  }
-
-  // Populate Topic Dropdown based on all questions or filtered by selected year
-  function populateTopicDropdown() {
-    const topicSelect = document.getElementById('topic-select');
-    const selectedYear = document.getElementById('year-select').value;
-    const currentVal = topicSelect.value || "ALL";
-
-    let pool = allQuestions;
-    if (selectedYear !== "ALL") {
-      pool = pool.filter(q => String(q.year) === selectedYear);
-    }
-
-    const availableTopics = [...new Set(pool.map(q => q.topic).filter(Boolean))].sort();
-
-    topicSelect.innerHTML = '<option value="ALL">All Topics</option>';
-    availableTopics.forEach(t => {
-      const opt = document.createElement('option');
-      opt.value = t;
-      opt.textContent = t;
-      topicSelect.appendChild(opt);
-    });
-
-    if (availableTopics.includes(currentVal)) {
-      topicSelect.value = currentVal;
-    } else {
-      topicSelect.value = "ALL";
-    }
-  }
-
-  function onYearChange() {
-    // When Year changes, immediately filter the available topics to remove irrelevancies
-    populateTopicDropdown();
-    syncCountInput();
-  }
-
-  function onTopicChange() {
-    syncCountInput();
-  }
-
-  function getFilteredQuestions() {
-    const selectedYear = document.getElementById('year-select').value;
-    const selectedTopic = document.getElementById('topic-select').value;
-
-    return allQuestions.filter(q => {
-      return (selectedYear === "ALL" || String(q.year) === selectedYear) &&
-             (selectedTopic === "ALL" || q.topic === selectedTopic);
-    });
-  }
-
-  function syncCountInput() {
-    const filtered = getFilteredQuestions();
-    const countInput = document.getElementById('count-input');
-    const counterBadge = document.getElementById('available-counter');
-    const startBtn = document.getElementById('start-btn');
-    const totalAvailable = filtered.length;
-
-    counterBadge.textContent = `Available: ${totalAvailable} / ${allQuestions.length}`;
-
-    if (totalAvailable === 0) {
-      countInput.value = 0;
-      countInput.min = 0;
-      countInput.max = 0;
-      countInput.disabled = true;
-      startBtn.disabled = true;
-      startBtn.style.opacity = "0.5";
-    } else {
-      countInput.disabled = false;
-      countInput.min = 1;
-      countInput.max = totalAvailable;
-
-      if (!countInput.value || parseInt(countInput.value) > totalAvailable || parseInt(countInput.value) < 1) {
-        countInput.value = totalAvailable;
-      }
-      startBtn.disabled = false;
-      startBtn.style.opacity = "1";
-    }
-  }
-
-  function startTest() {
-    const filtered = getFilteredQuestions();
-    const countInput = document.getElementById('count-input');
-    const count = parseInt(countInput.value, 10);
-    const maxAllowed = filtered.length;
-
-    if (isNaN(count) || count < 1) {
-      alert("Please enter a valid count (minimum 1).");
-      countInput.focus();
-      return;
-    }
-
-    if (count > maxAllowed) {
-      alert(`Entered count (${count}) exceeds available questions (${maxAllowed}) for this selection.`);
-      countInput.value = maxAllowed;
-      countInput.focus();
-      return;
-    }
-
-    // Shuffle and pick subset
-    currentTest = filtered.sort(() => Math.random() - 0.5).slice(0, count);
-    userAnswers = {};
-    currentIndex = 0;
-    reviewRenderIndex = 0;
-    isReviewInitialized = false;
-
-    document.getElementById('setup-screen').classList.add('hidden');
-    document.getElementById('quiz-screen').classList.remove('hidden');
-    renderQuestion();
-  }
-
-  function renderQuestion() {
-    const q = currentTest[currentIndex];
-    document.getElementById('q-counter').textContent = `Q ${currentIndex + 1} / ${currentTest.length}`;
-    document.getElementById('topic-badge').textContent = q.topic;
-    
-    const yearBadge = document.getElementById('year-badge');
-    if (q.year) { 
-      yearBadge.textContent = q.year; 
-      yearBadge.style.display = "inline-block"; 
-    } else { 
-      yearBadge.style.display = "none"; 
-    }
-
-    document.getElementById('q-text').textContent = q.question;
-    const optContainer = document.getElementById('options-box');
-    optContainer.innerHTML = "";
-
-    ["A", "B", "C", "D"].forEach((letter, i) => {
-      const btn = document.createElement('button');
-      btn.className = "opt-btn" + (userAnswers[currentIndex] === letter ? " selected" : "");
-      btn.innerHTML = `<strong>${letter}.</strong> ${q.options[i] || 'N/A'}`;
-      btn.onclick = () => { userAnswers[currentIndex] = letter; renderQuestion(); };
-      optContainer.appendChild(btn);
-    });
-
-    document.getElementById('prev-btn').style.visibility = currentIndex === 0 ? "hidden" : "visible";
-    document.getElementById('next-btn').textContent = (currentIndex === currentTest.length - 1) ? "Submit Test" : "Next";
-  }
-
-  function nextQuestion() { 
-    if (currentIndex === currentTest.length - 1) { 
-      finishTest(); 
-    } else { 
-      currentIndex++; 
-      renderQuestion(); 
-    } 
-  }
-
-  function prevQuestion() { 
-    if (currentIndex > 0) { 
-      currentIndex--; 
-      renderQuestion(); 
-    } 
-  }
-
-  function finishTest() {
-    let correctCount = 0;
-    let wrongCount = 0;
-    let unattemptedCount = 0;
-
-    currentTest.forEach((q, idx) => {
-      const choice = userAnswers[idx];
-      if (!choice) {
-        unattemptedCount++;
-      } else if (choice === q.answer) {
-        correctCount++;
-      } else {
-        wrongCount++;
-      }
-    });
-
-    const netMarks = (correctCount * MARKS_PER_CORRECT) - (wrongCount * NEGATIVE_MARK);
-    const maxMarks = currentTest.length * MARKS_PER_CORRECT;
-
-    document.getElementById('quiz-screen').classList.add('hidden');
-    document.getElementById('result-screen').classList.remove('hidden');
-
-    document.getElementById('score-text').innerHTML = `
-      Marks: ${netMarks.toFixed(2)} <span style="font-size: 15px; color: var(--text-sub); font-weight: normal;">/ ${maxMarks.toFixed(2)}</span>
-    `;
-
-    document.getElementById('stat-correct').textContent = correctCount;
-    document.getElementById('stat-wrong').textContent = wrongCount;
-    document.getElementById('stat-unattempted').textContent = unattemptedCount;
-
-    // Reset review container state
-    document.getElementById('review-section').classList.add('hidden');
-    document.getElementById('review-list').innerHTML = "";
-    document.getElementById('review-toggle-btn').textContent = "Review Explanations";
-    reviewRenderIndex = 0;
-    isReviewInitialized = false;
-  }
-
-  function toggleReview() {
-    const reviewSec = document.getElementById('review-section');
-    const toggleBtn = document.getElementById('review-toggle-btn');
-
-    if (reviewSec.classList.contains('hidden')) {
-      reviewSec.classList.remove('hidden');
-      toggleBtn.textContent = "Hide Explanations";
-      if (!isReviewInitialized) {
-        renderNextReviewBatch();
-        isReviewInitialized = true;
-      }
-    } else {
-      reviewSec.classList.add('hidden');
-      toggleBtn.textContent = "Review Explanations";
-    }
-  }
-
-  // Paginates DOM creation in chunks of 20 to prevent lag and mobile crashes
-  function renderNextReviewBatch() {
-    const reviewBox = document.getElementById('review-list');
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    const nextLimit = Math.min(reviewRenderIndex + REVIEW_PAGE_SIZE, currentTest.length);
-
-    const fragment = document.createDocumentFragment();
-
-    for (let idx = reviewRenderIndex; idx < nextLimit; idx++) {
-      const q = currentTest[idx];
-      const choice = userAnswers[idx];
-      const isAttempted = !!choice;
-      const isCorrect = choice === q.answer;
-
-      let statusBadge = "";
-      if (!isAttempted) {
-        statusBadge = '<span style="color: var(--text-sub); font-weight: bold;">Unattempted (0.00)</span>';
-      } else if (isCorrect) {
-        statusBadge = `<span style="color: var(--success); font-weight: bold;">${choice} (+${MARKS_PER_CORRECT.toFixed(2)})</span>`;
-      } else {
-        statusBadge = `<span style="color: var(--danger); font-weight: bold;">${choice} (-${NEGATIVE_MARK.toFixed(2)})</span>`;
-      }
-
-      const item = document.createElement('div');
-      item.style.marginBottom = "18px";
-      item.style.borderBottom = "1px solid var(--border)";
-      item.style.paddingBottom = "12px";
-      item.innerHTML = `
-        <div style="font-weight:600; font-size:14px;">${idx + 1}. [${q.year ? q.year + ' - ' : ''}${q.topic}] ${q.question}</div>
-        <div style="font-size:13px; margin-top:5px;">
-          Your answer: ${statusBadge} | Correct: <strong style="color:var(--success);">${q.answer}</strong>
-        </div>
-        <div class="exp-box"><strong>Explanation:</strong> ${q.explanation}</div>
-      `;
-      fragment.appendChild(item);
-    }
-
-    reviewBox.appendChild(fragment);
-    reviewRenderIndex = nextLimit;
-
-    // Show/hide Load More button depending on remaining questions
-    if (reviewRenderIndex < currentTest.length) {
-      loadMoreBtn.classList.remove('hidden');
-      loadMoreBtn.textContent = `Load More (${reviewRenderIndex} / ${currentTest.length} shown)`;
-    } else {
-      loadMoreBtn.classList.add('hidden');
-    }
-  }
-
-  loadData();
-</script>
-</body>
-</html>
+      yearSelect.appendChild(
