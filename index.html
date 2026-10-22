@@ -33,18 +33,6 @@
     .stat-box { padding: 10px; border-radius: 8px; text-align: center; }
     .stat-label { font-size: 12px; color: var(--text-sub); font-weight: 600; margin-bottom: 4px; }
     .stat-val { font-size: 20px; font-weight: 700; }
-
-    /* Dropdown Checklist Styles */
-    .dropdown-check { position: relative; margin-top: 6px; width: 100%; }
-    .dropdown-check summary { list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 12px; border-radius: 8px; border: 1px solid var(--border); background: #fff; cursor: pointer; font-size: 15px; user-select: none; }
-    .dropdown-check summary::-webkit-details-marker { display: none; }
-    .dropdown-check summary::after { content: "▼"; font-size: 10px; color: var(--text-sub); }
-    .dropdown-check[open] summary::after { content: "▲"; }
-    .dropdown-menu { position: absolute; z-index: 10; width: 100%; max-height: 220px; overflow-y: auto; background: #fff; border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-top: 4px; padding: 8px 12px; }
-    .menu-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-bottom: 6px; }
-    .menu-header button { width: auto; padding: 2px 8px; margin: 0; font-size: 12px; border: none; background: #e8f0fe; color: var(--primary); border-radius: 4px; cursor: pointer; font-weight: 600; }
-    .check-item { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; cursor: pointer; user-select: none; }
-    .check-item input[type="checkbox"] { width: auto; margin: 0; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -55,52 +43,35 @@
     <h2>🎯 Mock Test Setup</h2>
     <div id="loading-msg">Loading quiz questions...</div>
     <div id="setup-form" class="hidden">
-      
-      <!-- 1. Year Dropdown Checklist -->
-      <label>1. Select Years:</label>
-      <details id="year-dropdown" class="dropdown-check">
-        <summary id="year-summary">All Years Selected</summary>
-        <div class="dropdown-menu">
-          <div class="menu-header">
-            <span style="font-size: 12px; font-weight: 600; color: var(--text-sub);">Filter Years</span>
-            <div style="display: flex; gap: 6px;">
-              <button type="button" onclick="toggleGroup('year-options', true)">All</button>
-              <button type="button" onclick="toggleGroup('year-options', false)">Clear</button>
-            </div>
-          </div>
-          <div id="year-options"></div>
-        </div>
-      </details>
+      <!-- 1. Year Preset Filter Dropdown -->
+      <label>1. Select PYQ Range:</label>
+      <select id="year-select" onchange="onYearChange()">
+        <option value="ALL">All</option>
+        <option value="CURRENT">Current</option>
+        <option value="LAST_5">Last 5Yrs</option>
+        <option value="LAST_10">Last 10Yrs</option>
+        <option value="LAST_15">Last 15Yrs</option>
+      </select>
 
-      <!-- 2. Subject Dropdown Checklist -->
-      <label>2. Select Subjects:</label>
-      <details id="subject-dropdown" class="dropdown-check">
-        <summary id="subject-summary">All Subjects Selected</summary>
-        <div class="dropdown-menu">
-          <div class="menu-header">
-            <span style="font-size: 12px; font-weight: 600; color: var(--text-sub);">Filter Subjects</span>
-            <div style="display: flex; gap: 6px;">
-              <button type="button" onclick="toggleGroup('subject-options', true)">All</button>
-              <button type="button" onclick="toggleGroup('subject-options', false)">Clear</button>
-            </div>
-          </div>
-          <div id="subject-options"></div>
-        </div>
-      </details>
+      <!-- 2. Subject Filter Dropdown Cascaded -->
+      <label>2. Filter by Subject:</label>
+      <select id="subject-select" onchange="onSubjectChange()">
+        <option value="ALL">All Subjects</option>
+      </select>
 
-      <!-- 3. Question Count Input with live bounds -->
+      <!-- 3. Question Count Input -->
       <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px;">
         <label style="margin: 0;">3. Number of Questions:</label>
         <span id="available-counter" style="font-size: 12px; font-weight: 600; color: var(--primary);">Available: 0 / 0</span>
       </div>
       <input type="number" id="count-input" min="1" max="1" placeholder="Enter count">
 
-      <!-- 4. Timer Select -->
+      <!-- 4. Timer Option Dropdown -->
       <label>4. Timer Mode:</label>
       <select id="timer-select">
-        <option value="standard">Standard Exam Pace (72 sec / question)</option>
-        <option value="speed">Fast Pace (45 sec / question)</option>
-        <option value="none">No Timer (Untimed Practice)</option>
+        <option value="standard">standard 72spq</option>
+        <option value="speed">quick 45spq</option>
+        <option value="none">no timer</option>
       </select>
 
       <button class="btn-primary" id="start-btn" onclick="startTest()">Start Mock Test</button>
@@ -171,19 +142,8 @@
   let reviewRenderIndex = 0;
   let isReviewInitialized = false;
 
-  // Realtime Timer variables
   let timerInterval = null;
   let timeRemaining = 0;
-
-  // Auto-close dropdowns when clicking outside
-  document.addEventListener('click', (e) => {
-    ['year-dropdown', 'subject-dropdown'].forEach(id => {
-      const drop = document.getElementById(id);
-      if (drop && drop.open && !drop.contains(e.target)) {
-        drop.removeAttribute('open');
-      }
-    });
-  });
 
   async function loadData() {
     const targetUrl = DATA_URL + "?_=" + new Date().getTime();
@@ -200,97 +160,92 @@
 
   function initQuizUI() {
     if (allQuestions.length === 0) return;
-    buildYearOptions();
-    buildSubjectOptions();
-    syncFilters();
+    populateSubjectDropdown();
+    syncCountInput();
 
     document.getElementById('loading-msg').classList.add('hidden');
     document.getElementById('setup-form').classList.remove('hidden');
   }
 
-  function buildYearOptions() {
-    const container = document.getElementById('year-options');
-    const availableYears = [...new Set(allQuestions.map(q => q.year).filter(Boolean))].sort().reverse();
-
-    container.innerHTML = "";
-    availableYears.forEach(y => {
-      container.innerHTML += `
-        <label class="check-item">
-          <input type="checkbox" value="${y}" onchange="syncFilters()" checked> ${y}
-        </label>
-      `;
-    });
+  function getAvailableYearsSorted() {
+    return [...new Set(allQuestions.map(q => Number(q.year)).filter(Boolean))].sort((a, b) => b - a);
   }
 
-  function buildSubjectOptions() {
-    const container = document.getElementById('subject-options');
-    const availableSubjects = [...new Set(allQuestions.map(q => q.subject || q.topic).filter(Boolean))].sort();
+  function checkYearMatch(qYear, filterType) {
+    if (filterType === "ALL") return true;
+    const sortedYears = getAvailableYearsSorted();
+    if (sortedYears.length === 0) return true;
 
-    container.innerHTML = "";
+    const maxYear = sortedYears[0];
+    const yr = Number(qYear);
+
+    if (filterType === "CURRENT") {
+      return yr === maxYear;
+    }
+    if (filterType === "LAST_5") {
+      const allowed = sortedYears.slice(0, 5);
+      return allowed.includes(yr);
+    }
+    if (filterType === "LAST_10") {
+      const allowed = sortedYears.slice(0, 10);
+      return allowed.includes(yr);
+    }
+    if (filterType === "LAST_15") {
+      const allowed = sortedYears.slice(0, 15);
+      return allowed.includes(yr);
+    }
+    return true;
+  }
+
+  function populateSubjectDropdown() {
+    const subjectSelect = document.getElementById('subject-select');
+    const selectedRange = document.getElementById('year-select').value;
+    const currentVal = subjectSelect.value || "ALL";
+
+    let pool = allQuestions;
+    if (selectedRange !== "ALL") {
+      pool = pool.filter(q => checkYearMatch(q.year, selectedRange));
+    }
+
+    const availableSubjects = [...new Set(pool.map(q => q.subject || q.topic).filter(Boolean))].sort();
+
+    subjectSelect.innerHTML = '<option value="ALL">All Subjects</option>';
     availableSubjects.forEach(s => {
-      container.innerHTML += `
-        <label class="check-item">
-          <input type="checkbox" value="${s}" onchange="syncFilters()" checked> ${s}
-        </label>
-      `;
+      const opt = document.createElement('option');
+      opt.value = s;
+      opt.textContent = s;
+      subjectSelect.appendChild(opt);
     });
-  }
 
-  function toggleGroup(containerId, checkState) {
-    const boxes = document.querySelectorAll(`#${containerId} input[type="checkbox"]`);
-    boxes.forEach(cb => cb.checked = checkState);
-    syncFilters();
-  }
-
-  function getCheckedValues(containerId) {
-    const boxes = document.querySelectorAll(`#${containerId} input[type="checkbox"]:checked`);
-    return Array.from(boxes).map(cb => cb.value);
-  }
-
-  function updateDropdownSummaries() {
-    const selectedYears = getCheckedValues('year-options');
-    const totalYears = document.querySelectorAll('#year-options input[type="checkbox"]').length;
-    const yearSummary = document.getElementById('year-summary');
-
-    if (selectedYears.length === totalYears) {
-      yearSummary.textContent = `All Years (${totalYears})`;
-    } else if (selectedYears.length === 0) {
-      yearSummary.textContent = `None Selected`;
-    } else if (selectedYears.length <= 2) {
-      yearSummary.textContent = selectedYears.join(', ');
+    if (availableSubjects.includes(currentVal)) {
+      subjectSelect.value = currentVal;
     } else {
-      yearSummary.textContent = `${selectedYears.length} Years Selected`;
+      subjectSelect.value = "ALL";
     }
+  }
 
-    const selectedSubjects = getCheckedValues('subject-options');
-    const totalSubjects = document.querySelectorAll('#subject-options input[type="checkbox"]').length;
-    const subjectSummary = document.getElementById('subject-summary');
+  function onYearChange() {
+    populateSubjectDropdown();
+    syncCountInput();
+  }
 
-    if (selectedSubjects.length === totalSubjects) {
-      subjectSummary.textContent = `All Subjects (${totalSubjects})`;
-    } else if (selectedSubjects.length === 0) {
-      subjectSummary.textContent = `None Selected`;
-    } else if (selectedSubjects.length <= 2) {
-      subjectSummary.textContent = selectedSubjects.join(', ');
-    } else {
-      subjectSummary.textContent = `${selectedSubjects.length} Subjects Selected`;
-    }
+  function onSubjectChange() {
+    syncCountInput();
   }
 
   function getFilteredQuestions() {
-    const selectedYears = getCheckedValues('year-options');
-    const selectedSubjects = getCheckedValues('subject-options');
+    const selectedRange = document.getElementById('year-select').value;
+    const selectedSubject = document.getElementById('subject-select').value;
 
     return allQuestions.filter(q => {
-      const yearMatch = !q.year || selectedYears.includes(String(q.year));
-      const subjectMatch = selectedSubjects.includes(q.subject || q.topic);
+      const itemSubject = q.subject || q.topic;
+      const yearMatch = checkYearMatch(q.year, selectedRange);
+      const subjectMatch = (selectedSubject === "ALL" || itemSubject === selectedSubject);
       return yearMatch && subjectMatch;
     });
   }
 
-  function syncFilters() {
-    updateDropdownSummaries();
-
+  function syncCountInput() {
     const filtered = getFilteredQuestions();
     const countInput = document.getElementById('count-input');
     const counterBadge = document.getElementById('available-counter');
@@ -374,10 +329,9 @@
     reviewRenderIndex = 0;
     isReviewInitialized = false;
 
-    // Timer calculation
     const timerMode = document.getElementById('timer-select').value;
     let totalSeconds = 0;
-    if (timerMode === "standard") totalSeconds = count * 72; // ~1.2 min per question
+    if (timerMode === "standard") totalSeconds = count * 72;
     if (timerMode === "speed") totalSeconds = count * 45;
 
     startTimer(totalSeconds);
