@@ -1038,5 +1038,525 @@
     ],
     "answer": "D",
     "explanation": "Under Article 1.1 of the Ramsar Convention, wetlands are defined broadly as 'areas of marsh, fen, peatland or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish or salt, including areas of marine water the depth of which at low tide does not exceed six metres.' Consequently, natural peatlands, shallow marine areas/coral reefs under six meters, and human-made wetlands (e.g., reservoirs, fish ponds, salt pans, and irrigated agricultural lands like rice paddies) are eligible for Ramsar designation."
+  },
+  {
+    "year": 2023,
+    "subject": "Ancient History & Art and Culture",
+    "question": "In which one of the following regions was Dhanyakataka, which flourished as a prominent Buddhist centre under the Mahasanghikas, located?",
+    "options": [
+      "Andhra",
+      "Gandhara",
+      "Kalinga",
+      "Magadha"
+    ],
+    "answer": "A",
+    "explanation": "Dhanyakataka (modern-day Dharanikota/Amaravati in Guntur district, Andhra Pradesh) was a prominent Buddhist site and flourished under the patronage of the Satavahanas and later dynasties as a major centre of the Mahasanghika school."
+  },
+  {
+    "year": 2023,
+    "subject": "Ancient History & Art and Culture",
+    "question": "With reference to ancient India, consider the following statements:\n1. The concept of Stupa is Buddhist in origin.\n2. Stupa was generally a repository of relics.\n3. Stupa was a votive and commemorative structure in Buddhist tradition.\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "B",
+    "explanation": "Statement 1 is incorrect: The concept of the stupa predates Buddhism; funerary mounds were constructed in Vedic/pre-Buddhist times (Rigveda mentions 'stupa' in connection with fire mounds), though Buddhism popularized and architecturalized it. Statement 2 is correct: Stupas were primarily repositories of the bodily relics (saririka) or belongings (paribhogika) of the Buddha or revered monks. Statement 3 is correct: Many stupas were built as votive offerings by devotees or to commemorate significant events in the life of the Buddha or disciples. Hence, only two statements are correct."
+  },
+  {
+    "year": 2023,
+    "subject": "Ancient History",
+    "question": "With reference to ancient South India, Korkai, Poompuhar and Muchiri were well known as",
+    "options": [
+      "capital cities",
+      "ports",
+      "centres of iron-and-steel making",
+      "shrines of Jain Tirthankaras"
+    ],
+    "answer": "B",
+    "explanation": "Korkai (Pandya port renowned for pearl fisheries), Poompuhar/Kaveripattinam (major Early Chola seaport on the Coromandel coast), and Muchiri/Muziris (famous Chera seaport on the Malabar coast vital for Indo-Roman pepper trade) were prominent ancient trading ports."
+  },
+  {
+    "year": 2023,
+    "subject": "Ancient History",
+    "question": "Which one of the following explains the practice of 'Vattakirutal' as mentioned in Sangam poems?",
+    "options": [
+      "Kings employing women bodyguards",
+      "Learned persons assembling in royal courts to discuss religious and philosophical matters",
+      "Young girls keeping watch over agricultural fields and driving away birds and animals",
+      "A king defeated in a battle committing ritual suicide by starving himself to death"
+    ],
+    "answer": "D",
+    "explanation": "In Sangam tradition, 'Vattakirutal' refers to the ritual suicide undertaken by a defeated king facing north (fasting unto death) to wipe away the disgrace of defeat or wounding in battle."
+  },
+  {
+    "year": 2023,
+    "subject": "Medieval History",
+    "question": "Consider the following dynasties:\n1. Hoysala\n2. Gahadavala\n3. Kakatiya\n4. Yadava\nHow many of the above dynasties established their kingdoms in early eighth century AD?",
+    "options": [
+      "Only one",
+      "Only two",
+      "Only three",
+      "None"
+    ],
+    "answer": "D",
+    "explanation": "None of these dynasties established kingdoms in the early 8th century AD. The Gahadavalas of Kannauj, Hoysalas of Dvarasamudra, Kakatiyas of Warangal, and Yadavas (Seunas) of Devagiri all emerged as independent kingdom-builders later, primarily during the 11th and 12th centuries AD."
+  },
+  {
+    "year": 2023,
+    "subject": "Ancient & Medieval History (Literature)",
+    "question": "With reference to ancient Indian History, consider the following pairs:\nLiterary work : Author\n1. Devichandragupta : Bilhana\n2. Hammira-Mahakavya : Nayachandra Suri\n3. Milinda-panha : Nagarjuna\n4. Nitivakyamrita : Somadeva Suri\nHow many of the above pairs are correctly matched?",
+    "options": [
+      "Only one",
+      "Only two",
+      "Only three",
+      "All four"
+    ],
+    "answer": "B",
+    "explanation": "Pair 1 is incorrectly matched: Devichandraguptam was composed by Vishakhadatta (Bilhana wrote Vikramankadevacharita). Pair 2 is correctly matched: Hammira-Mahakavya was composed by the 15th-century Jain scholar Nayachandra Suri. Pair 3 is incorrectly matched: Milinda-panha contains dialogue between King Menander I and Buddhist monk Nagasena (not Nagarjuna). Pair 4 is correctly matched: Nitivakyamrita was written by Somadeva Suri. Thus, only two pairs are correctly matched."
+  },
+  {
+    "year": 2023,
+    "subject": "Ancient History & Philosophy",
+    "question": "\"Souls are not only the property of animal and plant life, but also of rocks, running water and many other natural objects not looked on as living by other religious sects.\"\nThe above statement reflects one of the core beliefs of which one of the following religious sects of ancient India?",
+    "options": [
+      "Buddhism",
+      "Jainism",
+      "Saivism",
+      "Vaishnavism"
+    ],
+    "answer": "B",
+    "explanation": "A central tenet of Jain metaphysics is hylozoism / panpsychism (Jiva and Ajiva), where consciousness/soul (jiva) is attributed not just to animals and plants, but also to elements like earth, water, fire, and wind bodies."
+  },
+  {
+    "year": 2023,
+    "subject": "Medieval History",
+    "question": "Who among the following rulers of Vijayanagara Empire constructed a large dam across Tungabhadra River and a canal-cum-aqueduct several kilometres long from the river to the capital city?",
+    "options": [
+      "Devaraya I",
+      "Mallikarjuna",
+      "Vira Vijaya",
+      "Virupaksha"
+    ],
+    "answer": "A",
+    "explanation": "According to contemporary chroniclers like Niccolò de' Conti, Devaraya I (Sangama dynasty) constructed a barrage/dam across the Tungabhadra River with a massive canal-cum-aqueduct leading into Vijayanagara to relieve water shortages and irrigate adjoining agricultural fields."
+  },
+  {
+    "year": 2023,
+    "subject": "Medieval History",
+    "question": "Who among the following rulers of medieval Gujarat surrendered Diu to Portuguese?",
+    "options": [
+      "Ahmad Shah",
+      "Mahmud Begarha",
+      "Bahadur Shah",
+      "Muhammad Shah"
+    ],
+    "answer": "C",
+    "explanation": "Facing pressure from the Mughal Emperor Humayun, Sultan Bahadur Shah of Gujarat signed the Treaty of Bassein (1534) and subsequently ceded Diu to the Portuguese in exchange for military assistance."
+  },
+  {
+    "year": 2023,
+    "subject": "Modern History & Polity",
+    "question": "By which one of the following Acts was the Governor General of Bengal designated as the Governor General of India?",
+    "options": [
+      "The Regulating Act",
+      "The Pitt's India Act",
+      "The Charter Act of 1793",
+      "The Charter Act of 1833"
+    ],
+    "answer": "D",
+    "explanation": "The Charter Act of 1833 elevated the post of Governor-General of Bengal to the 'Governor-General of India' and vested in him all civil and military powers, making Lord William Bentinck the first Governor-General of India."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "In essence, what does 'Due Process of Law' mean?",
+    "options": [
+      "The principle of natural justice",
+      "The procedure established by law",
+      "Fair application of law",
+      "Equality before law"
+    ],
+    "answer": "C",
+    "explanation": "Due process of law ensures that a law is not merely enacted through the proper legislative procedure, but is also inherently just, rational, and fair in its content and application, preventing arbitrary state action."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "Consider the following statements:\nStatement-I: In India, prisons are managed by State Governments with their own rules and regulations for the day-to-day administration of prisons.\nStatement-II: In India, prisons are governed by the Prisons Act, 1894 which expressly kept the subject of prisons in the control of Provincial Governments.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "A",
+    "explanation": "'Prisons/persons detained therein' is an entry under the State List of the Seventh Schedule of the Indian Constitution, which has its roots in the Prisons Act, 1894, where the day-to-day administration and rule-making authority were placed under provincial control."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "Which one of the following statements best reflects the Chief purpose of the 'Constitution' of a country?",
+    "options": [
+      "It determines the objective for the making of necessary laws.",
+      "It enables the creation of political offices and a government.",
+      "It defines and limits the powers of government.",
+      "It secures social justice, social equality and social security."
+    ],
+    "answer": "C",
+    "explanation": "The core constitutional principle of constitutionalism is establishing limited government—setting fundamental boundaries and checks on state power to safeguard individual rights and prevent tyranny."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "In India, which one of the following Constitutional Amendment Acts was widely believed to be enacted to overcome the judicial interpretations of the Fundamental Rights?",
+    "options": [
+      "1st Amendment",
+      "42nd Amendment",
+      "44th Amendment",
+      "86th Amendment"
+    ],
+    "answer": "A",
+    "explanation": "The Constitution (First Amendment) Act, 1951 was enacted primarily to overcome judicial rulings relating to agrarian land reforms, freedom of speech, and reservations (notably in cases like State of Madras v. Champakam Dorairajan and Romesh Thappar v. State of Madras), which led to the creation of the Ninth Schedule."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "Consider the following organizations/bodies in India:\n1. The National Commission for Backward Classes\n2. The National Human Rights Commission\n3. The National Law Commission\n4. The National Consumer Disputes Redressal Commission\nHow many of the above are constitutional bodies?",
+    "options": [
+      "Only one",
+      "Only two",
+      "Only three",
+      "All four"
+    ],
+    "answer": "A",
+    "explanation": "Only the National Commission for Backward Classes is a constitutional body (Article 338B, added by the 102nd Amendment). The NHRC and NCDRC are statutory bodies, while the Law Commission is an executive body constituted periodically."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "Consider the following statements:\n1. If the election of the President of India is declared void by the Supreme Court of India, all acts done by him/her in the performance of duties of his/her office of President before the date of decision become invalid.\n2. Election for the post of the President of India can be postponed on the ground that some Legislative Assemblies have been dissolved and elections are yet to take place.\n3. When a Bill is presented to the President of India, the Constitution prescribes time limits within which he/she has to declare his/her assent.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "D",
+    "explanation": "All statements are incorrect. Under Article 71(2), presidential acts performed prior to an election being nullified remain valid. Under Article 71(4), presidential elections cannot be challenged due to vacancies in the electoral college. Under Article 111, the Constitution does not prescribe a specific deadline for the President to grant assent."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "With reference to Finance Bill and Money Bill in the Indian Parliament, consider the following statements:\n1. When the Lok Sabha transmits Finance Bill to the Rajya Sabha, it can amend or reject the Bill.\n2. When the Lok Sabha transmits Money Bill to the Rajya Sabha, it cannot amend or reject the Bill, it can only make recommendations.\n3. In the case of disagreement between the Lok Sabha and the Rajya Sabha, there is no joint sitting for Money Bill, but a joint sitting becomes necessary for Finance Bill.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "A",
+    "explanation": "Statement 2 is correct: Rajya Sabha cannot amend or reject a Money Bill; it can only propose recommendations within 14 days. Statement 1 is ambiguous/incorrect depending on the type of Finance Bill (Finance Bill Type I is treated like a Money Bill regarding Rajya Sabha's power to reject/amend under Article 117(1)). Statement 3 is incorrect: A joint sitting is not 'necessary' or mandatory; it is an enabling provision at the discretion of the President under Article 108. Per the official key interpretation, only one statement is correct."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "Consider the following statements:\n1. Once the Central Government notifies an area as a 'Community Reserve', the Chief Wildlife Warden of the State becomes the governing authority of such forest.\n2. Hunting is not allowed in such area.\n3. People of such area are allowed to collect non-timber forest produce.\n4. People of such area are allowed traditional agricultural practices.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "Only three",
+      "All four"
+    ],
+    "answer": "B",
+    "explanation": "Under the Wildlife (Protection) Act, 1972: A Community Reserve Management Committee (not the Chief Wildlife Warden alone) manages the reserve. Hunting is strictly prohibited (Statement 2 is correct). Collection of non-timber forest produce is permitted for local livelihood needs (Statement 3 is correct). Large-scale traditional agricultural practices like shifting cultivation or routine conversion are barred. Hence, two statements are correct."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "With reference to 'Scheduled Areas' in India, consider the following statements:\n1. Within a State, the notification of an area as Scheduled Area takes place through an Order of the President.\n2. The largest administrative unit forming the Scheduled Area is the District and the lowest is the cluster of villages in the Block.\n3. The Chief Ministers of the concerned States are required to submit annual reports to the Union Home Ministry on the administration of Scheduled Areas in the States.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "B",
+    "explanation": "Statements 1 and 2 are correct: The President declares Fifth Schedule areas, where administrative boundaries range from districts down to village clusters. Statement 3 is incorrect: Under the Fifth Schedule, it is the Governor of the State (not the Chief Minister) who must submit an annual report directly to the President of India."
+  },
+  {
+    "year": 2023,
+    "subject": "Polity & Governance",
+    "question": "Consider the following statements:\nStatement-I: The Supreme Court of India has held in some judgements that the reservation policies made under Article 16(4) of the Constitution of India would be limited by Article 335 for maintenance of efficiency of administration.\nStatement-II: Article 335 of the Constitution of India defines the term 'efficiency of administration'.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "C",
+    "explanation": "Statement-I is correct: The Supreme Court (e.g., in Indra Sawhney and M. Nagaraj) affirmed that affirmative action under Article 16(4) must balance with administrative efficiency under Article 335. Statement-II is incorrect: The Constitution does not define the phrase 'efficiency of administration' anywhere in Article 335 or elsewhere."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography",
+    "question": "Consider the following statements:\nStatement-I: India, despite having uranium deposits, depends on coal for most of its electricity production.\nStatement-II: Uranium, enriched to the extent of at least 60%, is required for the production of electricity in a nuclear power plant.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "C",
+    "explanation": "Statement-I is correct: Coal accounts for over 50% of India's total electricity generation, while nuclear energy contributes around 2-3%, despite domestic uranium reserves. Statement-II is incorrect: Commercial nuclear power reactors use low-enriched uranium (LEU) typically enriched to 3% to 5% U-235 (or even natural un-enriched uranium in PHWRs). Uranium enriched to 60% or higher is considered highly enriched uranium (HEU) and is used in research reactors, naval propulsion, or nuclear weapons, not standard civil power plants."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography",
+    "question": "Which one of the following has been constituted under the Environment (Protection) Act, 1986?",
+    "options": [
+      "The Central Water Commission",
+      "The Central Ground Water Board",
+      "The Central Ground Water Authority",
+      "The National Water Development Agency"
+    ],
+    "answer": "C",
+    "explanation": "The Central Ground Water Authority (CGWA) was constituted under Section 3(3) of the Environment (Protection) Act, 1986 to regulate and control groundwater development and management in the country."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography & Environment",
+    "question": "With reference to the Indian trees, consider the following:\n1. Jackfruit (Artocarpus heterophyllus)\n2. Mahua (Madhuca indica)\n3. Teak (Tectona grandis)\nHow many of the above are deciduous trees?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "B",
+    "explanation": "Mahua (Madhuca indica) and Teak (Tectona grandis) are prominent deciduous trees typical of tropical moist and dry deciduous forests in India. Jackfruit (Artocarpus heterophyllus) is an evergreen tree native to tropical evergreen and semi-evergreen forest ecosystems. Thus, only two of the listed trees are deciduous."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography & Environment",
+    "question": "Consider the following statements:\n1. India has more arable area than China.\n2. The proportion of irrigated area is more in India as compared to China.\n3. The average productivity per hectare in Indian agriculture is higher than that in China.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "B",
+    "explanation": "Statement 1 is correct: India possesses the largest arable land area in the world (~156 million hectares), surpassing China (~119 million hectares). Statement 2 is correct: A higher proportion of India's total cultivated land is equipped for irrigation compared to China's total arable land proportion. Statement 3 is incorrect: China's agricultural productivity per hectare for major crops like rice, wheat, and maize is nearly double that of India due to higher mechanization and intensive input use. Therefore, only two statements are correct."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography & Environment",
+    "question": "Which one of the following is the best example of repeated falls in sea level, giving rise to present-day extensive marshland?",
+    "options": [
+      "Bhitarkanika Mangroves",
+      "Marakkanam Salt Pans",
+      "Naupada Swamp",
+      "Rann of Kutch"
+    ],
+    "answer": "D",
+    "explanation": "The Great and Little Rann of Kutch represent extensive salt marshes that were once shallow marine gulfs/inlets of the Arabian Sea. Repeated marine regressions, tectonic uplifts, and siltation led to the recession of the sea, resulting in the present-day seasonal and hyper-saline mudflats and marshes."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography",
+    "question": "Ilmenite and rutile, abundantly available in certain coastal tracts of India, are rich sources of which one of the following?",
+    "options": [
+      "Aluminium",
+      "Copper",
+      "Iron",
+      "Titanium"
+    ],
+    "answer": "D",
+    "explanation": "Ilmenite (FeTiO3) and rutile (TiO2) are primary titanium-bearing mineral sands abundant along the coastal placer deposits of Kerala, Tamil Nadu, Andhra Pradesh, and Odisha."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography",
+    "question": "About three-fourths of world's cobalt, a metal required for the manufacture of batteries for electric vehicles, is produced by",
+    "options": [
+      "Argentina",
+      "Botswana",
+      "the Democratic Republic of the Congo",
+      "Kazakhstan"
+    ],
+    "answer": "C",
+    "explanation": "The Democratic Republic of the Congo (DRC) is by far the world's leading producer of cobalt, extracting approximately 70% to 75% of total global cobalt output, primarily as a byproduct of copper mining in the Katanga Copperbelt."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography",
+    "question": "Which one of the following is a part of the Congo Basin?",
+    "options": [
+      "Cameroon",
+      "Nigeria",
+      "South Sudan",
+      "Uganda"
+    ],
+    "answer": "A",
+    "explanation": "The Congo Basin spans across six Central African countries: Cameroon, the Central African Republic, the Democratic Republic of the Congo, the Republic of the Congo, Equatorial Guinea, and Gabon. Southern and eastern parts of Cameroon drain into the Sangha and Congo River system."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography",
+    "question": "Consider the following statements:\n1. Amarkantak Hills are at the confluence of Vindhya and Sahyadri ranges.\n2. Biligirirangan Hills constitute the easternmost part of Satpura range.\n3. Seshachalam Hills constitute the southernmost part of Western Ghats.\nHow many of the statements given above are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are incorrect. Statement 1: Amarkantak Hills form the junction of the Vindhya and Satpura ranges (Maikal Hills), not Sahyadris (Western Ghats). Statement 2: The Biligirirangan (BR) Hills are located in Karnataka and bridge the Western Ghats with the Eastern Ghats, having no relation to the Satpura range. Statement 3: The Seshachalam Hills are part of the Southern Eastern Ghats in Andhra Pradesh, not the Western Ghats (whose southernmost section is the Cardamom/Agasthyamalai Hills)."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography",
+    "question": "With reference to India's projects on connectivity, consider the following statements:\n1. East-West Corridor under Golden Quadrilateral Project connects Dibrugarh and Surat.\n2. The Trilateral Highway connects Moreh in Manipur and Chiang Mai in Thailand via Myanmar.\n3. Bangladesh-China-India-Myanmar Economic Corridor connects Varanasi in Uttar Pradesh with Kunming in China.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are incorrect. Statement 1: The East-West Corridor connects Silchar in Assam to Porbandar in Gujarat. Statement 2: The India-Myanmar-Thailand Trilateral Highway connects Moreh (India) to Mae Sot in Thailand (via Mandalay/Naypyidaw in Myanmar), not Chiang Mai. Statement 3: The BCIM Economic Corridor connects Kolkata (India) to Kunming (Yunnan province, China), not Varanasi."
+  },
+  {
+    "year": 2023,
+    "subject": "Geography & Environment",
+    "question": "Consider the following statements:\nStatement-I: Switzerland is one of the leading exporters of gold in terms of value.\nStatement-II: Switzerland has the second largest gold reserves in the world.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "C",
+    "explanation": "Statement-I is correct: Switzerland is the world's leading gold refining hub and ranks among the top global exporters of gold by value. Statement-II is incorrect: According to the World Gold Council, the United States holds the largest gold reserves (~8,133 tonnes), followed by Germany, Italy, France, Russia, and China; Switzerland ranks around 7th or 8th globally, not second."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & International Trade",
+    "question": "Consider the following statements:\nStatement-I: Recently, the United States of America (USA) and the European Union (EU) have launched the 'Trade and Technology Council'.\nStatement-II: The USA and the EU claim that through this they are trying to bring technological progress and physical productivity under their control.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "C",
+    "explanation": "Statement-I is correct: The US-EU Trade and Technology Council (TTC) was established in 2021 as a diplomatic and technological coordination forum. Statement-II is incorrect: The stated objective of the TTC is to promote transatlantic cooperation, secure critical supply chains (like semiconductors), protect human rights online, and align standards for emerging technologies—not to bring technological progress and physical productivity under unilateral or joint control."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & Agriculture",
+    "question": "Consider the following statements:\nStatement-I: India accounts for 3.2% of global export of goods.\nStatement-II: Many local companies and some foreign companies operating in India have taken advantage of India's 'Production-linked Incentive' scheme.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "D",
+    "explanation": "Statement-I is incorrect: According to WTO data (World Trade Statistical Review), India's share in world merchandise exports is around 1.8% (not 3.2%; India's share in services exports is around 4%). Statement-II is correct: Numerous domestic enterprises and multinational giants (such as Foxconn, Samsung, and Pegatron) have actively availed incentives under India's flagship Production-Linked Incentive (PLI) scheme."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & Agriculture",
+    "question": "The 'Stability and Growth Pact' of the European Union is a treaty that\n1. limits the levels of the budgetary deficit of the countries of the European Union\n2. makes the countries of the European Union to share their infrastructure facilities\n3. enables the countries of the European Union to divide their technologies\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "A",
+    "explanation": "Statement 1 is correct: The Stability and Growth Pact (SGP) is an agreement among EU member states to enforce fiscal discipline, specifically requiring countries to keep their budget deficits below 3% of GDP and public debt below 60% of GDP. Statements 2 and 3 are incorrect: The pact is strictly a fiscal surveillance and budgetary framework, with no provisions for sharing infrastructure facilities or dividing technologies. Thus, only one statement is correct."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & Finance",
+    "question": "Consider the following statements:\n1. Recently, all the countries of the United Nations have adopted the first-ever compact for international migration, the 'Global Compact for Safe, Orderly and Regular Migration (GCM)'.\n2. The objectives and commitments stated in the GCM are binding on the UN member countries.\n3. The GCM addresses internal migration or internally displaced people also in its objectives and commitments.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "D",
+    "explanation": "All three statements are incorrect. Statement 1: Not all UN member states adopted it; notably, the United States, Hungary, Israel, and several others voted against or withdrew from the compact. Statement 2: The GCM is explicitly a non-legally binding cooperative framework. Statement 3: The GCM specifically covers international migration, whereas internal displacement is addressed through separate frameworks like the Guiding Principles on Internal Displacement."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & Monetary Policy",
+    "question": "With reference to Central Bank Digital Currencies, consider the following statements:\n1. It is possible to make payments in a digital currency without using US dollar or SWIFT system.\n2. A digital currency can be distributed with a condition programmed into it such as a time-frame for spending it.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": "C",
+    "explanation": "Both statements are correct. Statement 1: CBDCs can be settled directly on bilateral or multilateral ledgers/platforms (e.g., Project mBridge), bypassing conventional correspondent banking systems, the SWIFT network, and third-party currencies like the USD. Statement 2: Programmability is a core technical feature of CBDCs via smart contracts, allowing issuers to designate expiry dates, intended merchant categories, or purpose-specific stimulus use."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & Banking",
+    "question": "In the context of finance, the term 'beta' refers to",
+    "options": [
+      "the process of simultaneously buying and selling an asset from different platforms",
+      "an investment strategy of a portfolio manager to balance risk versus reward",
+      "a type of systemic risk that arises where perfect financial markets exist",
+      "a numeric value that measures the fluctuations of a stock to changes in the overall stock market"
+    ],
+    "answer": "D",
+    "explanation": "Beta (β) is a standard financial metric that measures the systematic risk or volatility of an individual security or portfolio relative to the broader market (where the market has a beta of 1.0; a beta greater than 1 indicates higher volatility than the benchmark)."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & Agriculture",
+    "question": "Consider the following statements:\n1. The Self-Help Group (SHG) programme was originally initiated by the State Bank of India by providing microcredit to the financially deprived.\n2. In an SHG, all members of a group take responsibility for a loan that is given to an individual member.\n3. The Regional Rural Banks and Scheduled Commercial Banks support SHGs.\nHow many of the above statements are correct?",
+    "options": [
+      "Only one",
+      "Only two",
+      "All three",
+      "None"
+    ],
+    "answer": "B",
+    "explanation": "Statement 1 is incorrect: The SHG Bank Linkage Project (SHG-BLP) was pioneered and launched by NABARD in 1992, not originally by SBI. Statement 2 is correct: SHGs function on peer pressure and collective/mutual liability where the entire group acts as a guarantor for individual member borrowings. Statement 3 is correct: Scheduled Commercial Banks, Regional Rural Banks (RRBs), and Cooperative Banks actively finance and support SHGs under the SHG-Bank Linkage Programme. Hence, only two statements are correct."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & Healthcare",
+    "question": "Consider the following statements:\nStatement-I: India's public healthcare system largely focuses on curative care with limited preventive, promotive and rehabilitative care.\nStatement-II: Under India's decentralized approach to healthcare delivery, the States are primarily responsible for organizing health services.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "B",
+    "explanation": "Statement-I is correct: National Health Policy documents and economic surveys acknowledge that historically, public health spending and infrastructure in India have been skewed towards secondary/tertiary curative care rather than comprehensive preventive or rehabilitative services. Statement-II is correct: Under the Seventh Schedule of the Indian Constitution, 'Public health and sanitation; hospitals and dispensaries' is an entry in the State List (List II), placing primary administrative responsibility on the States. However, State responsibility is not the causal reason for the historical skew toward curative care (which stemmed from funding allocations, policy priorities, and infrastructure gaps)."
+  },
+  {
+    "year": 2023,
+    "subject": "Economy & International Relations",
+    "question": "Consider the following statements:\nStatement-I: According to the United Nations' 'World Water Development Report, 2022', India extracts more than a quarter of the world's groundwater withdrawal each year.\nStatement-II: India needs to extract more than a quarter of the world's groundwater each year to satisfy the drinking water and sanitation needs of almost 18% of world's population living in its territory.\nWhich one of the following is correct in respect of the above statements?",
+    "options": [
+      "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+      "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+      "Statement-I is correct but Statement-II is incorrect",
+      "Statement-I is incorrect but Statement-II is correct"
+    ],
+    "answer": "C",
+    "explanation": "Statement-I is correct: India is the world's largest extractor of groundwater, withdrawing over 25% (roughly 250 cubic kilometres annually) of the global total, exceeding the combined extractions of China and the US. Statement-II is incorrect: Around 89% to 90% of extracted groundwater in India is utilized for agricultural irrigation (bolstered by tubewells and free/subsidized electricity), while drinking and domestic sanitation account for only about 9% to 11%."
   }
-  ]
+ ]
